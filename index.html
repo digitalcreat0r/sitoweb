@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Hub - Le mie App</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* 2. VARIABILI CSS (Il tuo "tema") */
+        :root {
+            --primary-color: #0066FF; /* Blu "tech" */
+            --primary-hover: #0052cc;
+            --background-color: #f4f7f9; /* Grigio chiarissimo per lo sfondo */
+            --card-background: #ffffff;
+            --text-dark: #1a202c;
+            --text-gray: #718096;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            --radius: 12px; /* Arrotondamento angoli */
+        }
+
+        /* 3. STILI BASE */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 60px auto; /* Più spazio sopra */
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Griglia per le card (se ne avrai tante) */
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* 4. LA CARD MODERNA */
+        .app-card {
+            background: var(--card-background);
+            border-radius: var(--radius);
+            padding: 30px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.05); /* Bordo quasi invisibile */
+            transition: all 0.3s ease; /* Animazione fluida */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        /* Effetto "Hover" quando passi il mouse */
+        .app-card:hover {
+            transform: translateY(-5px); /* Si alza leggermente */
+            box-shadow: var(--shadow-md); /* L'ombra diventa più marcata */
+        }
+
+        .app-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            background: #e6f0ff; /* Sfondo chiaro per l'icona */
+            padding: 15px;
+            border-radius: 50%;
+        }
+
+        h3 {
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        }
+
+        /* Stile del bottone/link */
+        .btn-policy {
+            display: inline-block;
+            margin-top: auto; /* Spinge il bottone in fondo alla card */
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn-policy:hover {
+            background-color: var(--primary-hover);
+        }
+        
+        .btn-policy i {
+            margin-left: 8px; /* Spazio tra testo e freccia nel bottone */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-code"></i> Developer Hub</h1>
+            <p class="subtitle">Documentazione legale e Privacy Policy per le applicazioni pubblicate su Google Play Store.</p>
+        </header>
+
+        <main class="apps-grid">
+            <div class="app-card">
+                <i class="fa-solid fa-rocket app-icon"></i> 
+                <h3>Space Explorer Game</h3>
+                <p style="color: var(--text-gray); margin-bottom: 20px; font-size: 0.95rem;">Un gioco arcade spaziale. Policy aggiornata per i requisiti GDPR.</p>
+                <a href="privacy-policy-app1.html" class="btn-policy">
+                    Leggi la Policy <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="app-card">
+                <i class="fa-solid fa-list-check app-icon"></i>
+                <h3>My Daily To-Do</h3>
+                <p style="color: var(--text-gray); margin-bottom: 20px; font-size: 0.95rem;">App di produttività. Non raccoglie dati personali sensibili.</p>
+                <a href="privacy-policy-app2.html" class="btn-policy">
+                    Leggi la Policy <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+             </main>
+
+        <footer>
+            <p>© 2026 Tuo Nome Sviluppatore. Tutti i diritti riservati.</p>
+        </footer>
+    </div>
+</body>
+</html>
