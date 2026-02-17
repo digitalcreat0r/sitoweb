@@ -1,13 +1,68 @@
+/* Variabili per una gestione rapida */
+:root {
+    --title-color: #000000;    /* Nero per i titoli */
+    --body-text: #333333;      /* Grigio scuro per il testo */
+    --light-text: #777777;     /* Grigio per i dettagli */
+    --bg-page: #f9f9f9;        /* Sfondo pagina */
+    --bg-card: #ffffff;        /* Sfondo contenuto */
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--body-text);
+    background-color: var(--bg-page);
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #f9f9f9;
 }
 
-h1 { color: #007bff; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
-h2 { color: #555; margin-top: 30px; }
-.last-updated { font-style: italic; color: #777; }
+/* Titoli */
+h1 { 
+    color: var(--title-color); 
+    border-bottom: 2px solid var(--title-color); 
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+h2 { 
+    color: var(--title-color); 
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+/* Contenitore principale (per pulire l'HTML) */
+.policy-content {
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Dettagli e link */
+.last-updated { 
+    font-style: italic; 
+    color: var(--light-text);
+    font-size: 0.9rem;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--light-text);
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: var(--title-color);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
