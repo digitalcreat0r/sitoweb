@@ -1,68 +1,70 @@
-/* Variabili per una gestione rapida */
+/* Variabili per modifiche veloci */
 :root {
-    --title-color: #000000;    /* Nero per i titoli */
-    --body-text: #333333;      /* Grigio scuro per il testo */
-    --light-text: #777777;     /* Grigio per i dettagli */
-    --bg-page: #f9f9f9;        /* Sfondo pagina */
-    --bg-card: #ffffff;        /* Sfondo contenuto */
+    --brand-blue: #007bff;
+    --title-black: #000000;
+    --text-dark: #333333;
+    --text-light: #777777;
+    --bg-page: #f9f9f9;
 }
 
+/* Reset e Base */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: var(--body-text);
+    color: var(--text-dark);
     background-color: var(--bg-page);
     max-width: 800px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 20px; /* Padding di sicurezza ai lati */
 }
 
-/* Titoli */
-h1 { 
-    color: var(--title-color); 
-    border-bottom: 2px solid var(--title-color); 
-    padding-bottom: 10px;
-    margin-top: 0;
-}
-
-h2 { 
-    color: var(--title-color); 
-    margin-top: 30px;
-    font-size: 1.5rem;
-}
-
-/* Contenitore principale (per pulire l'HTML) */
+/* Box Bianco Contenuto */
 .policy-content {
-    background: var(--bg-card);
-    padding: 40px;
+    background: #ffffff;
+    padding: 40px; /* Padding generoso su desktop */
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-/* Dettagli e link */
-.last-updated { 
-    font-style: italic; 
-    color: var(--light-text);
-    font-size: 0.9rem;
+h1 { 
+    color: var(--brand-blue); 
+    border-bottom: 2px solid var(--brand-blue); 
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 2.2rem;
 }
 
-.back-link {
-    text-decoration: none;
-    color: var(--light-text);
-    font-weight: 600;
-    display: inline-block;
-    margin-bottom: 20px;
-    transition: color 0.2s;
+h2 { 
+    color: var(--title-black); 
+    margin-top: 30px;
+    font-size: 1.5rem;
 }
 
-.back-link:hover {
-    color: var(--title-color);
-}
+/* Altri elementi */
+.last-updated { font-style: italic; color: var(--text-light); font-size: 0.9rem; }
+.back-link { text-decoration: none; color: var(--text-light); font-weight: 600; display: inline-block; margin-bottom: 20px; }
+.main-footer { margin-top: 40px; text-align: center; color: var(--text-light); font-size: 0.85rem; }
 
-ul {
-    padding-left: 20px;
-}
+@media (max-width: 600px) {
+    body {
+        margin: 10px auto; /* Riduciamo lo spazio sopra e sotto */
+        padding: 10px;     /* Meno spazio ai bordi dello schermo */
+    }
 
-li {
-    margin-bottom: 8px;
+    .policy-content {
+        padding: 20px;     /* Riduciamo il padding interno per dare più spazio al testo */
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 1.6rem; /* Titolo leggermente più piccolo per non andare a capo male */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Sottotitoli proporzionati */
+    }
+
+    .back-link {
+        margin-bottom: 15px;
+    }
 }
