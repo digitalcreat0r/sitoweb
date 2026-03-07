@@ -106,7 +106,7 @@ h2 i { color: var(--primary-color); }
 
 .app-card {
     background: var(--card-bg);
-    padding: 30px;
+    padding: 20px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     transition: transform 0.2s, background-color 0.3s;
@@ -147,7 +147,7 @@ h2 i { color: var(--primary-color); }
 /* --- TESTER GUIDE --- */
 .tester-box {
     background: var(--card-bg);
-    padding: 40px;
+    padding: 20px;
     border-radius: var(--radius);
     border-left: 5px solid var(--primary-color);
     box-shadow: var(--shadow);
@@ -187,12 +187,17 @@ footer {
     padding-top: 40px;
     border-top: 1px solid var(--border-color);
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 .footer-links { margin-bottom: 20px; }
 .footer-links a { color: var(--text-muted); text-decoration: none; margin: 0 10px; }
 .footer-links a:hover { color: var(--primary-color); }
+
+footer p {
+    font-size: 0.85rem;
+    margin-top: 65px;
+}
 
 /* --- BOTTONE SWITCH TEMA (UI) --- */
 .theme-switch-btn {
@@ -213,6 +218,42 @@ footer {
 
 .theme-switch-btn:hover {
     transform: scale(1.05);
+}
+
+/* Style for the tester reward badge */
+.reward-badge {
+    background: linear-gradient(135deg, var(--primary-color), #6366f1);
+    color: white;
+    padding: 20px;
+    border-radius: var(--radius);
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.reward-badge i {
+    font-size: 2rem;
+}
+
+.reward-badge p {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+/* Style for the utility note */
+.tester-note {
+    background: var(--step-bg);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 30px;
+}
+
+.tester-note i {
+    color: var(--primary-color);
+    margin-right: 8px;
 }
 
 /* --- MOBILE RESPONSIVE --- */
