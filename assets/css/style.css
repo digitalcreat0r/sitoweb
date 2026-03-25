@@ -280,7 +280,11 @@ footer {
 @media (max-width: 600px) {
     body { font-size: 1.1rem; }
     h1 { font-size: 2rem; }
-    .tester-box { padding: 25px; }
+    .tester-box {
+            padding: 20px;
+            border-left: none;
+            border-radius: 8px;
+        }
     .tester-note {
             font-size: 1.1rem;
             line-height: 1.5;
@@ -293,7 +297,18 @@ footer {
             font-size: 1.1rem;
             line-height: 1.5;
         }
-    .step-item { gap: 15px; }
+    .step-item {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+    .step-number {
+            margin-bottom: 5px;
+            width: 30px;
+            height: 30px;
+            font-size: 0.9rem;
+        }
     .theme-switch-btn { top: 10px; right: 10px; padding: 8px 12px; }
     .footer-links {
             flex-direction: column;
