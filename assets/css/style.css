@@ -12,6 +12,10 @@
     --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
+body.always-light .theme-switch-btn {
+    display: none;
+}
+
 /* --- TEMA LIGHT (Attivato tramite classe .light-mode) --- */
 body.light-mode {
     --bg-color: #f8fafc;
