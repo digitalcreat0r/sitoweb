@@ -298,6 +298,11 @@ footer {
             font-size: 1.1rem;
             line-height: 1.5;
         }
+    .step-number {
+            width: 45px;
+            height: 45px;
+            font-size: 1.3rem;
+        }
     .step-content {
             text-align: center;
         }
