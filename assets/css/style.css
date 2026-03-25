@@ -206,23 +206,12 @@ footer {
     color: var(--text-muted);
     text-decoration: none;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 900;
     transition: color 0.2s;
 }
 
 .footer-links a:hover {
     color: var(--primary-color);
-}
-
-.footer-contact {
-    margin-bottom: 30px;
-    font-size: 0.9rem;
-}
-
-.footer-contact a {
-    color: var(--text-main);
-    text-decoration: none;
-    font-weight: 600;
 }
 
 .copyright {
