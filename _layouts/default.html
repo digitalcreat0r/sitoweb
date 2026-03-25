@@ -29,22 +29,24 @@
     const themeIcon = document.getElementById('theme-icon');
     const body = document.body;
 
-    function updateIcon(isLight) {
-        themeIcon.className = isLight ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
-    }
+    if (themeToggle) {
+        function updateIcon(isLight) {
+            themeIcon.className = isLight ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+        }
 
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-        body.classList.add('light-mode');
-        updateIcon(true);
-    }
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            body.classList.add('light-mode');
+            updateIcon(true);
+        }
 
-    themeToggle.addEventListener('click', () => {
-        body.classList.toggle('light-mode');
-        const isLight = body.classList.contains('light-mode');
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
-        updateIcon(isLight);
-    });
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            const isLight = body.classList.contains('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+            updateIcon(isLight);
+        });
+    }
 </script>
 
 </body>
