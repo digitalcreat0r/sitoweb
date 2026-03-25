@@ -289,12 +289,14 @@ footer {
             font-size: 1.1rem;
             line-height: 1.5;
         }
+    .step-content {
+            text-align: center;
+        }
     .step-content h4 {
             font-size: 1.3rem;
             margin-bottom: 8px;
         }
     .step-content p {
-            text-align: center;
             font-size: 1.1rem;
             line-height: 1.5;
         }
