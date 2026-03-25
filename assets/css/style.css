@@ -278,6 +278,7 @@ footer {
 
 /* --- MOBILE RESPONSIVE --- */
 @media (max-width: 600px) {
+    body { font-size: 1.1rem; }
     h1 { font-size: 2rem; }
     .tester-box { padding: 25px; }
     .step-item { gap: 10px; }
