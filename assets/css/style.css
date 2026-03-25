@@ -189,7 +189,7 @@ h2 i { color: var(--primary-color); }
 /* --- FOOTER REVISIONATO --- */
 footer {
     text-align: center;
-    padding: 40px 20px 80px; /* Più respiro sopra e sotto */
+    padding: 40px 20px 20px; /* Più respiro sopra e sotto */
     border-top: 1px solid var(--border-color);
     color: var(--text-muted);
 }
