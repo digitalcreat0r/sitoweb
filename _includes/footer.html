@@ -1,8 +1,14 @@
 <footer>
     <div class="footer-links">
-        <a href="{{ site.baseurl }}/index.html#apps">Apps</a>
-        <a href="{{ site.baseurl }}/index.html#testing">Testing Guide</a>
+        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/#apps">Apps</a>
+        <a href="{{ site.baseurl }}/#testing">Testing Guide</a>
         <a href="{{ site.baseurl }}/policies/privacy-policy-screenrest.html">Privacy Policy</a>
     </div>
-    <p>© 2026 CleverPocket. All rights reserved.</p>
+
+    <div class="footer-contact">
+        <p>Contact: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    </div>
+
+    <p class="copyright">© {{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
 </footer>
