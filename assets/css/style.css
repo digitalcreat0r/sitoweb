@@ -280,6 +280,15 @@ footer {
 @media (max-width: 600px) {
     body { font-size: 1.1rem; }
     h1 { font-size: 2rem; }
+    h2 {
+            display: block;
+            text-align: center;
+        }
+
+        h2 i {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
     .tester-box {
             padding: 20px;
             border-left: none;
