@@ -1,0 +1,21 @@
+# Informazioni sul Sito
+title: CleverPocket
+author: Oleksandr
+email: cleverpocket.info@gmail.com
+description: "Independent developer focused on minimalist mobile Apps."
+
+# URL e Link
+url: "https://cleverpocket.app"
+baseurl: "" # Lascialo vuoto se il sito è nel dominio principale
+
+# Impostazioni di Build
+markdown: kramdown
+theme: minima # Opzionale, se vuoi un tema di base, ma noi useremo il tuo stile personalizzato
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

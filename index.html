@@ -1,146 +1,91 @@
 ---
 layout: default
+title: Developer Hub
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Hub | Portfolio & App Testing</title>
 
-    <link rel="icon" type="image/png" href="favicon.png">
+<header>
+    <div class="profile-img">
+        <i class="fa-solid fa-user-astronaut"></i>
+    </div>
+    <h1>Hi, I'm {{ site.author }}</h1>
+    <p class="about-text">
+        {{ site.description }}
+        Below you can find my current projects and information on how to join my testing programs.
+    </p>
+</header>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<button id="theme-toggle" class="theme-switch-btn" aria-label="Switch theme">
-    <i class="fa-solid fa-sun" id="theme-icon"></i>
-</button>
-
-<div class="container">
-    <header>
-        <div class="profile-img">
-            <i class="fa-solid fa-user-astronaut"></i>
-        </div>
-        <h1>Hi, I'm Oleksandr</h1>
-        <p class="about-text">
-            I am an independent developer focused on creating minimalist and functional mobile Apps.
-            Below you can find my current projects and information on how to join my testing programs.
-        </p>
-    </header>
-
-    <section id="apps">
-        <h2><i class="fa-solid fa-rocket"></i> My Apps</h2>
-        <div class="apps-grid">
-            <article class="app-card">
-                <div class="app-icon"><i class="fa-solid fa-gamepad"></i></div>
-                <h3>ScreenRest</h3>
-                <p class="app-description">
-                    No data collection during the testing.
-                </p>
-                <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" class="btn-main">
-                    Get it on Play Store <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <p class="policy-link-wrapper">
-                    <a href="policies/privacy-policy-screenrest.html">Privacy Policy</a>
-                </p>
-            </article>
-
-            <article class="app-card placeholder">
-                <div class="app-icon"><i class="fa-solid fa-plus"></i></div>
-                <h3>Coming Soon</h3>
-                <p>Working on something new. Stay tuned!</p>
-            </article>
-        </div>
-    </section>
-
-    <section id="testing">
-        <h2><i class="fa-solid fa-vial"></i> Become a Beta Tester</h2>
-        <div class="tester-box">
-            <p>Google requires at least <strong>12 testers</strong> for at least <strong>14 consecutive days</strong> before an app can be released to the Play Store.<br>If you want to support my work, please follow these steps:</p>
-
-            <div class="reward-badge">
-                <i class="fa-solid fa-gift"></i>
-                <p><strong>Tester Reward:</strong><br>As a thank you, all testers who complete the required 14-day period will receive <strong>lifetime free access</strong> to the full version of the tested app!</p>
-            </div>
-
-            <p class="tester-note">
-                <i class="fa-solid fa-lightbulb"></i>
-                <em><strong>Note:</strong> Is recommend joining the test only if you find the app truly useful. The best feedback comes from users who would naturally use the app in their daily routine.</em>
+<section id="apps">
+    <h2><i class="fa-solid fa-rocket"></i> My Apps</h2>
+    <div class="apps-grid">
+        <article class="app-card">
+            <div class="app-icon"><i class="fa-solid fa-gamepad"></i></div>
+            <h3>ScreenRest</h3>
+            <p class="app-description">
+                No data collection during the testing.
             </p>
+            <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" class="btn-main">
+                Get it on Play Store <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <p class="policy-link-wrapper">
+                <a href="{{ '/policies/privacy-policy-screenrest.html' | relative_url }}">Privacy Policy</a>
+            </p>
+        </article>
 
-            <div class="step-list">
-                <div class="step-item">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h4>Join the Testing Group</h4>
-                        <p>To access the private beta, you must join this <a href="YOUR_GOOGLE_GROUP_URL" target="_blank">Google Group</a> with your Play Store email.</p>
-                    </div>
+        <article class="app-card placeholder">
+            <div class="app-icon"><i class="fa-solid fa-plus"></i></div>
+            <h3>Coming Soon</h3>
+            <p>Working on something new. Stay tuned!</p>
+        </article>
+    </div>
+</section>
+
+<section id="testing">
+    <h2><i class="fa-solid fa-vial"></i> Become a Beta Tester</h2>
+    <div class="tester-box">
+        <p>Google requires at least <strong>12 testers</strong> for at least <strong>14 consecutive days</strong> before an app can be released to the Play Store.<br>If you want to support my work, please follow these steps:</p>
+
+        <div class="reward-badge">
+            <i class="fa-solid fa-gift"></i>
+            <p><strong>Tester Reward:</strong><br>As a thank you, all testers who complete the required 14-day period will receive <strong>lifetime free access</strong> to the full version of the tested app!</p>
+        </div>
+
+        <p class="tester-note">
+            <i class="fa-solid fa-lightbulb"></i>
+            <em><strong>Note:</strong> Is recommend joining the test only if you find the app truly useful. The best feedback comes from users who would naturally use the app in their daily routine.</em>
+        </p>
+
+        <div class="step-list">
+            <div class="step-item">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Join the Testing Group</h4>
+                    <p>To access the private beta, you must join this <a href="YOUR_GOOGLE_GROUP_URL" target="_blank">Google Group</a> with your Play Store email.</p>
                 </div>
+            </div>
 
-                <div class="step-item">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h4>Opt-in as a Tester</h4>
-                        <p>Click the <a href="YOUR_TESTING_OPT_IN_URL" target="_blank">Join on Web link</a> to officially register as a tester for the app.</p>
-                    </div>
+            <div class="step-item">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Opt-in as a Tester</h4>
+                    <p>Click the <a href="YOUR_TESTING_OPT_IN_URL" target="_blank">Join on Web link</a> to officially register as a tester for the app.</p>
                 </div>
+            </div>
 
-                <div class="step-item">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h4>Download & Stay Active</h4>
-                        <p>Download the app from the <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank">Play Store</a> and please keep it installed for at least 14 days.</p>
-                    </div>
+            <div class="step-item">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Download & Stay Active</h4>
+                    <p>Download the app from the <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank">Play Store</a> and please keep it installed for at least 14 days.</p>
                 </div>
+            </div>
 
-                <div class="step-item">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h4>Give Feedback</h4>
-                        <p>Found a bug?<br>Send me an email at:<br><strong>cleverpocket.info@gmail.com</strong><br>Your feedback is precious!</p>
-                    </div>
+            <div class="step-item">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Give Feedback</h4>
+                    <p>Found a bug?<br>Send me an email at:<br><strong>{{ site.email }}</strong><br>Your feedback is precious!</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    {% include footer.html %}
-</div>
-
-<script>
-    const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
-    const body = document.body;
-
-    // Funzione per aggiornare l'icona in base al tema
-    function updateIcon(isLight) {
-        themeIcon.className = isLight ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
-    }
-
-    // Carica la preferenza salvata all'avvio
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-        body.classList.add('light-mode');
-        updateIcon(true);
-    }
-
-    // Gestione del click sul pulsante
-    themeToggle.addEventListener('click', () => {
-        body.classList.toggle('light-mode');
-        const isLight = body.classList.contains('light-mode');
-
-        // Salva la scelta nel localStorage
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
-
-        // Cambia l'icona
-        updateIcon(isLight);
-    });
-</script>
-
-</body>
-</html>
+    </div>
+</section>
