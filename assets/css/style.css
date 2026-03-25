@@ -289,6 +289,6 @@ footer {
             gap: 15px;
         }
     .footer-links a {
-            font-size: 1.4rem; /* <--- Qui lo ingrandiamo SOLO per il telefono */
+            font-size: 1.4rem;
         }
 }
