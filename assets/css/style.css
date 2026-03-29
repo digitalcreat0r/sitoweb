@@ -342,3 +342,9 @@ footer {
     top: 0;
     z-index: 1001;
 }
+.maintenance-on .theme-switch-btn {
+    top: 70px; /* 20px originali + 50px di spazio per il banner */
+}
+.theme-switch-btn {
+    z-index: 2000;
+}

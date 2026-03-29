@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body class="{{ page.body_class }}">
+<body class="{{ page.body_class }} {% if site.maintenance_mode %}maintenance-on{% endif %}">
 
 {% if site.maintenance_mode %}
 <div class="maintenance-banner">
