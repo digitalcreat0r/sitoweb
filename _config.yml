@@ -19,3 +19,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+ # Banner di Manutenzione
+ maintenance_mode: true
+ maintenance_message: "Maintenance in progress. Some features may be temporarily unavailable."

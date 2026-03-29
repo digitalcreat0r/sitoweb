@@ -331,3 +331,14 @@ footer {
             font-size: 1.4rem;
         }
 }
+
+.maintenance-banner {
+    background: #f59e0b; /* Arancione avviso */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}

@@ -14,6 +14,12 @@
 </head>
 <body class="{{ page.body_class }}">
 
+{% if site.maintenance_mode %}
+<div class="maintenance-banner">
+    <i class="fa-solid fa-wrench"></i> {{ site.maintenance_message }}
+</div>
+{% endif %}
+
 <button id="theme-toggle" class="theme-switch-btn" aria-label="Switch theme">
     <i class="fa-solid fa-sun" id="theme-icon"></i>
 </button>
