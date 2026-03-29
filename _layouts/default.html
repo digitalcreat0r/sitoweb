@@ -12,7 +12,13 @@
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body class="{{ page.body_class }} {% if site.maintenance_mode %}maintenance-on{% endif %}">
+<body class="{{ page.body_class }} {% if site.maintenance_mode and page.hide_maintenance != true %}maintenance-on{% endif %}">
+
+{% if site.maintenance_mode and page.hide_maintenance != true %}
+<div class="maintenance-banner">
+    <i class="fa-solid fa-wrench"></i> {{ site.maintenance_message }}
+</div>
+{% endif %}
 
 {% if site.maintenance_mode %}
 <div class="maintenance-banner">
