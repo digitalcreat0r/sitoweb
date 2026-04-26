@@ -25,6 +25,7 @@ If you participate in beta testing:
 - You acknowledge that the software is in a testing phase and may contain bugs or errors.
 - **Testing Period:** The mandatory 14-day testing period begins only after the minimum number of testers required by Google is reached and active. Early participants may be required to remain in the program for longer than 14 days.
 - **Reward Eligibility:** Lifetime access rewards are subject to the successful completion of the testing phase and the application's subsequent official publication. The Developer does not guarantee that the application will be approved by Google for public release.
+- **Voluntary Participation:** You may stop participating in the testing program at any time. However, withdrawal or failure to remain active for the required period will forfeit any eligibility for rewards.
 
 ## 4. Disclaimer of Warranties
 The applications are provided "as is" without any warranties of any kind. The Developer does not guarantee that the apps will meet your requirements or be error-free.
