@@ -276,8 +276,10 @@ footer {
     transition: color 0.2s;
 }
 
-.footer-links a:hover {
-    color: var(--primary-color);
+@media (hover: hover) {
+    .footer-links a:hover {
+        color: var(--primary-color);
+    }
 }
 
 .copyright {
