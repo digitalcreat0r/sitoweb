@@ -40,15 +40,13 @@ body.always-light {
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-/* Ottimizzazioni per Documenti Legali */
 body.always-light .container {
-    max-width: 760px; /* Larghezza ottimale per la lettura */
+    max-width: 760px;
     padding-bottom: 80px;
 }
 
 body.always-light .site-nav {
-    background-color: rgba(248, 250, 252, 0.8); /* Semi-trasparente */
-    backdrop-filter: blur(10px);
+    background-color: var(--bg-color);
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -96,8 +94,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 15px 0;
-    position: sticky;
-    top: 0;
     z-index: 1000;
     background-color: var(--bg-color);
     transition: all 0.3s ease;
