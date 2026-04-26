@@ -4,11 +4,13 @@ title: Privacy Policy - ScreenRest
 body_class: always-light
 ---
 
+<div class="back-link"><a href="/">&larr; Back to Home</a></div>
+
 # Privacy Policy - ScreenRest
 
-*Last updated: March 2024*
+*Last updated: March 15, 2024*
 
-**ScreenRest** is built with a "Privacy by Design" approach. As an independent developer, I believe your data belongs to you. The app is designed to function entirely on your device without any external data transmission.
+**ScreenRest** is built with a "Privacy by Design" approach. We believe your data belongs to you. This application is designed to function entirely on your device without any external data transmission.
 
 ## 1. Information Collection
 We do **not** collect, store, or process any personal information. Specifically:

@@ -4,11 +4,13 @@ title: Terms of Use
 body_class: always-light
 ---
 
+<div class="back-link"><a href="/">&larr; Back to Home</a></div>
+
 # Terms of Use
 
-*Last updated: March 2024*
+*Last updated: March 15, 2024*
 
-By using the applications and services provided by Oleksandr (the "Developer"), you agree to the following terms. Please read them carefully.
+By using the applications and services provided by **CleverPocket Dev** (the "Developer"), you agree to the following terms. Please read them carefully.
 
 ## 1. Acceptance of Terms
 By downloading or using our mobile applications, including **ScreenRest**, you agree to be bound by these Terms of Use and our Privacy Policy.
