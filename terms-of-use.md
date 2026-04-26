@@ -23,7 +23,8 @@ We grant you a personal, non-transferable, and non-exclusive license to use our 
 ## 3. Beta Testing Programs
 If you participate in beta testing:
 - You acknowledge that the software is in a testing phase and may contain bugs or errors.
-- To qualify for testing rewards (such as lifetime access), you must complete the full testing period (14 consecutive days) as required by Google Play Store policies and described on our homepage.
+- **Testing Period:** The mandatory 14-day testing period begins only after the minimum number of testers required by Google is reached and active. Early participants may be required to remain in the program for longer than 14 days.
+- **Reward Eligibility:** Lifetime access rewards are subject to the successful completion of the testing phase and the application's subsequent official publication. The Developer does not guarantee that the application will be approved by Google for public release.
 
 ## 4. Disclaimer of Warranties
 The applications are provided "as is" without any warranties of any kind. The Developer does not guarantee that the apps will meet your requirements or be error-free.
