@@ -317,12 +317,19 @@ footer {
     border-radius: var(--radius);
     margin: 20px 0;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.reward-header {
+    display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
 .reward-badge i {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .reward-badge p {
