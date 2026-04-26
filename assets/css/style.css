@@ -333,7 +333,7 @@ footer {
 }
 
 .maintenance-banner {
-    background: #f59e0b; /* Arancione avviso */
+    background: #f59e0b;
     color: white;
     text-align: center;
     padding: 10px;
@@ -342,6 +342,11 @@ footer {
     top: 0;
     z-index: 1001;
 }
+
+body.always-light .maintenance-banner {
+    display: none;
+}
+
 .maintenance-on .theme-switch-btn {
     top: 70px; /* 20px originali + 50px di spazio per il banner */
 }
