@@ -171,6 +171,23 @@ h2 i { color: var(--primary-color); }
 
 .app-card.placeholder { opacity: 0.6; border-style: dashed; }
 
+.app-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.app-card-header h3 {
+    margin: 0;
+}
+
+.app-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+}
+
 .app-icon {
     font-size: 2.5rem;
     color: var(--primary-color);
