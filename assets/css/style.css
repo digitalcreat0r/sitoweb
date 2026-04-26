@@ -83,6 +83,31 @@ body {
     padding: 40px 20px 0;
 }
 
+/* --- SITE NAVBAR --- */
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.logo-img {
+    height: 45px; /* Regola l'altezza in base al tuo logo */
+    width: auto;
+}
+
 /* --- HEADER & ABOUT --- */
 header {
     text-align: center;
