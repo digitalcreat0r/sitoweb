@@ -9,8 +9,8 @@ body_class: always-light
         <img src="/assets/img/logo.png" alt="CleverPocket Logo" class="logo-img">
         <span>CleverPocket</span>
     </a>
+    <div class="back-link"><a href="/">&larr; Back to Home</a></div>
 </header>
-<div class="back-link"><a href="/">&larr; Back to Home</a></div>
 
 # Terms of Use
 
