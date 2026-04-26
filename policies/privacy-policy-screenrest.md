@@ -11,7 +11,7 @@ body_class: always-light
     </a>
 </header>
 
-<div class="back-link"><a href="/">&larr; Back to Home</a></div>
+<div class="back-link"><a href="/">← Back to Home</a></div>
 
 # Privacy Policy - ScreenRest
 

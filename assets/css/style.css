@@ -61,24 +61,8 @@ body.always-light h2 {
     padding-bottom: 8px;
 }
 
-body.always-light .site-nav {
-    justify-content: center; /* Torna centrato come nella Home */
-    margin-bottom: 30px;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--border-color);
-}
-
-body.always-light .logo {
-    font-size: 1.8rem; /* Dimensione originale della Home */
-    color: var(--text-main);
-}
-
-body.always-light .logo-img {
-    height: 45px; /* Dimensione originale della Home */
-}
-
 body.always-light .back-link {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     display: block;
 }
 
