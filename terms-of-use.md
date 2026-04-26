@@ -40,4 +40,4 @@ We reserve the right to modify these terms at any time. Your continued use of th
 These terms are governed by and construed in accordance with the laws of the Developer's jurisdiction.
 
 ## 8. Contact Information
-If you have any questions regarding these terms, please contact us at: **{{ site.email }}**
+If you have any questions regarding these terms, please contact me at: **{{ site.email }}**
