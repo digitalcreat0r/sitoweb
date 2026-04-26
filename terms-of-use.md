@@ -4,13 +4,6 @@ title: Terms of Use
 body_class: always-light
 ---
 
-<header class="site-nav">
-    <a href="/" class="logo">
-        <img src="/assets/img/logo.png" alt="CleverPocket Logo" class="logo-img">
-        <span>CleverPocket</span>
-    </a>
-</header>
-
 <div class="back-link"><a href="/">← Back to Home</a></div>
 
 # Terms of Use

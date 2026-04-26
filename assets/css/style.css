@@ -46,6 +46,12 @@ body.always-light .container {
     padding-bottom: 80px;
 }
 
+body.always-light .site-nav {
+    background-color: rgba(248, 250, 252, 0.8); /* Semi-trasparente */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+}
+
 body.always-light h1 {
     text-align: left;
     font-size: 2.2rem;
@@ -89,8 +95,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
-    padding: 20px 0;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bg-color);
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 !important;
+    margin: 0 auto;
 }
 
 .logo {

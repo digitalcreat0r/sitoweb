@@ -12,7 +12,7 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "CleverPocket",
+      "name": "CleverPocket Dev",
       "url": "https://cleverpocket.app"
     }
     </script>
@@ -31,6 +31,15 @@
     <i class="fa-solid fa-wrench"></i> {{ site.maintenance_message }}
 </div>
 {% endif %}
+
+<nav class="site-nav">
+    <div class="container nav-container">
+        <a href="{{ '/' | relative_url }}" class="logo">
+            <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo {{ site.title }}" class="logo-img">
+            <span>{{ site.title }}</span>
+        </a>
+    </div>
+</nav>
 
 <button id="theme-toggle" class="theme-switch-btn" aria-label="Switch theme">
     <i class="fa-solid fa-sun" id="theme-icon"></i>
