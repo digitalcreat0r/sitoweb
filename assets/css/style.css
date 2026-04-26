@@ -61,8 +61,16 @@ body.always-light h2 {
     padding-bottom: 8px;
 }
 
-body.always-light .back-link {
+body.always-light .site-nav {
+    justify-content: flex-start;
     margin-bottom: 30px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+body.always-light .back-link {
+    margin-top: 10px;
+    font-size: 0.9rem;
 }
 
 * { box-sizing: border-box; }

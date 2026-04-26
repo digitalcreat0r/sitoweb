@@ -4,6 +4,12 @@ title: Privacy Policy - ScreenRest
 body_class: always-light
 ---
 
+<header class="site-nav">
+    <a href="/" class="logo">
+        <img src="/assets/img/logo.png" alt="CleverPocket Logo" class="logo-img">
+        <span>CleverPocket</span>
+    </a>
+</header>
 <div class="back-link"><a href="/">&larr; Back to Home</a></div>
 
 # Privacy Policy - ScreenRest
