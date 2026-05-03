@@ -367,6 +367,62 @@ footer {
     margin-right: 8px;
 }
 
+
+/* --- APP SINGLE PAGE --- */
+.app-page-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.app-page-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.app-page-title-group h1 {
+    margin: 0 0 10px 0;
+    text-align: left; /* Sovrascrive il text-align center dell'header globale */
+}
+
+.app-page-subtitle {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.app-page-actions {
+    margin-bottom: 40px;
+}
+
+.app-divider {
+    border: 0;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 40px 0;
+}
+
+.app-page-content h2,
+.app-page-content h3 {
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .app-page-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .app-page-title-group h1 {
+        text-align: center;
+    }
+}
+
 /* --- MOBILE RESPONSIVE --- */
 @media (max-width: 600px) {
     body { font-size: 1.1rem; }
