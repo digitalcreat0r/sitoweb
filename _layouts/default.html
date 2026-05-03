@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body class="{{ page.body_class }} {% if site.maintenance_mode and page.hide_maintenance != true %}maintenance-on{% endif %}">
+<body class="{{ page.body_class }} {{ layout.body_class }} {% if site.maintenance_mode and page.hide_maintenance != true %}maintenance-on{% endif %}">
 
 {% if site.maintenance_mode and page.hide_maintenance != true %}
 <div class="maintenance-banner">

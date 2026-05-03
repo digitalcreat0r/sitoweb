@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: document
 title: Terms of Use
-body_class: always-light
 ---
 
 <div class="back-link"><a href="/">← Back to Home</a></div>
