@@ -2,9 +2,6 @@
 layout: document
 title: Terms of Use
 ---
-
-<div class="back-link"><a href="/">← Back to Home</a></div>
-
 # Terms of Use
 
 *Last updated: March 15, 2024*
