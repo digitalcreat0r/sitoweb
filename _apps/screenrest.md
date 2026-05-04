@@ -5,6 +5,9 @@ icon: /assets/images/screenrest_icon.png
 description: Designed for professionals and students who spend long hours at the computer. Prevent mental burnout, eye strain, and irritation with smart wellness reminders.
 play_store_link: https://play.google.com/store/apps/details?id=YOUR_APP_ID
 privacy_policy: /policies/privacy-policy-screenrest.html
+testing_active: true
+google_group_url: "https://groups.google.com/g/tuo-gruppo-screenrest"
+opt_in_url: "https://play.google.com/apps/testing/tuo.app.id"
 ---
 
 Qui puoi inserire tutto il contenuto specifico per la pagina dedicata a ScreenRest.
