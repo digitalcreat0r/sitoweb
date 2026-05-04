@@ -72,5 +72,47 @@
     });
 </script>
 
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                e.preventDefault();
+
+                // Impostazioni
+                const offset = 40;
+                const duration = 1200; // Modifica qui!
+
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+                const startPosition = window.pageYOffset;
+                const distance = targetPosition - startPosition;
+                let start = null;
+
+                function step(timestamp) {
+                    if (!start) start = timestamp;
+                    const progress = timestamp - start;
+
+                    const easeInOutCubic = progress < duration / 2
+                        ? 4 * Math.pow(progress / duration, 3)
+                        : 1 - Math.pow(-2 * (progress / duration) + 2, 3) / 2;
+
+                    window.scrollTo(0, startPosition + distance * easeInOutCubic);
+
+                    if (progress < duration) {
+                        window.requestAnimationFrame(step);
+                    } else {
+                        window.scrollTo(0, targetPosition);
+                    }
+                }
+                window.requestAnimationFrame(step);
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
