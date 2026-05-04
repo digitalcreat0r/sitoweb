@@ -48,6 +48,3 @@ Burnout happens when you push through mental exhaustion. ScreenRest breaks that 
 *   **Effortless Background Operation:** Once configured, the app runs entirely in the background without micro-managing timers.
 *   **Professional UI:** A clean, minimal interface that feels right at home in a developer’s or designer’s toolkit.
 *   **Battery Optimized:** Uses precise background scheduling to stay active without draining your device.
-
-> **👨‍💻 Built for the Modern Creator**
-> Whether you are debugging complex code, designing pixel-perfect interfaces, or writing your next masterpiece, ScreenRest ensures you arrive at the end of the day feeling fresh, not fried.
