@@ -35,15 +35,10 @@
     {% include footer.html %}
 </div>
 
-{% include cookie-banner.html %}
-
 <script>
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
     const body = document.body;
-
-    const cookieBanner = document.getElementById('cookie-banner');
-    const acceptBtn = document.getElementById('accept-cookies');
 
     if (themeToggle) {
         function updateIcon(isLight) {
@@ -61,17 +56,6 @@
             const isLight = body.classList.contains('light-mode');
             localStorage.setItem('theme', isLight ? 'light' : 'dark');
             updateIcon(isLight);
-        });
-    }
-
-    if (cookieBanner && !localStorage.getItem('cookies-accepted')) {
-        cookieBanner.style.display = 'block';
-    }
-
-    if (acceptBtn) {
-        acceptBtn.addEventListener('click', () => {
-            localStorage.setItem('cookies-accepted', 'true');
-            cookieBanner.style.display = 'none';
         });
     }
 </script>
