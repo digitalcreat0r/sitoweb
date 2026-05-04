@@ -1,7 +1,7 @@
 ---
 layout: app
 title: ScreenRest
-icon: /assets/images/screenrest_icon.png
+icon: /assets/images/screenrest/screenrest_icon.png
 description: Designed for professionals and students who spend long hours at the computer. Prevent mental burnout, eye strain, and irritation with smart wellness reminders.
 play_store_link: https://play.google.com/store/apps/details?id=YOUR_APP_ID
 privacy_policy: /policies/privacy-policy-screenrest.html
