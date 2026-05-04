@@ -21,8 +21,9 @@ If you are a programmer, designer, or digital professional, you know the "zone"â
 <!-- Replace the paths below with your actual screenshot images -->
 <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px;">
   <img src="/assets/images/screenrest/1.png" alt="ScreenRest Timer Interface" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
-  <img src="/assets/images/screenrest/2.png" alt="ScreenRest Statistics and Flow" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
-  <img src="/assets/images/screenrest/3.png" alt="ScreenRest Settings and Presets" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
+  <img src="/assets/images/screenrest/2.png" alt="ScreenRest Methods" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
+  <img src="/assets/images/screenrest/3.png" alt="ScreenRest Eye Reset" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
+<img src="/assets/images/screenrest/4.png" alt="ScreenRest Automation" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
 </div>
 
 ---
