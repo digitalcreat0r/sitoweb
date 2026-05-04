@@ -16,7 +16,7 @@ If you are a programmer, designer, or digital professional, you know the "zone"�
 
 ---
 
-## 📸 See ScreenRest in Action
+## Gallery
 
 <!-- Replace the paths below with your actual screenshot images -->
 <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px;">
@@ -28,7 +28,7 @@ If you are a programmer, designer, or digital professional, you know the "zone"�
 
 ---
 
-## 🚀 Set It Once, Focus Forever
+## Set It Once, Focus Forever
 
 Most timer apps require constant manual adjustment. ScreenRest is built for convenience, staying out of your way until you need it:
 
@@ -36,14 +36,14 @@ Most timer apps require constant manual adjustment. ScreenRest is built for conv
 *   **One-Tap Start:** Press one button at the start of your session and let the app do the rest.
 *   **Smart Transitions:** Clear notifications and alerts tell you exactly when to step away and when it’s time to dive back in.
 
-## 🛡️ Prevent Burnout & Fatigue
+## Prevent Burnout & Fatigue
 
 Burnout happens when you push through mental exhaustion. ScreenRest breaks that cycle by ensuring you take high-quality breaks at the exact right time.
 
 *   **20-20-20 Philosophy:** Our method encourages regular intervals to rest your eye muscles, actively preventing that end-of-day burning sensation.
 *   **Scientific Presets:** Select the rhythm that fits your task—from 52/17 balanced flows to 90-minute deep work sessions.
 
-## ✨ Key Features at a Glance
+## Key Features at a Glance
 
 *   **Effortless Background Operation:** Once configured, the app runs entirely in the background without micro-managing timers.
 *   **Professional UI:** A clean, minimal interface that feels right at home in a developer’s or designer’s toolkit.
