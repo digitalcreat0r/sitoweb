@@ -227,7 +227,10 @@ h2 i { color: var(--primary-color); }
 
 .btn-main i { margin-left: 8px; }
 
-.policy-link-wrapper { margin-top: 15px; font-size: 0.95rem; }
+.policy-link-wrapper {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
 .policy-link-wrapper a { color: var(--text-muted); text-decoration: none; }
 .policy-link-wrapper a:hover { text-decoration: underline; }
 
