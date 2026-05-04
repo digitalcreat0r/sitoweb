@@ -2,7 +2,7 @@
 layout: document
 title: Terms of Use
 ---
-# Terms of Use
+# Terms of Use - CleverPocket Dev
 
 *Last updated: May 4, 2026*
 

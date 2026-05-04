@@ -1,8 +1,8 @@
 ---
 layout: document
-title: Privacy Policy - CleverPocket Dev
+title: Privacy Policy
 ---
-# Privacy Policy
+# Privacy Policy - CleverPocket Dev
 
 *Last updated: May 4, 2026*
 
