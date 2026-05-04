@@ -26,5 +26,5 @@ collections:
     output: true
 
 # Banner di Manutenzione, mettere su true durante la manutenzione, altrimenti su false
-maintenance_mode: true
+maintenance_mode: false
 maintenance_message: "Maintenance in progress. Some features may be temporarily unavailable."
