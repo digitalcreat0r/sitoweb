@@ -60,5 +60,17 @@
     }
 </script>
 
+<script>
+    // Aspetta che la pagina sia completamente caricata
+    document.addEventListener("DOMContentLoaded", function() {
+        const images = document.querySelectorAll('img:not([loading])');
+
+        // Aggiungi loading="lazy" a ciascuna di esse
+        images.forEach(img => {
+            img.setAttribute('loading', 'lazy');
+        });
+    });
+</script>
+
 </body>
 </html>
