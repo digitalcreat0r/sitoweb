@@ -57,12 +57,15 @@ layout: default
         <h2><i class="fa-solid fa-vial"></i> Become a Beta&nbsp;Tester</h2>
         <div class="tester-box">
             <p>Google requires a group of at least <strong>12&nbsp;testers</strong> to be active for <strong>14&nbsp;consecutive&nbsp;days</strong> before an app can be released.<br><strong>Note:</strong> The 14-day countdown starts only once the full group is active. If you join early, you may need to keep the app installed for a longer period until the goal is reached.</p>
-            <div class="reward-badge">
+            <div class="reward-badge" id="reward-badge-toggle">
                 <div class="reward-header">
-                    <i class="fa-solid fa-gift"></i>
-                    <strong>Tester Reward:</strong>
+                    <div class="reward-title">
+                        <i class="fa-solid fa-gift"></i>
+                        <strong>Tester Reward:</strong>
+                    </div>
+                    <i class="fa-solid fa-chevron-down toggle-icon"></i>
                 </div>
-                <p>As a thank you, testers who complete the full testing phase will receive <strong>lifetime&nbsp;free&nbsp;access</strong> to the app, provided it is successfully published. Participation is voluntary and can be discontinued at any time, however, leaving the program before the completion of the requirements will result in the loss of reward eligibility.</p>
+                <p class="reward-content">As a thank you, testers who complete the full testing phase will receive <strong>lifetime&nbsp;free&nbsp;access</strong> to the app, provided it is successfully published. Participation is voluntary and can be discontinued at any time, however, leaving the program before the completion of the requirements will result in the loss of reward eligibility.</p>
             </div>
             <p class="tester-note">
                 <i class="fa-solid fa-lightbulb"></i>
@@ -108,6 +111,19 @@ layout: default
                     <span>This application is for <strong>Android</strong> only.</span>
                 `;
                 warningContainer.appendChild(warningBox);
+            }
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const rewardBadge = document.getElementById('reward-badge-toggle');
+            if (rewardBadge) {
+                rewardBadge.addEventListener('click', function() {
+                    if (window.innerWidth <= 600) {
+                        this.classList.toggle('expanded');
+                    }
+                });
             }
         });
     </script>
