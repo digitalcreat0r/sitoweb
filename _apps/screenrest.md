@@ -9,13 +9,6 @@ privacy_policy: /policies/privacy-policy-screenrest.html
 google_group_url: "https://groups.google.com/g/screenrest-test"
 opt_in_url: "https://play.google.com/apps/testing/com.cleverpocket.screenrest"
 ---
-
-Mind drained, eyes tired by end of day? ScreenRest automates your work/break rhythm, no thinking about setting timers manually every time.
-
-Built for developers, designers, and anyone who spends long hours in front of a screen.
-
----
-
 ## Gallery
 
 <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px;">
