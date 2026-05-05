@@ -37,7 +37,7 @@ body.always-light h2 {
 
 section { margin-bottom: 80px; }
 
-h2 {
+h1, h2 {
     font-size: 1.8rem;
     margin-bottom: 30px;
     display: flex;
@@ -47,7 +47,7 @@ h2 {
     text-align: center;
 }
 
-h2 i { color: var(--primary-color); }
+h1 i, h2 i { color: var(--primary-color); }
 
 /* Maintenance Banner */
 .maintenance-banner {
