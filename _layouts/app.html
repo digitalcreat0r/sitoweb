@@ -27,7 +27,7 @@ layout: default
         {% if page.testing_active %}
         <!-- Bottone per la fase di test -->
         <a href="#beta-testing" class="btn-main">
-            Become a Tester (Android) <i class="fa-brands fa-android"></i>
+            Become a Tester <i class="fa-solid fa-vial"></i> <i class="fa-brands fa-android"></i>
         </a>
         {% elsif page.play_store_link %}
         <!-- Bottone standard per quando l'app è pubblica -->
@@ -112,7 +112,7 @@ layout: default
             warningBox.style.cssText = "background: #fff3cd; color: #856404; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #ffeeba; display: flex; align-items: center; gap: 10px; font-size: 0.95rem;";
             warningBox.innerHTML = `
                 <i class="fa-solid fa-circle-exclamation"></i>
-                <span><strong>Platform Note:</strong> This application is for <strong>Android</strong> only. You cannot participate in the testing program from an iOS device.</span>
+                <span> This application is for <strong>Android</strong> only.</span>
             `;
             warningContainer.appendChild(warningBox);
         }
