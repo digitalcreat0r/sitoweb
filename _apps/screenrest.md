@@ -10,9 +10,9 @@ google_group_url: "https://groups.google.com/g/screenrest-test"
 opt_in_url: "https://play.google.com/apps/testing/com.cleverpocket.screenrest"
 ---
 
-Screen fatigue is real. ScreenRest helps you take the right breaks at the right time, automatically.
+Mind drained, eyes tired by end of day? ScreenRest automates your work/break rhythm so you stay sharp without thinking about it.
 
-Built for developers, designers, and anyone who spends long hours in front of a screen. Based on the 20-20-20 rule and proven work/rest rhythms like 52/17 and 90-minute deep work cycles.
+Built for developers, designers, and anyone who spends long hours in front of a screen.
 
 ---
 
@@ -29,7 +29,7 @@ Built for developers, designers, and anyone who spends long hours in front of a 
 
 ## How it works
 
-Start a session with one tap. ScreenRest runs in the background and nudges you when it's time to step away — then again when it's time to get back to work. No manual timers, no constant fiddling.
+Start a session with one tap. ScreenRest runs in the background and nudges you when it's time to step away, then again when it's time to get back to work. No manual timers, no constant fiddling.
 
 - **Automatic transitions** — work and rest phases cycle on their own
 - **Smart notifications** — clear alerts, no noise in between
