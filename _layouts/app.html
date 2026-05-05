@@ -26,8 +26,10 @@ layout: default
 
         {% if page.testing_active %}
         <!-- Bottone per la fase di test -->
-        <a href="#beta-testing" class="btn-main">
-            <i class="fa-solid fa-vial"></i> Become a Tester <i class="fa-brands fa-android"></i>
+        <a href="#beta-testing" class="btn-main" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
+            <i class="fa-solid fa-vial" style="margin: 0;"></i>
+            <span>Become a Tester</span>
+            <i class="fa-brands fa-android" style="margin: 0;"></i>
         </a>
         {% elsif page.play_store_link %}
         <!-- Bottone standard per quando l'app è pubblica -->
