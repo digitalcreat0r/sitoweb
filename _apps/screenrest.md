@@ -10,7 +10,7 @@ google_group_url: "https://groups.google.com/g/screenrest-test"
 opt_in_url: "https://play.google.com/apps/testing/com.cleverpocket.screenrest"
 ---
 
-Mind drained, eyes tired by end of day? ScreenRest automates your work/break rhythm so you stay sharp without thinking about it.
+Mind drained, eyes tired by end of day? ScreenRest automates your work/break rhythm, no thinking about setting timers manually every time.
 
 Built for developers, designers, and anyone who spends long hours in front of a screen.
 
@@ -36,9 +36,3 @@ Start a session with one tap. ScreenRest runs in the background and nudges you w
 - **Multiple presets** — science-backed work/break rhythms: 52/17 for focus, 90-min for deep work, all with built-in 20-20-20 eye reminders
 - **Battery-friendly** — precise background scheduling, minimal drain
 - **Clean UI** — minimal by design, stays out of your way
-
-## Why it matters
-
-Eye strain, mental fog, and end-of-day exhaustion aren't inevitable, they're usually the result of skipping breaks. Regular, well-timed rest keeps your focus sharp throughout the day without requiring any willpower to enforce.
-
-ScreenRest automates that discipline so you don't have to think about it.
