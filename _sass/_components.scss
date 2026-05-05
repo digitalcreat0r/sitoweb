@@ -68,6 +68,7 @@
 /* Play Store Badge */
 .google-play-badge {
     display: inline-block;
+    margin-left: -10px;
     transition: transform 0.2s ease;
 
     img {
