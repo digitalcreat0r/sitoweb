@@ -9,6 +9,7 @@ privacy_policy: /policies/privacy-policy-screenrest.html
 google_group_url: "https://groups.google.com/g/screenrest-test"
 opt_in_url: "https://play.google.com/apps/testing/com.cleverpocket.screenrest"
 ---
+
 ## <i class="fa-solid fa-images"></i> Gallery
 
 <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px;">
@@ -17,8 +18,6 @@ opt_in_url: "https://play.google.com/apps/testing/com.cleverpocket.screenrest"
   <img src="/assets/images/screenrest/3.png" alt="20-20-20 eye strain prevention" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
   <img src="/assets/images/screenrest/4.png" alt="Automated screen break scheduling" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
 </div>
-
----
 
 ## <i class="fa-solid fa-gears"></i> How it works
 
