@@ -120,20 +120,17 @@ layout: default
             const rewardBadge = document.getElementById('reward-badge-toggle');
 
             if (rewardBadge) {
-                // 1. Gestione click esistente per il menu a tendina
                 rewardBadge.addEventListener('click', function() {
                     if (window.innerWidth <= 600) {
                         this.classList.toggle('expanded');
                     }
                 });
 
-                // Selezioniamo l'icona specifica dentro il badge
                 const toggleIcon = rewardBadge.querySelector('.toggle-icon');
 
-                // 2. Gestione professionale dell'animazione con Intersection Observer
                 if (toggleIcon) {
                     const observerOptions = {
-                        root: null, // usa il viewport del browser
+                        root: null,
                         rootMargin: '0px',
                         threshold: 0.6 // si attiva quando il 60% del badge è visibile sullo schermo
                     };
@@ -141,7 +138,6 @@ layout: default
                     const observer = new IntersectionObserver((entries) => {
                         entries.forEach(entry => {
                             if (entry.isIntersecting) {
-                                // L'utente è arrivato alla scheda: attiva l'animazione
                                 toggleIcon.classList.add('pulse-active');
 
                                 // Rimuove la classe dopo 3 secondi esatti
@@ -150,13 +146,11 @@ layout: default
                                 }, 3000);
                             } else {
                                 // L'utente è uscito dalla visuale della scheda: resetta lo stato.
-                                // In questo modo, se torna indietro scrollando, l'animazione riparte.
                                 toggleIcon.classList.remove('pulse-active');
                             }
                         });
                     }, observerOptions);
 
-                    // Avvia l'osservazione sul badge dei reward
                     observer.observe(rewardBadge);
                 }
             }
