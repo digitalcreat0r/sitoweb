@@ -6,6 +6,7 @@ layout: default
         <i class="fa-solid fa-arrow-left"></i> Back to Home
     </a>
 </div>
+
 <article class="app-page-container">
     <!-- Intestazione dell'App -->
     <header class="app-page-header">
@@ -20,10 +21,13 @@ layout: default
 
     <!-- Pulsanti e link (Play Store e Privacy Policy) -->
     <div class="app-page-actions">
+        <!-- Placeholder per avviso iOS -->
+        <div id="ios-platform-warning"></div>
+
         {% if page.testing_active %}
         <!-- Bottone per la fase di test -->
         <a href="#beta-testing" class="btn-main">
-            Become a Tester <i class="fa-solid fa-vial"></i>
+            Become a Tester (Android) <i class="fa-brands fa-android"></i>
         </a>
         {% elsif page.play_store_link %}
         <!-- Bottone standard per quando l'app è pubblica -->
@@ -31,6 +35,7 @@ layout: default
             Get it on Play Store <i class="fa-brands fa-google-play"></i>
         </a>
         {% endif %}
+
         {% if page.privacy_policy %}
         <div class="policy-link-wrapper">
             <a href="{{ page.privacy_policy | relative_url }}">Privacy Policy</a>
@@ -51,7 +56,6 @@ layout: default
         <h2><i class="fa-solid fa-vial"></i> Become a Beta&nbsp;Tester</h2>
         <div class="tester-box">
             <p>Google requires a group of at least <strong>12&nbsp;testers</strong> to be active for <strong>14&nbsp;consecutive&nbsp;days</strong> before an app can be released.<br><strong>Note:</strong> The 14-day countdown starts only once the full group is active. If you join early, you may need to keep the app installed for a longer period until the goal is reached.</p>
-
             <div class="reward-badge">
                 <div class="reward-header">
                     <i class="fa-solid fa-gift"></i>
@@ -59,12 +63,10 @@ layout: default
                 </div>
                 <p>As a thank you, testers who complete the full testing phase will receive <strong>lifetime&nbsp;free&nbsp;access</strong> to the app, provided it is successfully published. Participation is voluntary and can be discontinued at any time; however, leaving the program before the completion of the requirements will result in the loss of reward eligibility.</p>
             </div>
-
             <p class="tester-note">
                 <i class="fa-solid fa-lightbulb"></i>
                 <em><strong>Note:</strong> Is recommend joining the test only if you find the app truly useful. The best feedback comes from users who would naturally use the app in their daily routine.</em>
             </p>
-
             <div class="step-list">
                 <div class="step-item">
                     <div class="step-number">1</div>
@@ -73,7 +75,6 @@ layout: default
                         <p>To access the private beta, you must join this <a href="{{ page.google_group_url }}" target="_blank">Google&nbsp;Group</a> with your Play&nbsp;Store&nbsp;email.</p>
                     </div>
                 </div>
-
                 <div class="step-item">
                     <div class="step-number">2</div>
                     <div class="step-content">
@@ -81,7 +82,6 @@ layout: default
                         <p>Click the <a href="{{ page.opt_in_url }}" target="_blank">Join on Web link</a> to officially register as a tester for the app.</p>
                     </div>
                 </div>
-
                 <div class="step-item">
                     <div class="step-number">3</div>
                     <div class="step-content">
@@ -89,7 +89,6 @@ layout: default
                         <p>Download the app from the <a href="{{ page.play_store_link }}" target="_blank">Play&nbsp;Store</a> and keep it installed for at least 14 days.</p>
                     </div>
                 </div>
-
                 <div class="step-item">
                     <div class="step-number">4</div>
                     <div class="step-content">
@@ -102,3 +101,20 @@ layout: default
     </section>
     {% endif %}
 </article>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        const warningContainer = document.getElementById('ios-platform-warning');
+
+        if (isIOS && warningContainer) {
+            const warningBox = document.createElement('div');
+            warningBox.style.cssText = "background: #fff3cd; color: #856404; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #ffeeba; display: flex; align-items: center; gap: 10px; font-size: 0.95rem;";
+            warningBox.innerHTML = `
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span><strong>Platform Note:</strong> This application is for <strong>Android</strong> only. You cannot participate in the testing program from an iOS device.</span>
+            `;
+            warningContainer.appendChild(warningBox);
+        }
+    });
+</script>
