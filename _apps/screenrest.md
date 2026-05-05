@@ -9,7 +9,7 @@ privacy_policy: /policies/privacy-policy-screenrest.html
 google_group_url: "https://groups.google.com/g/screenrest-test"
 opt_in_url: "https://play.google.com/apps/testing/com.cleverpocket.screenrest"
 ---
-## Gallery
+## <i class="fa-solid fa-images"></i> Gallery
 
 <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px;">
   <img src="/assets/images/screenrest/1.png" alt="ScreenRest break timer" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
@@ -20,7 +20,7 @@ opt_in_url: "https://play.google.com/apps/testing/com.cleverpocket.screenrest"
 
 ---
 
-## How it works
+## <i class="fa-solid fa-gears"></i> How it works
 
 Start a session with one tap. ScreenRest runs in the background and nudges you when it's time to step away, then again when it's time to get back to work. No manual timers, no constant fiddling.
 
