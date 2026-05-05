@@ -10,41 +10,35 @@ google_group_url: "https://groups.google.com/g/screenrest-test"
 opt_in_url: "https://play.google.com/apps/testing/com.cleverpocket.screenrest"
 ---
 
-Do you finish your workday feeling exhausted, with burning eyes and a foggy mind?
+Screen fatigue is real. ScreenRest helps you take the right breaks at the right time, automatically.
 
-If you are a programmer, designer, or digital professional, you know the "zone"—that state of deep focus where hours vanish. But staying glued to the screen without breaks is the fastest way to mental burnout and digital eye strain. ScreenRest automates the science of recovery so you can stay productive without the health costs.
+Built for developers, designers, and anyone who spends long hours in front of a screen. Based on the 20-20-20 rule and proven work/rest rhythms like 52/17 and 90-minute deep work cycles.
 
 ---
 
 ## Gallery
 
-<!-- Replace the paths below with your actual screenshot images -->
 <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px;">
-  <img src="/assets/images/screenrest/1.png" alt="ScreenRest Timer Interface" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
-  <img src="/assets/images/screenrest/2.png" alt="ScreenRest Methods" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
-  <img src="/assets/images/screenrest/3.png" alt="ScreenRest Eye Reset" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
-<img src="/assets/images/screenrest/4.png" alt="ScreenRest Automation" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
+  <img src="/assets/images/screenrest/1.png" alt="ScreenRest break timer for Mac" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
+  <img src="/assets/images/screenrest/2.png" alt="Work and rest interval methods" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
+  <img src="/assets/images/screenrest/3.png" alt="20-20-20 eye strain prevention" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
+  <img src="/assets/images/screenrest/4.png" alt="Automated screen break scheduling" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
 </div>
 
 ---
 
-## Set It Once, Focus Forever
+## How it works
 
-Most timer apps require constant manual adjustment. ScreenRest is built for convenience, staying out of your way until you need it:
+Start a session with one tap. ScreenRest runs in the background and nudges you when it's time to step away — then again when it's time to get back to work. No manual timers, no constant fiddling.
 
-*   **Total Automation:** The app guides you through work and rest phases seamlessly. You stay focused on your work; we handle the clock.
-*   **One-Tap Start:** Press one button at the start of your session and let the app do the rest.
-*   **Smart Transitions:** Clear notifications and alerts tell you exactly when to step away and when it’s time to dive back in.
+- **Automatic transitions** — work and rest phases cycle on their own
+- **Smart notifications** — clear alerts, no noise in between
+- **Multiple presets** — science-backed work/break rhythms: 52/17 for focus, 90-min for deep work, all with built-in 20-20-20 eye reminders
+- **Battery-friendly** — precise background scheduling, minimal drain
+- **Clean UI** — minimal by design, stays out of your way
 
-## Prevent Burnout & Fatigue
+## Why it matters
 
-Burnout happens when you push through mental exhaustion. ScreenRest breaks that cycle by ensuring you take high-quality breaks at the exact right time.
+Eye strain, mental fog, and end-of-day exhaustion aren't inevitable, they're usually the result of skipping breaks. Regular, well-timed rest keeps your focus sharp throughout the day without requiring any willpower to enforce.
 
-*   **20-20-20 Philosophy:** Our method encourages regular intervals to rest your eye muscles, actively preventing that end-of-day burning sensation.
-*   **Scientific Presets:** Select the rhythm that fits your task—from 52/17 balanced flows to 90-minute deep work sessions.
-
-## Key Features at a Glance
-
-*   **Effortless Background Operation:** Once configured, the app runs entirely in the background without micro-managing timers.
-*   **Professional UI:** A clean, minimal interface that feels right at home in a developer’s or designer’s toolkit.
-*   **Battery Optimized:** Uses precise background scheduling to stay active without draining your device.
+ScreenRest automates that discipline so you don't have to think about it.
