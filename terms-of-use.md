@@ -21,9 +21,9 @@ By participating in testing programs, you agree to the following specific terms:
 
 - **Nature of the Software:** You acknowledge that the software is in a testing phase and may contain bugs, system errors, or cause data loss.
 - **Data Collection and Purpose:** To participate in the program, you agree to provide your email address (specifically, the address associated with your Google Play account). This data will be processed by the Developer exclusively to:
-    1. Grant technical access to test versions via the Google Play Console.
-    2. Send strictly operational communications regarding the test (e.g., updates, bug reporting).
-    3. Manage the distribution of earned rewards.
+    - Grant technical access to test versions via the Google Play Console.
+    - Send strictly operational communications regarding the test (e.g., updates, bug reporting).
+    - Manage the distribution of earned rewards.
        Your data will not be used for marketing purposes or shared with third parties, in compliance with our Privacy Policy.
 - **Testing Period:** In compliance with Google requirements, the mandatory 14-day testing period begins only once the minimum number of required testers is reached and active. Users joining before this milestone may be required to remain in the program for longer than 14 days.
 - **Reward Eligibility:** Receiving rewards (such as "Lifetime" access) is subject to the successful completion of the testing phase and the subsequent official publication of the application. The Developer does not guarantee that the application will be approved or published by Google.
