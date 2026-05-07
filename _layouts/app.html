@@ -69,13 +69,17 @@ layout: default
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h4>Submit your Email</h4>
-                        <p>Enter the email associated with your Google&nbsp;Play account below. Clicking <strong>Continue</strong> will open your email app with a pre-filled request. Just hit send!</p>
+                        <p>Enter your details below. Clicking <strong>Continue</strong> will open your email app with a pre-filled request. Just hit send!</p>
 
                         <!-- Area Form Riorganizzata -->
                         <div class="email-submission-form-container" style="margin-top: 15px; display: flex; flex-direction: column; gap: 15px; max-width: 500px;">
 
+                            <!-- 0. Input Nome (Opzionale) -->
+                            <input type="text" id="testerNameInput" placeholder="Your name (optional)"
+                                   style="padding: 12px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-main); border-radius: 6px; font-family: inherit; width: 100%; box-sizing: border-box; font-size: 1.1rem;">
+
                             <!-- 1. Input Email -->
-                            <input type="email" id="testerEmailInput" placeholder="Write your email here"
+                            <input type="email" id="testerEmailInput" placeholder="Your email"
                                    style="padding: 12px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-main); border-radius: 6px; font-family: inherit; width: 100%; box-sizing: border-box; font-size: 1.1rem;">
 
                             <!-- 2. Checkbox -->
@@ -123,6 +127,7 @@ layout: default
 
     <script>
         function sendBetaEmail() {
+            const nameInput = document.getElementById('testerNameInput').value.trim();
             const emailInput = document.getElementById('testerEmailInput').value.trim();
             const termsCheckbox = document.getElementById('termsCheckbox');
             const errorMsg = document.getElementById('emailErrorMsg');
@@ -145,19 +150,24 @@ layout: default
             const devEmail = "{{ site.email }}";
             const appName = "{{ page.title | escape }}";
 
+            // Gestione firma opzionale
+            let thankYouLine = "Thank you!";
+            if (nameInput) {
+                thankYouLine += "\n" + nameInput;
+            }
+
             const subject = encodeURIComponent("Tester Request for " + appName);
             const body = encodeURIComponent(
                 "Hello,\n\n" +
                 "I would like to join the testing program for " + appName + ".\n\n" +
                 "My Google Play account email is: " + emailInput + "\n\n" +
-                "Thank you!"
+                thankYouLine
             );
 
             window.location.href = `mailto:${devEmail}?subject=${subject}&body=${body}`;
         }
     </script>
 
-    <!-- Script aggiuntivi (iOS warning, reward badge toggle) rimangono invariati -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
