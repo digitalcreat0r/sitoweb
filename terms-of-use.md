@@ -16,7 +16,7 @@ We grant you a personal, non-transferable, and non-exclusive license to use our 
 - Modify, copy, or reverse engineer the software or website content.
 - Use the website or apps for any illegal activities.
 
-## 3. Beta Testing Programs {: #beta-programs }
+<h2 id="beta-programs">3. Beta Testing Programs</h2>
 If you participate in our beta testing programs:
 - You acknowledge that the software is in a testing phase and may contain bugs, errors, or cause data loss.
 - **Testing Period:** The mandatory 14-day testing period begins only after the minimum number of testers required by Google is reached and active. Early participants may be required to remain in the program for longer than 14 days.

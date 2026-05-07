@@ -7,7 +7,7 @@ description: "Independent developer focused on intuitive mobile&nbsp;apps for&nb
 # URL e Link
 url: "https://cleverpocket.app"
 baseurl: "" # Lascialo vuoto se il sito è nel dominio principale
-terms_of_use_path: "/terms-of-use"
+terms_of_use_path: "/terms-of-use/"
 
 # Impostazioni di Build
 markdown: kramdown
