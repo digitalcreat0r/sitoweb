@@ -8,7 +8,6 @@ layout: default
 </div>
 
 <article class="app-page-container">
-    <!-- Intestazione dell'App -->
     <header class="app-page-header">
         {% if page.icon %}
         <img src="{{ page.icon | relative_url }}" alt="{{ page.title }} Icon" class="app-page-icon">
@@ -19,13 +18,10 @@ layout: default
         </div>
     </header>
 
-    <!-- Pulsanti e link (Play Store e Privacy Policy) -->
     <div class="app-page-actions">
         {% if page.testing_active %}
-        <!-- Avviso iOS: scompare se testing_active è false -->
         <div id="ios-platform-warning"></div>
 
-        <!-- Bottone simmetrico e centrato -->
         <a href="#beta-testing" class="btn-main" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
             <i class="fa-solid fa-vial" style="margin: 0;"></i>
             <span>Become a Tester</span>
@@ -48,7 +44,6 @@ layout: default
         {{ content }}
     </div>
 
-    <!-- SEZIONE BETA TESTING DINAMICA -->
     {% if page.testing_active %}
     <hr class="app-divider">
     <section id="beta-testing">
@@ -67,34 +62,67 @@ layout: default
             </div>
             <p class="tester-note">
                 <i class="fa-solid fa-lightbulb"></i>
-                <em><strong>Note:</strong> Is recommend joining the test only if you find the app truly useful. The best feedback comes from users who would naturally use the app in their daily routine.</em>
+                <em><strong>Note:</strong> It is recommended to join the test only if you find the app truly useful. The best feedback comes from users who would naturally use the app in their daily routine.</em>
             </p>
             <div class="step-list">
                 <div class="step-item">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h4>Join the Testing&nbsp;Group</h4>
-                        <p>To access the private beta, you must first join this <a href="{{ page.google_group_url }}" target="_blank">Google&nbsp;Group</a> with your Google&nbsp;email.</p>
+                        <h4>Submit your Email</h4>
+                        <p>Enter the email associated with your Google Play account below. Clicking <strong>Continue</strong> will open your email app with a pre-filled request. Just hit send!</p>
+
+                        <div class="email-submission-form" style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
+                            <input type="email" id="testerEmailInput" placeholder="Your Google Play Email" style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; flex: 1; min-width: 220px; font-family: inherit;">
+                            <button onclick="sendBetaEmail()" class="btn-main" style="border: none; cursor: pointer; padding: 10px 20px; margin: 0;">Continue</button>
+                        </div>
+                        <p id="emailErrorMsg" style="color: #d9534f; font-size: 0.85em; display: none; margin-top: 8px;"><i class="fa-solid fa-triangle-exclamation"></i> Please enter a valid email address.</p>
                     </div>
                 </div>
                 <div class="step-item">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h4>Become an Official&nbsp;Tester</h4>
-                        <p>Click the <a href="{{ page.opt_in_url }}" target="_blank">Join on Web link</a> to officially register as a tester for the app.</p>
+                        <h4>Wait for the Invitation</h4>
+                        <p>Once I receive your request, I will manually add your email to the authorized testers list. You will receive a reply as soon as possible containing the official link to download the app.</p>
                     </div>
                 </div>
                 <div class="step-item">
                     <div class="step-number">3</div>
                     <div class="step-content">
                         <h4>Download & Stay Active</h4>
-                        <p>Download the app from the <a href="{{ page.play_store_link }}" target="_blank">Play&nbsp;Store</a> and keep it installed for at least 14 days.</p>
+                        <p>Download the app using the link provided in the invitation email and keep it installed for at least <strong>14 consecutive days</strong>.</p>
                         <p style="margin-top: 15px;">Found a bug?<br>Send me an email at:<br><strong>{{ site.email }}</strong><br>Your feedback is precious!</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        function sendBetaEmail() {
+            const emailInput = document.getElementById('testerEmailInput').value.trim();
+            const errorMsg = document.getElementById('emailErrorMsg');
+
+            if (!emailInput || !emailInput.includes('@')) {
+                errorMsg.style.display = 'block';
+                return;
+            }
+
+            errorMsg.style.display = 'none';
+
+            const devEmail = "{{ site.email }}";
+            const appName = "{{ page.title | escape }}";
+
+            const subject = encodeURIComponent("Beta Tester Request for " + appName);
+            const body = encodeURIComponent(
+                "Hello,\n\n" +
+                "I would like to join the beta testing program for " + appName + ".\n\n" +
+                "My Google Play account email is: " + emailInput + "\n\n" +
+                "Thank you!"
+            );
+
+            window.location.href = `mailto:${devEmail}?subject=${subject}&body=${body}`;
+        }
+    </script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -133,7 +161,7 @@ layout: default
                     const observerOptions = {
                         root: null,
                         rootMargin: '0px',
-                        threshold: 0.6 // si attiva quando il 60% del badge è visibile
+                        threshold: 0.6
                     };
 
                     const observer = new IntersectionObserver((entries) => {
@@ -141,8 +169,6 @@ layout: default
                             if (entry.isIntersecting) {
                                 if (!rewardBadge.classList.contains('expanded')) {
                                     toggleIcon.classList.add('pulse-active');
-
-                                    // Rimuove la classe dopo 3 secondi esatti
                                     setTimeout(() => {
                                         toggleIcon.classList.remove('pulse-active');
                                     }, 3000);
