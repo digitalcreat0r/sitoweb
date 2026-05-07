@@ -20,14 +20,14 @@ We grant you a personal, non-transferable, and non-exclusive license to use our 
 By participating in testing programs, you agree to the following specific terms:
 
 - **Nature of the Software:** You acknowledge that the software is in a testing phase and may contain bugs, system errors, or cause data loss.
+- **Testing Period:** In compliance with Google requirements, the mandatory 14-day testing period begins only once the minimum number of required testers is reached and active. Users joining before this milestone may be required to remain in the program for longer than 14 days.
+- **Reward Eligibility:** Receiving rewards (such as "Lifetime" access) is subject to the successful completion of the testing phase and the subsequent official publication of the application. The Developer does not guarantee that the application will be approved or published by Google.
+- **Voluntary Participation and Withdrawal:** Participation is entirely voluntary and you may opt-out at any time. However, early withdrawal or failure to remain an "active tester" for the required duration will result in the forfeiture of any eligibility for rewards.
 - **Data Collection and Purpose:** To participate in the program, you agree to provide your email address (specifically, the address associated with your Google Play account). This data will be processed by the Developer exclusively to:
     - Grant technical access to test versions via the Google Play Console.
     - Send strictly operational communications regarding the test (e.g., updates, bug reporting).
     - Manage the distribution of earned rewards.
-       Your data will not be used for marketing purposes or shared with third parties, in compliance with our Privacy Policy.
-- **Testing Period:** In compliance with Google requirements, the mandatory 14-day testing period begins only once the minimum number of required testers is reached and active. Users joining before this milestone may be required to remain in the program for longer than 14 days.
-- **Reward Eligibility:** Receiving rewards (such as "Lifetime" access) is subject to the successful completion of the testing phase and the subsequent official publication of the application. The Developer does not guarantee that the application will be approved or published by Google.
-- **Voluntary Participation and Withdrawal:** Participation is entirely voluntary and you may opt-out at any time. However, early withdrawal or failure to remain an "active tester" for the required duration will result in the forfeiture of any eligibility for rewards.
+Your data will not be used for marketing purposes or shared with third parties, in compliance with our Privacy Policy.
 
 ## 4. User Feedback and Ideas
 We love hearing your feedback and ideas for new features or future applications! However, to avoid any potential misunderstandings, if you submit comments, suggestions, or ideas via our website contact forms, emails, or during the beta testing process, you agree that:
