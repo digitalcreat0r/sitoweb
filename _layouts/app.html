@@ -75,7 +75,7 @@ layout: default
                         <div class="email-submission-form-container" style="margin-top: 15px; display: flex; flex-direction: column; gap: 15px; max-width: 500px;">
 
                             <!-- 1. Input Email -->
-                            <input type="email" id="testerEmailInput" placeholder="Your Google Play Email"
+                            <input type="email" id="testerEmailInput" placeholder="Write your email here"
                                    style="padding: 12px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-main); border-radius: 6px; font-family: inherit; width: 100%; box-sizing: border-box; font-size: 1.1rem;">
 
                             <!-- 2. Checkbox -->
@@ -148,7 +148,7 @@ layout: default
             const subject = encodeURIComponent("Tester Request for " + appName);
             const body = encodeURIComponent(
                 "Hello,\n\n" +
-                "I would like to join the beta testing program for " + appName + ".\n\n" +
+                "I would like to join the testing program for " + appName + ".\n\n" +
                 "My Google Play account email is: " + emailInput + "\n\n" +
                 "Thank you!"
             );
