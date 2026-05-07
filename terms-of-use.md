@@ -16,7 +16,7 @@ We grant you a personal, non-transferable, and non-exclusive license to use our 
 - Modify, copy, or reverse engineer the software or website content.
 - Use the website or apps for any illegal activities.
 
-<h2 id="beta-programs">3. Beta Testing Programs</h2>
+<h2 id="testing-programs">3. Testing Programs</h2>
 By participating in testing programs, you agree to the following specific terms:
 
 - **Nature of the Software:**<br>You acknowledge that the software is in a testing phase and may contain bugs, system errors, or cause data loss.

@@ -47,7 +47,7 @@ layout: default
     {% if page.testing_active %}
     <hr class="app-divider">
     <section id="beta-testing">
-        <h2><i class="fa-solid fa-vial"></i> Become a Beta&nbsp;Tester</h2>
+        <h2><i class="fa-solid fa-vial"></i> Become a&nbsp;Tester</h2>
         <div class="tester-box">
             <p>Google requires a group of at least <strong>12&nbsp;testers</strong> to be active for <strong>14&nbsp;consecutive&nbsp;days</strong> before an app can be released.<br><strong>Note:</strong> The 14-day countdown starts only once the full group is active. If you join early, you may need to keep the app installed for a longer period until the goal is reached.</p>
             <div class="reward-badge" id="reward-badge-toggle">
@@ -83,8 +83,8 @@ layout: default
                                 <input type="checkbox" id="termsCheckbox" style="width: 22px; height: 22px; margin: 0; margin-top: 2px; cursor: pointer; flex-shrink: 0; -webkit-appearance: checkbox;">
                                 <label for="termsCheckbox" style="font-size: 0.9em; line-height: 1.4; cursor: pointer; color: #555;">
                                     I have read and agree to the
-                                    <a href="{{ site.terms_of_use_path | relative_url }}#beta-programs" target="_blank" style="text-decoration: underline; color: inherit;">
-                                        Beta Testing Programs
+                                    <a href="{{ site.terms_of_use_path | relative_url }}#testing-programs" target="_blank" style="text-decoration: underline; color: inherit;">
+                                        Testing Programs
                                     </a>
                                 </label>
                             </div>
@@ -147,7 +147,7 @@ layout: default
             const devEmail = "{{ site.email }}";
             const appName = "{{ page.title | escape }}";
 
-            const subject = encodeURIComponent("Beta Tester Request for " + appName);
+            const subject = encodeURIComponent("Tester Request for " + appName);
             const body = encodeURIComponent(
                 "Hello,\n\n" +
                 "I would like to join the beta testing program for " + appName + ".\n\n" +
