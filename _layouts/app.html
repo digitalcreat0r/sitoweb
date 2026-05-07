@@ -72,10 +72,22 @@ layout: default
                         <p>Enter the email associated with your Google Play account below. Clicking <strong>Continue</strong> will open your email app with a pre-filled request. Just hit send!</p>
 
                         <div class="email-submission-form" style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
-                            <input type="email" id="testerEmailInput" placeholder="Your Google Play Email" style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; flex: 1; min-width: 220px; font-family: inherit;">
+                            <input type="email" id="testerEmailInput" placeholder="Your Google Play Email (@gmail.com)" style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; flex: 1; min-width: 220px; font-family: inherit;">
                             <button onclick="sendBetaEmail()" class="btn-main" style="border: none; cursor: pointer; padding: 10px 20px; margin: 0;">Continue</button>
                         </div>
-                        <p id="emailErrorMsg" style="color: #d9534f; font-size: 0.85em; display: none; margin-top: 8px;"><i class="fa-solid fa-triangle-exclamation"></i> Please enter a valid email address.</p>
+
+                        <div style="margin-top: 12px; display: flex; align-items: flex-start; gap: 8px;">
+                            <input type="checkbox" id="termsCheckbox" style="margin-top: 4px; cursor: pointer;">
+                            <label for="termsCheckbox" style="font-size: 0.85em; line-height: 1.4; cursor: pointer; color: #555;">
+                                I have read and agree to the
+                                <a href="{{ page.privacy_policy | relative_url }}" target="_blank" style="text-decoration: underline;">Beta Testing Terms & Privacy Policy</a>.
+                            </label>
+                        </div>
+
+                        <p id="emailErrorMsg" style="color: #d9534f; font-size: 0.85em; display: none; margin-top: 8px;">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <span id="errorText">Please enter a valid email address.</span>
+                        </p>
                     </div>
                 </div>
                 <div class="step-item">
@@ -100,9 +112,19 @@ layout: default
     <script>
         function sendBetaEmail() {
             const emailInput = document.getElementById('testerEmailInput').value.trim();
+            const termsCheckbox = document.getElementById('termsCheckbox');
             const errorMsg = document.getElementById('emailErrorMsg');
+            const errorText = document.getElementById('errorText');
 
-            if (!emailInput || !emailInput.includes('@')) {
+            // Controllo email (deve contenere @gmail.com)
+            if (!emailInput || !emailInput.toLowerCase().endsWith('@gmail.com')) {
+                errorText.innerText = "Please enter a valid @gmail.com address.";
+                errorMsg.style.display = 'block';
+                return;
+            }
+
+            if (!termsCheckbox.checked) {
+                errorText.innerText = "You must agree to the terms and privacy policy to continue.";
                 errorMsg.style.display = 'block';
                 return;
             }
