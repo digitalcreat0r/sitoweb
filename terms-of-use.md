@@ -27,6 +27,7 @@ By participating in testing programs, you agree to the following specific terms:
     - Grant technical access to test versions via the Google Play Console.
     - Send strictly operational communications regarding the test (e.g., updates, bug reporting).
     - Manage the distribution of earned rewards.
+
 Your data will not be used for marketing purposes or shared with third parties, in compliance with our Privacy Policy.
 
 ## 4. User Feedback and Ideas
