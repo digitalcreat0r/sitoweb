@@ -74,13 +74,13 @@ layout: default
                         <!-- Area Form Riorganizzata -->
                         <div class="email-submission-form-container" style="margin-top: 15px; display: flex; flex-direction: column; gap: 15px; max-width: 500px;">
 
-                            <!-- 1. Input Email (Aumentata dimensione font) -->
+                            <!-- 1. Input Email (Focale) -->
                             <input type="email" id="testerEmailInput" placeholder="Your Google Play Email" style="padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; width: 100%; box-sizing: border-box; font-size: 1.1rem;">
 
-                            <!-- 2. Checkbox per termini e privacy (Ridotta dimensione font label) -->
-                            <div style="display: flex; align-items: flex-start; gap: 10px; background: #f9f9f9; padding: 10px; border-radius: 6px; border: 1px solid #eee;">
-                                <input type="checkbox" id="termsCheckbox" style="width: 22px; height: 22px; margin: 0; margin-top: 2px; cursor: pointer; flex-shrink: 0; -webkit-appearance: checkbox;">
-                                <label for="termsCheckbox" style="font-size: 0.85em; line-height: 1.4; cursor: pointer; color: #555;">
+                            <!-- 2. Checkbox (Semplificata: rimosso sfondo e bordo per non distrarre) -->
+                            <div style="display: flex; align-items: flex-start; gap: 10px; padding: 2px 5px; background: transparent;">
+                                <input type="checkbox" id="termsCheckbox" style="width: 20px; height: 20px; margin: 0; margin-top: 2px; cursor: pointer; flex-shrink: 0; -webkit-appearance: checkbox;">
+                                <label for="termsCheckbox" style="font-size: 0.85em; line-height: 1.4; cursor: pointer; color: #666;">
                                     I have read and agree to the
                                     <a href="{{ site.terms_of_use_path | relative_url }}#testing-programs" target="_blank" style="text-decoration: underline; color: inherit;">
                                         Testing Programs
@@ -100,6 +100,7 @@ layout: default
                         </p>
                     </div>
                 </div>
+                <!-- Step 2 e 3... (il resto del codice rimane uguale) -->
                 <div class="step-item">
                     <div class="step-number">2</div>
                     <div class="step-content">
@@ -155,6 +156,7 @@ layout: default
         }
     </script>
 
+    <!-- Script aggiuntivi (iOS warning, reward badge toggle) rimangono invariati -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
@@ -175,10 +177,8 @@ layout: default
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const rewardBadge = document.getElementById('reward-badge-toggle');
-
             if (rewardBadge) {
                 const toggleIcon = rewardBadge.querySelector('.toggle-icon');
-
                 rewardBadge.addEventListener('click', function() {
                     if (window.innerWidth <= 600) {
                         this.classList.toggle('expanded');
@@ -187,14 +187,7 @@ layout: default
                         toggleIcon.classList.remove('pulse-active');
                     }
                 });
-
                 if (toggleIcon) {
-                    const observerOptions = {
-                        root: null,
-                        rootMargin: '0px',
-                        threshold: 0.6
-                    };
-
                     const observer = new IntersectionObserver((entries) => {
                         entries.forEach(entry => {
                             if (entry.isIntersecting) {
@@ -208,8 +201,7 @@ layout: default
                                 toggleIcon.classList.remove('pulse-active');
                             }
                         });
-                    }, observerOptions);
-
+                    }, { threshold: 0.6 });
                     observer.observe(rewardBadge);
                 }
             }
