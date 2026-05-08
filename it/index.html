@@ -3,6 +3,8 @@ layout: default
 title: App Mobile & Beta Testing
 lang: it
 ---
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data[lang] %}
 
 <header>
     <div class="profile-img">
