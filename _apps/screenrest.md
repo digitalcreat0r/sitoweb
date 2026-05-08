@@ -2,6 +2,7 @@
 layout: app
 title: ScreenRest
 lang: en
+permalink: /apps/screenrest/
 testing_active: true
 icon: /assets/images/screenrest/screenrest_icon.png
 description: Designed for professionals and students who spend long hours at the computer. Prevent mental burnout, eye strain, and irritation with smart wellness reminders.
