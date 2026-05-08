@@ -1,11 +1,24 @@
 <footer>
     <div class="footer-links">
-        <a href="{{ site.baseurl }}/">Home</a>
-        <a href="{{ site.baseurl }}/#apps">Apps</a>
-        <a href="{{ site.baseurl }}/terms-of-use.html">Terms of Use</a>
-        <a href="{{ site.baseurl }}/privacy-policy.html">Privacy Policy</a>
-        <a href="{{ site.baseurl }}/cookie-policy.html">Cookie Policy</a>
+        <a href="{{ site.baseurl }}/">{{ t.nav_home }}</a>
+        <a href="{{ site.baseurl }}/#apps">{{ t.nav_apps }}</a>
+        <a href="{{ site.baseurl }}/terms-of-use.html">{{ t.nav_terms }}</a>
+        <a href="{{ site.baseurl }}/privacy-policy.html">{{ t.nav_privacy }}</a>
+        <a href="{{ site.baseurl }}/cookie-policy.html">{{ t.nav_cookie }}</a>
     </div>
 
-    <p class="copyright">© {{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    <div class="language-selector">
+        <i class="fa-solid fa-globe"></i>
+        {% if page.lang == "it" %}
+        <a href="{{ page.url | replace: '/it/', '/' | relative_url }}">English</a>
+        <span>•</span>
+        <strong>Italiano</strong>
+        {% else %}
+        <strong>English</strong>
+        <span>•</span>
+        <a href="{{ '/it' | append: page.url | relative_url }}">Italiano</a>
+        {% endif %}
+    </div>
+
+    <p class="copyright">© {{ "now" | date: "%Y" }} {{ site.title }}. {{ t.all_rights_reserved }}</p>
 </footer>
