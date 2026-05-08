@@ -92,7 +92,8 @@ layout: default
                                 <input type="checkbox" id="termsCheckbox" style="width: 20px; height: 20px; margin: 0; margin-top: 2px; cursor: pointer; flex-shrink: 0; -webkit-appearance: checkbox;">
                                 <label for="termsCheckbox" style="font-size: 0.85em; line-height: 1.4; cursor: pointer; color: var(--text-main);">
                                     {{ t.agree_to }}
-                                    <a href="{{ site.terms_of_use_path | relative_url }}#testing-programs" target="_blank" style="text-decoration: underline; color: inherit; font-weight: 500;">
+                                    {% capture lang_prefix %}{% if lang == 'it' %}/it{% endif %}{% endcapture %}
+                                    <a href="{{ site.baseurl }}{{ lang_prefix }}/terms-of-use.html#testing-programs" target="_blank" style="text-decoration: underline; color: inherit; font-weight: 500;">
                                         {{ t.testing_programs }}
                                     </a>
                                 </label>
