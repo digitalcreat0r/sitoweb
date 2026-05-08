@@ -138,13 +138,13 @@ layout: default
             const errorText = document.getElementById('errorText');
 
             if (!emailInput || !emailInput.toLowerCase().endsWith('@gmail.com')) {
-                errorText.innerText = "{{ t.error_email }}";
+                errorText.innerHTML = "{{ t.error_email }}";
                 errorMsg.style.display = 'block';
                 return;
             }
 
             if (!termsCheckbox.checked) {
-                errorText.innerText = "{{ t.error_terms }}";
+                errorText.innerHTML = "{{ t.error_email }}";
                 errorMsg.style.display = 'block';
                 return;
             }
