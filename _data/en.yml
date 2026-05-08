@@ -64,3 +64,10 @@ feedback_precious: "Your feedback is precious!"
 # Elementi UI App Specifici (Titoli delle sezioni)
 app_gallery: "Gallery"
 app_how_it_works: "How it works"
+
+# Testi Email Beta Testing
+email_subject: "Tester Request for"
+email_greeting: "Hello,"
+email_join_request: "I would like to join the testing program for"
+email_play_account: "My Google Play account email is:"
+email_thank_you: "Thank you!"
