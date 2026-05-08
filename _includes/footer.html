@@ -1,10 +1,11 @@
 <footer>
     <div class="footer-links">
-        <a href="{{ site.baseurl }}/">{{ t.nav_home }}</a>
-        <a href="{{ site.baseurl }}/#apps">{{ t.nav_apps }}</a>
-        <a href="{{ site.baseurl }}/terms-of-use.html">{{ t.nav_terms }}</a>
-        <a href="{{ site.baseurl }}/privacy-policy.html">{{ t.nav_privacy }}</a>
-        <a href="{{ site.baseurl }}/cookie-policy.html">{{ t.nav_cookie }}</a>
+        {% capture lang_prefix %}{% if page.lang == 'it' %}/it{% else %}{% endif %}{% endcapture %}
+        <a href="{{ site.baseurl }}{{ lang_prefix }}/">{{ t.nav_home }}</a>
+        <a href="{{ site.baseurl }}{{ lang_prefix }}/#apps">{{ t.nav_apps }}</a>
+        <a href="{{ site.baseurl }}{{ lang_prefix }}/terms-of-use.html">{{ t.nav_terms }}</a>
+        <a href="{{ site.baseurl }}{{ lang_prefix }}/privacy-policy.html">{{ t.nav_privacy }}</a>
+        <a href="{{ site.baseurl }}{{ lang_prefix }}/cookie-policy.html">{{ t.nav_cookie }}</a>
     </div>
 
     <div class="language-selector">

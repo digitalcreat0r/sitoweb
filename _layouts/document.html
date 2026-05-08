@@ -3,8 +3,9 @@ layout: default
 body_class: always-light
 ---
 <div class="back-link">
-  <a href="{{ '/' | relative_url }}">
-    <i class="fa-solid fa-arrow-left"></i> Back to Home
+  {% capture home_url %}{% if page.lang == 'it' %}/it/{% else %}/{% endif %}{% endcapture %}
+  <a href="{{ home_url | relative_url }}">
+    <i class="fa-solid fa-arrow-left"></i> {{ t.back_to_home }}
   </a>
 </div>
 
