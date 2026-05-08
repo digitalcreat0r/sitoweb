@@ -1,0 +1,66 @@
+# ==========================================
+# Impostazioni Generali / Header / Footer
+# ==========================================
+site_description: "Independent developer focused on intuitive mobile&nbsp;apps for&nbsp;specific&nbsp;use&nbsp;cases."
+maintenance_message: "Maintenance in progress. Some features may be temporarily unavailable."
+nav_home: "Home"
+nav_apps: "Apps"
+nav_terms: "Terms of Use"
+nav_privacy: "Privacy Policy"
+nav_cookie: "Cookie Policy"
+all_rights_reserved: "All rights reserved."
+back_to_home: "Back to Home"
+
+# ==========================================
+# Home Page (index.html)
+# ==========================================
+greeting: "Hi, I'm Oleksandr"
+about_subtitle: "Below you can find my current projects."
+my_apps: "My Apps"
+learn_more: "Learn more"
+coming_soon: "Coming Soon"
+next_project: "Next Project!"
+
+# ==========================================
+# Pagina 404 (404.md)
+# ==========================================
+404_title: "Page Not Found"
+404_subtitle: "Oops! Page not found..."
+404_text: "The page you are looking for doesn't exist, has been moved, or is temporarily unavailable."
+
+# ==========================================
+# Layout App - Sezione Beta Testing (_layouts/app.html)
+# ==========================================
+become_tester: "Become a Tester"
+android_only: "This application is for <strong>Android</strong> only."
+tester_intro: "Google requires a group of at least <strong>12&nbsp;testers</strong> to be active for <strong>14&nbsp;consecutive&nbsp;days</strong> before an app can be released.<br><strong>Note:</strong> The 14-day countdown starts only once the full group is active. If you join early, you may need to keep the app installed for a longer period until the goal is reached."
+
+tester_reward_title: "Tester Reward:"
+tester_reward_text: "As a thank you, testers who complete the full testing phase will receive <strong>lifetime&nbsp;free&nbsp;access</strong> to the app, provided it is successfully published. Participation is voluntary and can be discontinued at any time, however, leaving the program before the completion of the requirements will result in the loss of reward eligibility."
+tester_note: "It is recommended to join the test only if you find the app truly useful. The best feedback comes from users who would naturally use the app in their daily routine."
+
+# Step 1: Form email
+step1_title: "Submit your Email"
+step1_desc: "Enter your details below. Clicking <strong>Continue</strong> will open your email app with a pre-filled request. Just hit send!"
+placeholder_name: "Your name (optional)"
+placeholder_email: "Your email"
+agree_to: "I have read and agree to the"
+testing_programs: "Testing&nbsp;Programs"
+btn_continue: "Continue"
+error_email: "Please enter a valid email address."
+error_terms: "You must agree to the Testing Programs to continue."
+
+# Step 2: Attesa
+step2_title: "Wait for the Invitation"
+step2_desc: "Once I receive your request, I will manually add your email to the authorized testers list. You will receive a reply as soon as possible containing the official link to download the app."
+
+# Step 3: Installazione
+step3_title: "Download & Stay Active"
+step3_desc: "Download the app using the link provided in the invitation email and keep it installed for at least <strong>14&nbsp;consecutive&nbsp;days</strong>."
+found_bug: "Found a bug?"
+send_email: "Send me an email at:"
+feedback_precious: "Your feedback is precious!"
+
+# Elementi UI App Specifici (Titoli delle sezioni)
+app_gallery: "Gallery"
+app_how_it_works: "How it works"

@@ -1,18 +1,25 @@
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data[lang] %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ t.site_description }}">
+
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url | replace: '/it/', '/' }}">
+    <link rel="alternate" hreflang="it" href="{{ site.url }}/it{{ page.url | replace: '/it/', '/' }}">
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url | replace: '/it/', '/' }}">
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "CleverPocket Dev",
-            "url": "https://cleverpocket.app"
+            "url": "{{ site.url }}"
         }
     </script>
     <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
@@ -24,7 +31,7 @@
 
 {% if site.maintenance_mode and page.hide_maintenance != true %}
 <div class="maintenance-banner">
-    <i class="fa-solid fa-wrench"></i> {{ site.maintenance_message }}
+    <i class="fa-solid fa-wrench"></i> {{ t.maintenance_message }}
 </div>
 {% endif %}
 
@@ -61,11 +68,9 @@
 </script>
 
 <script>
-    // Aspetta che la pagina sia completamente caricata
+    // Lazy loading per immagini
     document.addEventListener("DOMContentLoaded", function() {
         const images = document.querySelectorAll('img:not([loading])');
-
-        // Aggiungi loading="lazy" a ciascuna di esse
         images.forEach(img => {
             img.setAttribute('loading', 'lazy');
         });
@@ -73,6 +78,7 @@
 </script>
 
 <script>
+    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
@@ -83,9 +89,8 @@
             if (targetElement) {
                 e.preventDefault();
 
-                // Impostazioni
                 const offset = 40;
-                const duration = 2000; // Modifica qui!
+                const duration = 2000;
 
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
                 const startPosition = window.pageYOffset;

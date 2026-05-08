@@ -1,0 +1,66 @@
+# ==========================================
+# Impostazioni Generali / Header / Footer
+# ==========================================
+site_description: "Sviluppatore indipendente focalizzato su app mobile intuitive per casi d'uso specifici."
+maintenance_message: "Manutenzione in corso. Alcune funzionalità potrebbero essere temporaneamente non disponibili."
+nav_home: "Home"
+nav_apps: "App"
+nav_terms: "Termini di Utilizzo"
+nav_privacy: "Privacy Policy"
+nav_cookie: "Cookie Policy"
+all_rights_reserved: "Tutti i diritti riservati."
+back_to_home: "Torna alla Home"
+
+# ==========================================
+# Home Page (index.html)
+# ==========================================
+greeting: "Ciao, sono Oleksandr"
+about_subtitle: "Di seguito puoi trovare i miei progetti attuali."
+my_apps: "Le mie App"
+learn_more: "Scopri di più"
+coming_soon: "In Arrivo"
+next_project: "Prossimo Progetto!"
+
+# ==========================================
+# Pagina 404 (404.md)
+# ==========================================
+404_title: "Pagina Non Trovata"
+404_subtitle: "Ops! Pagina non trovata..."
+404_text: "La pagina che stai cercando non esiste, è stata spostata o è temporaneamente non disponibile."
+
+# ==========================================
+# Layout App - Sezione Beta Testing (_layouts/app.html)
+# ==========================================
+become_tester: "Diventa un Tester"
+android_only: "Questa applicazione è solo per <strong>Android</strong>."
+tester_intro: "Google richiede che un gruppo di almeno <strong>12&nbsp;tester</strong> sia attivo per <strong>14&nbsp;giorni&nbsp;consecutivi</strong> prima che un'app possa essere rilasciata.<br><strong>Nota:</strong> Il conto alla rovescia di 14 giorni inizia solo quando il gruppo completo è attivo. Se ti unisci in anticipo, potresti dover mantenere l'app installata per un periodo più lungo fino al raggiungimento dell'obiettivo."
+
+tester_reward_title: "Ricompensa per i Tester:"
+tester_reward_text: "Come ringraziamento, i tester che completano l'intera fase di test riceveranno <strong>accesso&nbsp;gratuito&nbsp;a vita</strong> all'app, a condizione che venga pubblicata con successo. La partecipazione è volontaria e può essere interrotta in qualsiasi momento; tuttavia, abbandonare il programma prima del completamento dei requisiti comporterà la perdita del diritto alla ricompensa."
+tester_note: "Si consiglia di partecipare al test solo se si ritiene l'app veramente utile. I feedback migliori provengono da utenti che userebbero naturalmente l'app nella loro routine quotidiana."
+
+# Step 1: Form email
+step1_title: "Invia la tua Email"
+step1_desc: "Inserisci i tuoi dati qui sotto. Cliccando su <strong>Continua</strong> si aprirà la tua app di posta con una richiesta precompilata. Devi solo premere invia!"
+placeholder_name: "Il tuo nome (opzionale)"
+placeholder_email: "La tua email"
+agree_to: "Ho letto e accetto i"
+testing_programs: "Programmi di&nbsp;Testing"
+btn_continue: "Continua"
+error_email: "Inserisci un indirizzo email valido."
+error_terms: "Devi accettare i Programmi di Testing per continuare."
+
+# Step 2: Attesa
+step2_title: "Attendi l'Invito"
+step2_desc: "Una volta ricevuta la tua richiesta, aggiungerò manualmente la tua email all'elenco dei tester autorizzati. Riceverai una risposta il prima possibile contenente il link ufficiale per scaricare l'app."
+
+# Step 3: Installazione
+step3_title: "Scarica e Resta Attivo"
+step3_desc: "Scarica l'app utilizzando il link fornito nell'email di invito e tienila installata per almeno <strong>14&nbsp;giorni&nbsp;consecutivi</strong>."
+found_bug: "Trovato un bug?"
+send_email: "Inviami un'email a:"
+feedback_precious: "Il tuo feedback è prezioso!"
+
+# Elementi UI App Specifici (Titoli delle sezioni)
+app_gallery: "Galleria"
+app_how_it_works: "Come funziona"
