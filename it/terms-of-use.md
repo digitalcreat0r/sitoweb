@@ -18,7 +18,7 @@ Ti concediamo una licenza personale, non trasferibile e non esclusiva per utiliz
 - Utilizzare il sito o le app per qualsiasi attività illegale.
 
 <h2 id="testing-programs">3. Programma di Testing</h2>
-Partecipando ai programmi di testing, accetti i seguenti termini specifici:
+Partecipando al programma di testing, accetti i seguenti termini specifici:
 
 - **Natura del Software:**<br>Riconosci che il software si trova in una fase di test e potrebbe contenere bug, errori di sistema o causare la perdita di dati.
 - **Periodo di Testing:**<br>In conformità con i requisiti di Google, il periodo di test obbligatorio di 14 giorni inizia solo una volta raggiunto e attivo il numero minimo di tester richiesti. Gli utenti che si uniscono prima di questo traguardo potrebbero dover rimanere nel programma per più di 14 giorni.

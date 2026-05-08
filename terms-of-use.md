@@ -16,8 +16,8 @@ We grant you a personal, non-transferable, and non-exclusive license to use our 
 - Modify, copy, or reverse engineer the software or website content.
 - Use the website or apps for any illegal activities.
 
-<h2 id="testing-programs">3. Testing Programs</h2>
-By participating in testing programs, you agree to the following specific terms:
+<h2 id="testing-program">3. Testing Program</h2>
+By participating in testing program, you agree to the following specific terms:
 
 - **Nature of the Software:**<br>You acknowledge that the software is in a testing phase and may contain bugs, system errors, or cause data loss.
 - **Testing Period:**<br>In compliance with Google requirements, the mandatory 14-day testing period begins only once the minimum number of required testers is reached and active. Users joining before this milestone may be required to remain in the program for longer than 14 days.
