@@ -1,14 +1,14 @@
 # ==========================================
 # Impostazioni Generali / Header / Footer
 # ==========================================
-site_description: "Sviluppatore indipendente focalizzato su app mobile intuitive per casi d'uso specifici."
-maintenance_message: "Manutenzione in corso. Alcune funzionalità potrebbero essere temporaneamente non disponibili."
+site_description: "Sviluppatore indipendente focalizzato sulla creazione di app&nbsp;intuitive per esigenze&nbsp;mirate."
+maintenance_message: "Manutenzione in&nbsp;corso. Alcune funzionalità potrebbero essere temporaneamente non&nbsp;disponibili."
 nav_home: "Home"
 nav_apps: "App"
 nav_terms: "Termini di Utilizzo"
 nav_privacy: "Privacy Policy"
 nav_cookie: "Cookie Policy"
-all_rights_reserved: "Tutti i diritti riservati."
+all_rights_reserved: "Tutti i&nbsp;diritti&nbsp;riservati."
 back_to_home: "Torna alla Home"
 
 # ==========================================
@@ -26,7 +26,7 @@ next_project: "Prossimo Progetto!"
 # ==========================================
 404_title: "Pagina Non Trovata"
 404_subtitle: "Ops! Pagina non trovata..."
-404_text: "La pagina che stai cercando non esiste, è stata spostata o è temporaneamente non disponibile."
+404_text: "La pagina che stai cercando non esiste, è stata spostata o è temporaneamente non&nbsp;disponibile."
 
 # ==========================================
 # Layout App - Sezione Beta Testing (_layouts/app.html)
@@ -48,7 +48,7 @@ agree_to: "Ho letto e accetto i"
 testing_programs: "Programma di&nbsp;Testing"
 btn_continue: "Continua"
 error_email: "Inserisci un indirizzo email valido."
-error_terms: "Devi accettare il Programma di Testing per continuare."
+error_terms: "Devi accettare il&nbsp;Programma&nbsp;di&nbsp;Testing per continuare."
 
 # Step 2: Attesa
 step2_title: "Attendi l'Invito"

@@ -17,7 +17,7 @@ Ti concediamo una licenza personale, non trasferibile e non esclusiva per utiliz
 - Modificare, copiare o decodificare il software o i contenuti del sito web.
 - Utilizzare il sito o le app per qualsiasi attività illegale.
 
-<h2 id="testing-programs">3. Programmi di Testing</h2>
+<h2 id="testing-programs">3. Programma di Testing</h2>
 Partecipando ai programmi di testing, accetti i seguenti termini specifici:
 
 - **Natura del Software:**<br>Riconosci che il software si trova in una fase di test e potrebbe contenere bug, errori di sistema o causare la perdita di dati.
