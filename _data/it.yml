@@ -52,13 +52,13 @@ error_terms: "Devi accettare il&nbsp;Programma&nbsp;di&nbsp;Testing per continua
 
 # Step 2: Attesa
 step2_title: "Attendi l'Invito"
-step2_desc: "Una volta ricevuta la tua richiesta, aggiungerò manualmente la tua email all'elenco dei tester autorizzati. Riceverai una risposta il prima possibile contenente il link ufficiale per scaricare l'app."
+step2_desc: "Una volta ricevuta la richiesta, l'indirizzo email verrà aggiunto alla lista dei tester autorizzati. Riceverai quanto prima una risposta contenente il link ufficiale per scaricare l'app."
 
 # Step 3: Installazione
 step3_title: "Scarica e Resta Attivo"
 step3_desc: "Scarica l'app utilizzando il link fornito nell'email di invito e tienila installata per almeno <strong>14&nbsp;giorni&nbsp;consecutivi</strong>."
 found_bug: "Trovato un bug?"
-send_email: "Inviami un'email a:"
+send_email: "Invia un'email a:"
 feedback_precious: "Il tuo feedback è prezioso!"
 
 # Elementi UI App Specifici (Titoli delle sezioni)

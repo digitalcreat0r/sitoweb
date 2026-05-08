@@ -52,13 +52,13 @@ error_terms: "You must agree to the Testing Programs to continue."
 
 # Step 2: Attesa
 step2_title: "Wait for the Invitation"
-step2_desc: "Once I receive your request, I will manually add your email to the authorized testers list. You will receive a reply as soon as possible containing the official link to download the app."
+step2_desc: "Once the request is received, the email will be added to the authorized testers list. You can expect a reply as soon as possible with the official link to download the app."
 
 # Step 3: Installazione
 step3_title: "Download & Stay Active"
 step3_desc: "Download the app using the link provided in the invitation email and keep it installed for at least <strong>14&nbsp;consecutive&nbsp;days</strong>."
 found_bug: "Found a bug?"
-send_email: "Send me an email at:"
+send_email: "Send an email at:"
 feedback_precious: "Your feedback is precious!"
 
 # Elementi UI App Specifici (Titoli delle sezioni)
