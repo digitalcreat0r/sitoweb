@@ -33,48 +33,39 @@ footer {
 }
 
 .language-selector {
-    margin: 30px 0;
-    font-size: 0.85rem;
+    margin: 25px 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px; // Spazio tra i "bottoni" delle lingue
 
     i {
         margin-right: 10px;
-        color: var(--text-muted);
-        opacity: 0.8;
+        opacity: 0.7;
     }
 
-    a, strong {
-        padding: 5px 15px;
-        border-radius: 30px;
-        text-decoration: none;
-        transition: all 0.2s ease-in-out;
-        display: inline-block;
-    }
-
-    // Lingua NON selezionata (Link)
     a {
+        text-decoration: none;
         color: var(--text-muted);
-        border: 1px solid transparent;
+        transition: color 0.2s;
 
         &:hover {
-            background-color: rgba(var(--text-color), 0.05);
             color: var(--text-color);
-            text-decoration: none;
+            text-decoration: underline;
         }
     }
 
-    // Lingua SELEZIONATA (Attiva)
     strong {
-        background-color: var(--accent-color);
-        color: #fff;
-        font-weight: 600;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        color: var(--accent-color); /* Colore della lingua attiva */
+        font-weight: 700;
     }
 
-    span {
-        display: none;
+    .lang-arrow {
+        margin: 0 10px;
+        color: var(--accent-color);
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 0;
     }
 }
