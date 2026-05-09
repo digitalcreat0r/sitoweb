@@ -43,7 +43,7 @@ placeholder_email: "Your email"
 agree_to: "I have read and agree to the"
 testing_programs: "Testing&nbsp;Programs"
 error_email: "Please enter a valid email address."
-error_terms: "You must agree to the Testing Programs to continue."
+error_terms: "You must agree to the Testing&nbsp;Programs to continue."
 
 # Step 2: Attesa
 step2_title: "Wait for the Invitation"
