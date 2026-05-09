@@ -33,7 +33,7 @@ next_project: "Prossimo Progetto!"
 # ==========================================
 become_tester: "Diventa un Tester"
 android_only: "Questa applicazione è solo per <strong>Android</strong>."
-tester_intro: "Google richiede che un gruppo di almeno <strong>12&nbsp;tester</strong> sia attivo per <strong>14&nbsp;giorni&nbsp;consecutivi</strong> prima che un'app possa essere rilasciata.<br><strong>Nota:</strong> Il conto alla rovescia di 14 giorni inizia solo quando il gruppo completo è attivo. Se ti unisci in anticipo, potresti dover mantenere l'app installata per un periodo più lungo fino al raggiungimento dell'obiettivo."
+tester_intro: "Google richiede che un gruppo di almeno <strong>12&nbsp;tester</strong> sia attivo per <strong>14&nbsp;giorni&nbsp;consecutivi</strong> prima che un'app possa essere pubblicata sul Play&nbsp;Store.<br><strong>Nota:</strong> Il conto alla rovescia di 14 giorni inizia solo quando il gruppo completo è attivo. Se ti unisci in anticipo, potresti dover mantenere l'app installata per un periodo più lungo fino al raggiungimento dell'obiettivo."
 
 tester_reward_title: "Ricompensa per i Tester:"
 tester_reward_text: "Come ringraziamento, i tester che completano l'intera fase di test riceveranno <strong>accesso&nbsp;gratuito&nbsp;a vita</strong> all'app, a condizione che venga pubblicata con successo. La partecipazione è volontaria e può essere interrotta in qualsiasi momento; tuttavia, abbandonare il programma prima del completamento dei requisiti comporterà la perdita del diritto alla ricompensa."

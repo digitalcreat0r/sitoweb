@@ -33,7 +33,7 @@ next_project: "Next Project!"
 # ==========================================
 become_tester: "Become a Tester"
 android_only: "This application is for <strong>Android</strong> only."
-tester_intro: "Google requires a group of at least <strong>12&nbsp;testers</strong> to be active for <strong>14&nbsp;consecutive&nbsp;days</strong> before an app can be released.<br><strong>Note:</strong> The 14-day countdown starts only once the full group is active. If you join early, you may need to keep the app installed for a longer period until the goal is reached."
+tester_intro: "Google requires a group of at least <strong>12&nbsp;testers</strong> to be active for <strong>14&nbsp;consecutive&nbsp;days</strong> before an app can be published on the Play&nbsp;Store.<br><strong>Note:</strong> The 14-day countdown starts only once the full group is active. If you join early, you may need to keep the app installed for a longer period until the goal is reached."
 
 tester_reward_title: "Tester Reward:"
 tester_reward_text: "As a thank you, testers who complete the full testing phase will receive <strong>lifetime&nbsp;free&nbsp;access</strong> to the app, provided it is successfully published. Participation is voluntary and can be discontinued at any time, however, leaving the program before the completion of the requirements will result in the loss of reward eligibility."
