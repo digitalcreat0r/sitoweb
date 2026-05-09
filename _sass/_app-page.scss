@@ -56,9 +56,42 @@
 
 .back-link a:hover { color: var(--primary-color); }
 
-.policy-link-wrapper { margin-top: 15px; font-size: 1.1rem; }
+.policy-link-wrapper {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
 .policy-link-wrapper a { color: var(--text-muted); text-decoration: none; }
 .policy-link-wrapper a:hover { text-decoration: underline; }
+
+.secondary-actions-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Stile minimal per il tasto condividi */
+.btn-share-minimal {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-family: inherit;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn-share-minimal:hover {
+    color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.04);
+}
 
 @media (max-width: 600px) {
     .app-page-header { flex-direction: column; text-align: center; }

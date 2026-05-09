@@ -42,11 +42,18 @@ layout: default
         </a>
         {% endif %}
 
-        {% if page.privacy_policy %}
-        <div class="policy-link-wrapper">
-            <a href="{{ page.privacy_policy | relative_url }}">{{ t.privacy_policy | default: "Privacy Policy" }}</a>
+        <div class="secondary-actions-row">
+            {% if page.privacy_policy %}
+            <div class="policy-link-wrapper">
+                <a href="{{ page.privacy_policy | relative_url }}">{{ t.privacy_policy | default: "Privacy Policy" }}</a>
+            </div>
+            {% else %}
+            <div></div> {% endif %}
+
+            <button id="shareAppButton" class="btn-share-minimal">
+                <i class="fa-solid fa-share-nodes"></i> {{ t.share_app | default: "Share" }}
+            </button>
         </div>
-        {% endif %}
     </div>
 
     <div class="app-page-content">
@@ -224,4 +231,35 @@ layout: default
         });
     </script>
     {% endif %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const shareBtn = document.getElementById('shareAppButton');
+            if (shareBtn) {
+                shareBtn.addEventListener('click', async () => {
+                    const shareData = {
+                        title: '{{ page.title | escape }}',
+                        text: '{{ t.share_message | default: "Check out this app:" }} {{ page.title | escape }}',
+                        url: window.location.href
+                    };
+
+                    try {
+                        if (navigator.share) {
+                            // Apre il menu nativo di iOS/Android (WhatsApp, Insta, ecc.)
+                            await navigator.share(shareData);
+                        } else {
+                            // Fallback per PC desktop: Copia negli appunti
+                            await navigator.clipboard.writeText(window.location.href);
+                            const originalHtml = shareBtn.innerHTML;
+                            shareBtn.innerHTML = '<i class="fa-solid fa-check"></i> {{ t.link_copied | default: "Link Copied!" }}';
+                            setTimeout(() => {
+                                shareBtn.innerHTML = originalHtml;
+                            }, 2500);
+                        }
+                    } catch (err) {
+                        console.log('Condivisione annullata o fallita.', err);
+                    }
+                });
+            }
+        });
+    </script>
 </article>

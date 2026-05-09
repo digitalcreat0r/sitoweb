@@ -10,6 +10,9 @@ nav_privacy: "Privacy Policy"
 nav_cookie: "Cookie Policy"
 all_rights_reserved: "Tutti&nbsp;i&nbsp;diritti&nbsp;riservati."
 back_to_home: "Torna alla Home"
+share_app: "Condividi"
+share_message: "Dai un'occhiata a questa app:"
+link_copied: "Link Copiato!"
 
 # ==========================================
 # Home Page (index.html)
