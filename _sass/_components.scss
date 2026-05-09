@@ -85,7 +85,14 @@
 .tester-note i { color: var(--primary-color); margin-right: 8px; }
 
 @media (max-width: 600px) {
-    .theme-switch-btn { top: 10px; right: 10px; padding: 8px 12px; }
+    .theme-switch-btn {
+            top: 85px;
+            right: 10px;
+            padding: 8px 12px;
+        }
+    .theme-switch-btn.scrolled { top: 10px; }
+    .maintenance-on .theme-switch-btn { top: 125px; }
+    .maintenance-on .theme-switch-btn.scrolled { top: 50px; }
     .tester-note { font-size: 1.1rem; line-height: 1.5; }
     .reward-badge {
             cursor: pointer;
