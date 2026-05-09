@@ -7,11 +7,9 @@ support_email: support@cleverpocket.app
 # URL e Link
 url: "https://cleverpocket.app"
 baseurl: "" # Lascialo vuoto se il sito è nel dominio principale
-terms_of_use_path: "/terms-of-use"
 
 # Impostazioni di Build
 markdown: kramdown
-theme: minima # Opzionale, se vuoi un tema di base, ma noi useremo il tuo stile personalizzato
 exclude:
   - Gemfile
   - Gemfile.lock
