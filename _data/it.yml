@@ -13,6 +13,7 @@ back_to_home: "Torna alla Home"
 share_app: "Condividi"
 share_message: "Dai un'occhiata a questa app:"
 link_copied: "Link Copiato!"
+btn_continue: "Continua"
 
 # ==========================================
 # Home Page (index.html)
@@ -49,7 +50,6 @@ placeholder_name: "Il tuo nome (opzionale)"
 placeholder_email: "La tua email"
 agree_to: "Ho letto e accetto "
 testing_programs: "il&nbsp;Programma&nbsp;di&nbsp;Testing"
-btn_continue: "Continua"
 error_email: "Inserisci un indirizzo email valido."
 error_terms: "Devi accettare il&nbsp;Programma&nbsp;di&nbsp;Testing per continuare."
 
