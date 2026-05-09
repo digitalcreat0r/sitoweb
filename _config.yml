@@ -24,5 +24,9 @@ collections:
   apps:
     output: true
 
+# Per google search
+plugins:
+  - jekyll-sitemap
+
 # Banner di Manutenzione, mettere su true durante la manutenzione, altrimenti su false
 maintenance_mode: false
