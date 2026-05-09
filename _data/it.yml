@@ -68,8 +68,8 @@ email_play_account: "La mia email dell'account Google Play è:"
 email_thank_you: "Grazie!"
 
 # Sezione Condividi Idea
-idea_title: "Have an idea for a new app?"
-idea_desc: "Share a problem you'd like to solve or an app idea that would make your life easier. If the idea is good, I might build it!"
-placeholder_idea: "Write here..."
-email_idea_prefix: "Idea/Problem:"
-email_salutation: "Best regards,"
+idea_title: "Hai un'idea per una nuova app?"
+idea_desc: "Condividi un problema che vorresti risolvere o un'idea per un'app che ti semplificherebbe la vita. Se l'idea è valida, potrei svilupparla!"
+placeholder_idea: "Scrivi qui..."
+email_idea_prefix: "Idea/Problema:"
+email_salutation: "Saluti,"
