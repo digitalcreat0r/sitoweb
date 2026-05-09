@@ -48,8 +48,10 @@ textarea.form-input {
     }
 
     .btn-main {
-        margin-top: 10px;
-    }
+            margin-top: 15px;
+            width: auto;
+            min-width: 200px;
+        }
 }
 
 // 3. Mobile (Sotto i 600px)
