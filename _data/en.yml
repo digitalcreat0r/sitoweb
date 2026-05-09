@@ -1,6 +1,4 @@
-# ==========================================
 # Impostazioni Generali / Header / Footer
-# ==========================================
 site_description: "Independent developer focused on intuitive mobile&nbsp;apps for&nbsp;specific&nbsp;use&nbsp;cases."
 maintenance_message: "Maintenance in progress. Some features may be temporarily unavailable."
 nav_home: "Home"
@@ -15,9 +13,7 @@ share_message: "Check out this app:"
 link_copied: "Link Copied!"
 btn_continue: "Continue"
 
-# ==========================================
 # Home Page (index.html)
-# ==========================================
 greeting: "Hi, I'm Oleksandr"
 about_subtitle: "Below you can find my current projects."
 my_apps: "My Apps"
@@ -25,16 +21,12 @@ learn_more: "Learn more"
 coming_soon: "Coming Soon"
 next_project: "Next Project!"
 
-# ==========================================
 # Pagina 404 (404.md)
-# ==========================================
 404_title: "Page Not Found"
 404_subtitle: "Oops! Page not found..."
 404_text: "The page you are looking for doesn't exist, has been moved, or is temporarily unavailable."
 
-# ==========================================
 # Layout App - Sezione Beta Testing (_layouts/app.html)
-# ==========================================
 become_tester: "Become a Tester"
 android_only: "This application is for <strong>Android</strong> only."
 tester_intro: "Google requires a group of at least <strong>12&nbsp;testers</strong> to be active for <strong>14&nbsp;consecutive&nbsp;days</strong> before an app can be published on the Play&nbsp;Store.<br><strong>Note:</strong> The 14-day countdown starts only once the full group is active. If you join early, you may need to keep the app installed for a longer period until the goal is reached."
@@ -74,3 +66,8 @@ email_greeting: "Hello,"
 email_join_request: "I would like to join the testing program for"
 email_play_account: "My Google Play account email is:"
 email_thank_you: "Thank you!"
+
+# Sezione Condividi Idea
+idea_title: "Hai un'idea per una nuova app?"
+idea_desc: "Condividi un problema che vorresti risolvere o un'idea per un'app che ti semplificherebbe la vita. Se l'idea è valida, potrei svilupparla!"
+placeholder_idea: "Scrivi qui..."

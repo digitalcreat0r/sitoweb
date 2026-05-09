@@ -1,6 +1,4 @@
-# ==========================================
 # Impostazioni Generali / Header / Footer
-# ==========================================
 site_description: "Sviluppatore indipendente focalizzato sulla creazione di app&nbsp;mobile&nbsp;intuitive per esigenze&nbsp;mirate."
 maintenance_message: "Manutenzione in&nbsp;corso. Alcune funzionalità potrebbero essere temporaneamente non&nbsp;disponibili."
 nav_home: "Home"
@@ -15,9 +13,7 @@ share_message: "Dai un'occhiata a questa app:"
 link_copied: "Link Copiato!"
 btn_continue: "Continua"
 
-# ==========================================
 # Home Page (index.html)
-# ==========================================
 greeting: "Ciao, sono Oleksandr"
 about_subtitle: "Di seguito puoi trovare i miei progetti attuali."
 my_apps: "Le mie App"
@@ -25,16 +21,12 @@ learn_more: "Scopri di più"
 coming_soon: "In Arrivo"
 next_project: "Prossimo Progetto!"
 
-# ==========================================
 # Pagina 404 (404.md)
-# ==========================================
 404_title: "Pagina Non Trovata"
 404_subtitle: "Ops! Pagina non trovata..."
 404_text: "La pagina che stai cercando non esiste, è stata spostata o è temporaneamente non&nbsp;disponibile."
 
-# ==========================================
 # Layout App - Sezione Beta Testing (_layouts/app.html)
-# ==========================================
 become_tester: "Diventa un Tester"
 android_only: "Questa applicazione è solo per <strong>Android</strong>."
 tester_intro: "Google richiede che un gruppo di almeno <strong>12&nbsp;tester</strong> sia attivo per <strong>14&nbsp;giorni&nbsp;consecutivi</strong> prima che un'app possa essere pubblicata sul Play&nbsp;Store.<br><strong>Nota:</strong> Il conto alla rovescia di 14 giorni inizia solo quando il gruppo completo è attivo. Se ti unisci in anticipo, potresti dover mantenere l'app installata per un periodo più lungo fino al raggiungimento dell'obiettivo."
@@ -74,3 +66,8 @@ email_greeting: "Ciao,"
 email_join_request: "Vorrei partecipare al programma di testing per"
 email_play_account: "La mia email dell'account Google Play è:"
 email_thank_you: "Grazie!"
+
+# Sezione Condividi Idea
+idea_title: "Have an idea for a new app?"
+idea_desc: "Share a problem you'd like to solve or an app idea that would make your life easier. If the idea is good, I might build it!"
+placeholder_idea: "Write here..."
