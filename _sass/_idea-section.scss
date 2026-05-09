@@ -1,6 +1,7 @@
+// 1. Stili base per tutti i campi di input del sito
 .form-input {
     width: 100%;
-    max-width: 500px;
+    max-width: 500px; // Limite standard
     padding: 12px 15px;
     border: 1px solid var(--border-color, #ccc);
     border-radius: 8px;
@@ -9,18 +10,21 @@
     font-family: inherit;
     font-size: 1rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
+    display: block;
+    margin: 0 auto; // Centra l'elemento orizzontalmente
 
-.form-input:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.2);
+    &:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.2);
+    }
 }
 
 textarea.form-input {
     resize: vertical;
 }
 
+// 2. Personalizzazioni specifiche per la sezione "Share Idea"
 #share-idea {
     text-align: center;
 
@@ -31,36 +35,13 @@ textarea.form-input {
     }
 
     .form-input {
-        width: 100%;
-        max-width: 800px;
-
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-
-        padding: 12px 15px;
-        border: 1px solid var(--border-color, #ccc);
-        border-radius: 8px;
-        background-color: var(--card-bg, #fff);
-        color: var(--text-main, #333);
-        font-family: inherit;
-        font-size: 1rem;
-        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        max-width: 800px; // Più largo su desktop (come richiesto)
     }
 }
 
+// 3. Regole per dispositivi mobili (sotto i 600px)
 @media (max-width: 600px) {
     #share-idea .form-input {
-        max-width: 100%;
+        max-width: 100%; // Da lato a lato su mobile
     }
-}
-
-.form-input:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.2);
-}
-
-textarea.form-input {
-    resize: vertical;
 }
