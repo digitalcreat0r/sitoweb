@@ -20,3 +20,19 @@
 textarea.form-input {
     resize: vertical;
 }
+
+#share-idea {
+    text-align: center;
+
+    .form-input {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #idea-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
