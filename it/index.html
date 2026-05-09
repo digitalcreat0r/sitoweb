@@ -46,15 +46,15 @@ lang: it
     </div>
 </section>
 
-<section id="share-idea" style="margin-top: 40px;">
+<section id="share-idea">
     <h1><i class="fa-regular fa-lightbulb"></i> {{ t.idea_title }}</h1>
     <p>{{ t.idea_desc }}</p>
 
-    <form id="idea-form" onsubmit="sendIdeaEmail(event)" style="margin-top: 20px;">
-        <div style="margin-bottom: 15px;">
+    <form id="idea-form" onsubmit="sendIdeaEmail(event)">
+        <div class="form-group">
             <input type="text" id="idea-name" placeholder="{{ t.placeholder_name }}" class="form-input">
         </div>
-        <div style="margin-bottom: 15px;">
+        <div class="form-group">
             <textarea id="idea-text" placeholder="{{ t.placeholder_idea }}" required rows="5" class="form-input"></textarea>
         </div>
         <button type="submit" class="btn-main">

@@ -1,7 +1,6 @@
-// 1. Stili base per tutti i campi di input del sito
+// 1. Stili comuni per tutti gli input (Base)
 .form-input {
     width: 100%;
-    max-width: 500px; // Limite standard
     padding: 12px 15px;
     border: 1px solid var(--border-color, #ccc);
     border-radius: 8px;
@@ -9,9 +8,8 @@
     color: var(--text-main, #333);
     font-family: inherit;
     font-size: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     display: block;
-    margin: 0 auto; // Centra l'elemento orizzontalmente
 
     &:focus {
         outline: none;
@@ -24,24 +22,44 @@ textarea.form-input {
     resize: vertical;
 }
 
-// 2. Personalizzazioni specifiche per la sezione "Share Idea"
+// 2. Centratura e larghezze specifiche per la sezione Idea
 #share-idea {
     text-align: center;
+    margin-top: 40px;
+    padding: 0 20px;
 
     #idea-form {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; // Centra i form-group orizzontalmente
+        width: 100%;
+        margin-top: 20px;
     }
 
+    .form-group {
+        width: 100%;
+        max-width: 800px; // Larghezza desktop desiderata
+        margin-bottom: 15px;
+    }
+
+    // Qui non serve riscrivere tutto, solo quello che cambia
     .form-input {
-        max-width: 800px; // Più largo su desktop (come richiesto)
+        max-width: 100%; // Prende tutto lo spazio del form-group (800px)
+    }
+
+    .btn-main {
+        margin-top: 10px;
     }
 }
 
-// 3. Regole per dispositivi mobili (sotto i 600px)
+// 3. Mobile (Sotto i 600px)
 @media (max-width: 600px) {
-    #share-idea .form-input {
-        max-width: 100%; // Da lato a lato su mobile
+    #share-idea {
+        .form-group {
+            max-width: 100%; // Diventa fluido "lato a lato"
+        }
+
+        // Riduciamo il padding della sezione se necessario per guadagnare spazio
+        padding: 0 15px;
     }
 }
