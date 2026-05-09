@@ -30,7 +30,7 @@ By participating in testing program, you agree to the following specific terms:
 
 Your data will not be used for marketing purposes or shared with third parties, in compliance with our Privacy Policy.
 
-## 4. User Feedback and Ideas
+<h2 id="user-feedback">4. User Feedback and Ideas</h2>
 We love hearing your feedback and ideas for new features or future applications! However, to avoid any potential misunderstandings, if you submit comments, suggestions, or ideas via our website contact forms, emails, or during the beta testing process, you agree that:
 - Your submission is entirely voluntary and made without expectation of compensation, now or in the future.
 - You grant the Developer a perpetual, irrevocable, worldwide, royalty-free license to use, modify, implement, and commercialize those ideas in our current or future products without any obligation or attribution to you.

@@ -65,3 +65,32 @@ textarea.form-input {
         padding: 0 15px;
     }
 }
+
+.checkbox-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-align: left;
+        font-size: 0.9rem;
+
+        input[type="checkbox"] {
+            width: auto;
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+
+        label {
+            cursor: pointer;
+            color: var(--text-main, #333);
+
+            a {
+                color: var(--primary-color, #007bff);
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }

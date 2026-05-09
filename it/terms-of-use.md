@@ -31,7 +31,7 @@ Partecipando al programma di testing, accetti i seguenti termini specifici:
 
 I tuoi dati non saranno utilizzati per scopi di marketing né condivisi con terze parti, in conformità con la nostra Informativa sulla Privacy.
 
-## 4. Feedback e Idee degli Utenti
+<h2 id="user-feedback">4. Feedback e Idee degli Utenti</h2>
 Ci piace ricevere i tuoi feedback e le tue idee! Tuttavia, per evitare potenziali incomprensioni, se invii commenti o suggerimenti tramite i moduli di contatto del sito, email o durante il processo di beta testing, accetti che:
 - La tua sottomissione è interamente volontaria e fatta senza aspettativa di compenso, presente o futuro.
 - Concedi allo Sviluppatore una licenza perpetua, irrevocabile, mondiale e gratuita per utilizzare, modificare e commercializzare tali idee nei nostri prodotti attuali o futuri senza alcun obbligo o attribuzione nei tuoi confronti.

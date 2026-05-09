@@ -49,15 +49,22 @@ title: Niche Mobile Apps & Beta Testing
     <p>{{ t.idea_desc }}</p>
 
     <form id="idea-form" onsubmit="sendIdeaEmail(event)">
-        <div class="form-group">
-            <input type="text" id="idea-name" placeholder="{{ t.placeholder_name }}" class="form-input">
+        <div class="form-group checkbox-group" style="display: flex; align-items: flex-start; gap: 10px; text-align: left;">
+            <input type="checkbox" id="idea-terms" style="margin-top: 4px; cursor: pointer;">
+            <label for="idea-terms" style="font-size: 0.9em; cursor: pointer; color: var(--text-main);">
+                {{ t.agree_to }}
+                <a href="{{ '/terms-of-use.html#user-feedback' | relative_url }}" target="_blank" style="text-decoration: underline;">{{ t.idea_terms }}</a>
+            </label>
         </div>
-        <div class="form-group">
-            <textarea id="idea-text" placeholder="{{ t.placeholder_idea }}" required rows="5" class="form-input"></textarea>
-        </div>
+
         <button type="submit" class="btn-main">
             {{ t.btn_continue }} <i class="fa-solid fa-paper-plane"></i>
         </button>
+
+        <p id="ideaErrorMsg" style="color: #ff9800; font-size: 0.85em; display: none; margin-top: 15px; text-align: center;">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span id="ideaErrorText"></span>
+        </p>
     </form>
 </section>
 
