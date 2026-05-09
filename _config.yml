@@ -3,7 +3,6 @@ title: CleverPocket Dev
 author: Oleksandr Bihansky
 email: info@cleverpocket.app
 support_email: support@cleverpocket.app
-description: "Independent developer focused on intuitive mobile&nbsp;apps for&nbsp;specific&nbsp;use&nbsp;cases."
 
 # URL e Link
 url: "https://cleverpocket.app"
@@ -28,4 +27,4 @@ collections:
     output: true
 
 # Banner di Manutenzione, mettere su true durante la manutenzione, altrimenti su false
-maintenance_mode: true
+maintenance_mode: false
