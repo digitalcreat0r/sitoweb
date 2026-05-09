@@ -61,20 +61,38 @@
         const langBanner = document.getElementById('lang-banner');
         const switchBtn = document.getElementById('lang-switch-btn');
         const closeBtn = document.getElementById('lang-close-btn');
+        const langText = langBanner.querySelector('p');
+        const langIcon = langBanner.querySelector('.lang-icon');
 
         if (!langBanner) return;
 
-        // Controlla se l'utente ha già fatto una scelta in passato
         const bannerDismissed = localStorage.getItem('langBannerDismissed');
-
         if (!bannerDismissed) {
-            const userLang = navigator.language || navigator.userLanguage;
-            // Prende la lingua della pagina attuale da Jekyll
-            const pageLang = "{{ lang }}";
+            const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
+            const pageLang = "{{ lang }}"; // Lingua attuale della pagina ('it' o 'en')
 
-            // Se la lingua del browser è italiano e la pagina corrente non lo è
-            if (userLang.toLowerCase().startsWith('it') && pageLang !== 'it') {
+            let targetLang = "";
+
+            // Caso A: Browser IT su pagina EN -> Suggerisci IT
+            if (userLang.startsWith('it') && pageLang !== 'it') {
+                targetLang = "it";
+                langText.innerText = "Vuoi visualizzare il sito in italiano?";
+                switchBtn.innerText = "Passa all'Italiano";
+                langIcon.innerText = "🇮🇹";
+            }
+            // Caso B: Browser EN su pagina IT -> Suggerisci EN
+            else if (userLang.startsWith('en') && pageLang !== 'en') {
+                targetLang = "en";
+                langText.innerText = "View this site in English?";
+                switchBtn.innerText = "Switch to English";
+                langIcon.innerText = "🇬🇧";
+            }
+
+            if (targetLang) {
                 langBanner.style.display = 'flex';
+                // Salviamo la lingua di destinazione nel bottone per usarla dopo
+                switchBtn.setAttribute('data-target', targetLang);
+
                 setTimeout(() => {
                     langBanner.classList.add('show');
                 }, 100);
@@ -83,10 +101,11 @@
 
         if (switchBtn) {
             switchBtn.addEventListener('click', function() {
-                const itLink = document.querySelector('link[hreflang="it"]');
-                if (itLink) {
+                const target = this.getAttribute('data-target');
+                const targetLink = document.querySelector(`link[hreflang="${target}"]`);
+                if (targetLink) {
                     localStorage.setItem('langBannerDismissed', 'true');
-                    window.location.href = itLink.href;
+                    window.location.href = targetLink.href;
                 }
             });
         }
@@ -95,9 +114,7 @@
             closeBtn.addEventListener('click', function() {
                 localStorage.setItem('langBannerDismissed', 'true');
                 langBanner.classList.remove('show');
-                setTimeout(() => {
-                    langBanner.style.display = 'none';
-                }, 500);
+                setTimeout(() => { langBanner.style.display = 'none'; }, 500);
             });
         }
     });
