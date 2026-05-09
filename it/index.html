@@ -76,6 +76,20 @@ lang: it
 
         const name = document.getElementById('idea-name').value.trim();
         const idea = document.getElementById('idea-text').value.trim();
+        const termsCheckbox = document.getElementById('idea-terms');
+        const errorMsg = document.getElementById('ideaErrorMsg');
+        const errorText = document.getElementById('ideaErrorText');
+
+        // Controllo della checkbox: se non è spuntata mostra l'errore e ferma l'invio
+        if (!termsCheckbox.checked) {
+            // Nota: sto riutilizzando t.error_terms che avevi usato per l'altra sezione
+            errorText.innerHTML = "Devi accettare i Termini per continuare."; // Puoi usare anche qui {{ t.error_terms }} se il testo si adatta
+            errorMsg.style.display = 'block';
+            return;
+        }
+
+        // Nasconde l'errore se l'utente ha spuntato la casella al secondo tentativo
+        errorMsg.style.display = 'none';
 
         let bodyText = "{{ t.email_idea_prefix }}\n" + idea;
 
