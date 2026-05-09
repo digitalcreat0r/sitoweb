@@ -1,98 +1,227 @@
 ---
 layout: default
 ---
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data[lang] %}
+
 <div class="back-link" style="margin-bottom: 30px;">
     <a href="{{ '/' | relative_url }}">
-        <i class="fa-solid fa-arrow-left"></i> Back to Home
+        <i class="fa-solid fa-arrow-left"></i> {{ t.back_to_home }}
     </a>
 </div>
+
 <article class="app-page-container">
-    <!-- Intestazione dell'App -->
     <header class="app-page-header">
         {% if page.icon %}
         <img src="{{ page.icon | relative_url }}" alt="{{ page.title }} Icon" class="app-page-icon">
         {% endif %}
         <div class="app-page-title-group">
             <h1>{{ page.title }}</h1>
-            <p class="app-page-subtitle">{{ page.description }}</p>
+            <p class="app-page-subtitle">
+                {% if lang == 'it' and page.description_it %}
+                {{ page.description_it }}
+                {% else %}
+                {{ page.description }}
+                {% endif %}
+            </p>
         </div>
     </header>
 
-    <!-- Pulsanti e link (Play Store e Privacy Policy) -->
     <div class="app-page-actions">
-        {% if page.play_store_link %}
-        <a href="{{ page.play_store_link }}" class="btn-main" target="_blank">
-            Get it on Play Store <i class="fa-brands fa-google-play"></i>
+        {% if page.testing_active %}
+        <div id="ios-platform-warning"></div>
+
+        <a href="#beta-testing" class="btn-main" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
+            <i class="fa-solid fa-vial" style="margin: 0;"></i>
+            <span>{{ t.become_tester }}</span>
+            <i class="fa-brands fa-android" style="margin: 0;"></i>
+        </a>
+        {% elsif page.play_store_link %}
+        <a href="{{ page.play_store_link }}&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank" class="google-play-badge">
+            <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
         </a>
         {% endif %}
+
         {% if page.privacy_policy %}
         <div class="policy-link-wrapper">
-            <a href="{{ page.privacy_policy | relative_url }}">Privacy Policy</a>
+            <a href="{{ page.privacy_policy | relative_url }}">{{ t.privacy_policy | default: "Privacy Policy" }}</a>
         </div>
         {% endif %}
     </div>
-
-    <hr class="app-divider">
 
     <div class="app-page-content">
         {{ content }}
     </div>
 
-    <!-- SEZIONE BETA TESTING DINAMICA -->
     {% if page.testing_active %}
     <hr class="app-divider">
     <section id="beta-testing">
-        <h2><i class="fa-solid fa-vial"></i> Become a Beta&nbsp;Tester</h2>
+        <h2><i class="fa-solid fa-vial"></i> {{ t.become_tester }}</h2>
         <div class="tester-box">
-            <p>Google requires a group of at least <strong>12&nbsp;testers</strong> to be active for <strong>14&nbsp;consecutive&nbsp;days</strong> before an app can be released.<br><strong>Note:</strong> The 14-day countdown starts only once the full group is active. If you join early, you may need to keep the app installed for a longer period until the goal is reached.</p>
-
-            <div class="reward-badge">
+            <p>{{ t.tester_intro }}</p>
+            <div class="reward-badge" id="reward-badge-toggle">
                 <div class="reward-header">
-                    <i class="fa-solid fa-gift"></i>
-                    <strong>Tester Reward:</strong>
+                    <div class="reward-title">
+                        <i class="fa-solid fa-gift"></i>
+                        <strong>{{ t.tester_reward_title }}</strong>
+                    </div>
+                    <i class="fa-solid fa-chevron-down toggle-icon"></i>
                 </div>
-                <p>As a thank you, testers who complete the full testing phase will receive <strong>lifetime&nbsp;free&nbsp;access</strong> to the app, provided it is successfully published. Participation is voluntary and can be discontinued at any time; however, leaving the program before the completion of the requirements will result in the loss of reward eligibility.</p>
+                <p class="reward-content">{{ t.tester_reward_text }}</p>
             </div>
-
             <p class="tester-note">
                 <i class="fa-solid fa-lightbulb"></i>
-                <em><strong>Note:</strong> Is recommend joining the test only if you find the app truly useful. The best feedback comes from users who would naturally use the app in their daily routine.</em>
+                <em><strong>Nota:</strong> {{ t.tester_note }}</em>
             </p>
-
             <div class="step-list">
                 <div class="step-item">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h4>Join the Testing&nbsp;Group</h4>
-                        <p>To access the private beta, you must join this <a href="{{ page.google_group_url }}" target="_blank">Google&nbsp;Group</a> with your Play&nbsp;Store&nbsp;email.</p>
+                        <h4>{{ t.step1_title }}</h4>
+                        <p>{{ t.step1_desc }}</p>
+
+                        <div class="email-submission-form-container" style="margin-top: 15px; display: flex; flex-direction: column; gap: 15px; max-width: 500px;">
+
+                            <input type="text" id="testerNameInput" placeholder="{{ t.placeholder_name }}"
+                                   style="padding: 12px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-main); border-radius: 6px; font-family: inherit; width: 100%; box-sizing: border-box; font-size: 1.1rem;">
+
+                            <input type="email" id="testerEmailInput" placeholder="{{ t.placeholder_email }}"
+                                   style="padding: 12px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-main); border-radius: 6px; font-family: inherit; width: 100%; box-sizing: border-box; font-size: 1.1rem;">
+
+                            <div style="display: flex; align-items: flex-start; gap: 10px; padding: 0 2px;">
+                                <input type="checkbox" id="termsCheckbox" style="width: 20px; height: 20px; margin: 0; margin-top: 2px; cursor: pointer; flex-shrink: 0; -webkit-appearance: checkbox;">
+                                <label for="termsCheckbox" style="font-size: 0.85em; line-height: 1.4; cursor: pointer; color: var(--text-main);">
+                                    {{ t.agree_to }}
+                                    {% capture lang_prefix %}{% if lang == 'it' %}/it{% endif %}{% endcapture %}
+                                    <a href="{{ site.baseurl }}{{ lang_prefix }}/terms-of-use.html#testing-program" target="_blank" style="text-decoration: underline; color: inherit; font-weight: 500;">
+                                        {{ t.testing_programs }}
+                                    </a>
+                                </label>
+                            </div>
+
+                            <div style="margin-top: 10px;">
+                                <button onclick="sendBetaEmail()" class="btn-main" style="border: none; cursor: pointer; padding: 14px 32px; margin: 0; width: auto; display: inline-flex; justify-content: center; font-size: 1.2rem; font-weight: 600; letter-spacing: 0.5px;">{{ t.btn_continue }}</button>
+                            </div>
+                        </div>
+
+                        <p id="emailErrorMsg" style="color: #d9534f; font-size: 0.85em; display: none; margin-top: 10px;">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <span id="errorText">{{ t.error_email }}</span>
+                        </p>
                     </div>
                 </div>
-
                 <div class="step-item">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h4>Opt-in as a Tester</h4>
-                        <p>Click the <a href="{{ page.opt_in_url }}" target="_blank">Join on Web link</a> to officially register as a tester for the app.</p>
+                        <h4>{{ t.step2_title }}</h4>
+                        <p>{{ t.step2_desc }}</p>
                     </div>
                 </div>
-
                 <div class="step-item">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h4>Download & Stay Active</h4>
-                        <p>Download the app from the <a href="{{ page.play_store_link }}" target="_blank">Play&nbsp;Store</a> and keep it installed for at least 14 days.</p>
-                    </div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h4>Give Feedback</h4>
-                        <p>Found a bug?<br>Send me an email at:<br><strong>{{ site.email }}</strong><br>Your feedback is precious!</p>
+                        <h4>{{ t.step3_title }}</h4>
+                        <p>{{ t.step3_desc }}</p>
+                        <p style="margin-top: 15px;">{{ t.found_bug }}<br>{{ t.send_email }}<br><strong>{{ site.support_email }}</strong><br>{{ t.feedback_precious }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        function sendBetaEmail() {
+            const nameInput = document.getElementById('testerNameInput').value.trim();
+            const emailInput = document.getElementById('testerEmailInput').value.trim();
+            const termsCheckbox = document.getElementById('termsCheckbox');
+            const errorMsg = document.getElementById('emailErrorMsg');
+            const errorText = document.getElementById('errorText');
+
+            if (!emailInput || !emailInput.toLowerCase().endsWith('@gmail.com')) {
+                errorText.innerHTML = "{{ t.error_email }}";
+                errorMsg.style.display = 'block';
+                return;
+            }
+
+            if (!termsCheckbox.checked) {
+                errorText.innerHTML = "{{ t.error_terms }}";
+                errorMsg.style.display = 'block';
+                return;
+            }
+
+            errorMsg.style.display = 'none';
+
+            const devEmail = "{{ site.email }}";
+            const appName = "{{ page.title | escape }}";
+
+            // Costruisce la riga finale con i saluti localizzati e il nome dell'utente
+            let thankYouLine = "{{ t.email_thank_you }}";
+            if (nameInput) {
+                thankYouLine += "\n" + nameInput;
+            }
+
+            // Assembla l'oggetto e il corpo dell'email usando le variabili tradotte
+            const subject = encodeURIComponent("{{ t.email_subject }} " + appName);
+            const body = encodeURIComponent(
+                "{{ t.email_greeting }}\n\n" +
+                "{{ t.email_join_request }} " + appName + ".\n\n" +
+                "{{ t.email_play_account }} " + emailInput + "\n\n" +
+                thankYouLine
+            );
+
+            window.location.href = `mailto:${devEmail}?subject=${subject}&body=${body}`;
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+            const warningContainer = document.getElementById('ios-platform-warning');
+
+            if (isIOS && warningContainer) {
+                const warningBox = document.createElement('div');
+                warningBox.style.cssText = "background: #fff3cd; color: #856404; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #ffeeba; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; width: fit-content;";
+                warningBox.innerHTML = `
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span>{{ t.android_only }}</span>
+                `;
+                warningContainer.appendChild(warningBox);
+            }
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const rewardBadge = document.getElementById('reward-badge-toggle');
+            if (rewardBadge) {
+                const toggleIcon = rewardBadge.querySelector('.toggle-icon');
+                rewardBadge.addEventListener('click', function() {
+                    if (window.innerWidth <= 600) {
+                        this.classList.toggle('expanded');
+                    }
+                    if (toggleIcon) {
+                        toggleIcon.classList.remove('pulse-active');
+                    }
+                });
+                if (toggleIcon) {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                if (!rewardBadge.classList.contains('expanded')) {
+                                    toggleIcon.classList.add('pulse-active');
+                                    setTimeout(() => {
+                                        toggleIcon.classList.remove('pulse-active');
+                                    }, 3000);
+                                }
+                            } else {
+                                toggleIcon.classList.remove('pulse-active');
+                            }
+                        });
+                    }, { threshold: 0.6 });
+                    observer.observe(rewardBadge);
+                }
+            }
+        });
+    </script>
     {% endif %}
 </article>

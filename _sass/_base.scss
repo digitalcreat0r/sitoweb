@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
     background-color: var(--bg-color);
     color: var(--text-main);
     line-height: 1.6;
@@ -36,7 +37,7 @@ body.always-light h2 {
 
 section { margin-bottom: 80px; }
 
-h2 {
+h1, h2 {
     font-size: 1.8rem;
     margin-bottom: 30px;
     display: flex;
@@ -46,7 +47,7 @@ h2 {
     text-align: center;
 }
 
-h2 i { color: var(--primary-color); }
+h1 i, h2 i { color: var(--primary-color); }
 
 /* Maintenance Banner */
 .maintenance-banner {
@@ -66,8 +67,8 @@ body.always-light .maintenance-banner {
 
 /* Mobile Responsive */
 @media (max-width: 600px) {
-    body { font-size: 1.1rem; }
-    h1 { font-size: 2rem; }
-    h2 { display: block; text-align: center; }
+    h1 { font-size: 1.7rem; }
+    h2 { display: block; text-align: center; font-size: 1.4rem; }
     h2 i { margin-right: 10px; vertical-align: middle; }
+    ul, ol { padding-left: 1rem; }
 }

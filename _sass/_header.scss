@@ -41,17 +41,26 @@ header {
 .profile-img {
     width: 100px;
     height: 100px;
-    background: var(--primary-color);
-    color: white;
-    border-radius: 50%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
-    margin: 0 auto 20px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
 }
 
-h1 { font-size: 2.5rem; margin-bottom: 10px; letter-spacing: -1px; }
+h1 {
+        font-size: 2.0rem;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+    }
 
 .about-text {
     max-width: 650px;

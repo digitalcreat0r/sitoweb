@@ -1,13 +1,14 @@
 ---
 layout: default
-title: Niche Mobile Apps & Beta Testing
+title: App Mobile & Beta Testing
+lang: it
 ---
 {% assign lang = page.lang | default: "en" %}
 {% assign t = site.data[lang] %}
 
 <header>
     <div class="profile-img">
-        <img src="{{ '/assets/images/fp.jpg' | relative_url }}" alt="Profile Photo">
+        <img src="{{ '/assets/images/fp.jpg' | relative_url }}" alt="Photo Profilo">
     </div>
     <h1>{{ t.greeting }}</h1>
     <p class="about-text">
@@ -20,8 +21,9 @@ title: Niche Mobile Apps & Beta Testing
 <section id="apps">
     <h1><i class="fa-solid fa-rocket"></i> {{ t.my_apps }}</h1>
     <div class="apps-grid">
-        {% assign apps_en = site.apps | where: "lang", "en" %}
-        {% for app in apps_en %}
+
+        {% assign apps_it = site.apps | where: "lang", "it" %}
+        {% for app in apps_it %}
         <article class="app-card">
             <div class="app-card-header">
                 <img src="{{ app.icon | relative_url }}" alt="{{ app.title }} Icon" class="app-card-icon">

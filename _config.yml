@@ -2,7 +2,7 @@
 title: CleverPocket Dev
 author: Oleksandr Bihansky
 email: info@cleverpocket.app
-description: "Independent developer focused on intuitive mobile&nbsp;apps for&nbsp;specific&nbsp;use&nbsp;cases."
+support_email: support@cleverpocket.app
 
 # URL e Link
 url: "https://cleverpocket.app"
@@ -10,7 +10,6 @@ baseurl: "" # Lascialo vuoto se il sito è nel dominio principale
 
 # Impostazioni di Build
 markdown: kramdown
-theme: minima # Opzionale, se vuoi un tema di base, ma noi useremo il tuo stile personalizzato
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -26,5 +25,4 @@ collections:
     output: true
 
 # Banner di Manutenzione, mettere su true durante la manutenzione, altrimenti su false
-maintenance_mode: true
-maintenance_message: "Maintenance in progress. Some features may be temporarily unavailable."
+maintenance_mode: false

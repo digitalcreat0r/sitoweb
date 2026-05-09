@@ -16,12 +16,19 @@ We grant you a personal, non-transferable, and non-exclusive license to use our 
 - Modify, copy, or reverse engineer the software or website content.
 - Use the website or apps for any illegal activities.
 
-## 3. Beta Testing Programs
-If you participate in our beta testing programs:
-- You acknowledge that the software is in a testing phase and may contain bugs, errors, or cause data loss.
-- **Testing Period:** The mandatory 14-day testing period begins only after the minimum number of testers required by Google is reached and active. Early participants may be required to remain in the program for longer than 14 days.
-- **Reward Eligibility:** Lifetime access rewards are subject to the successful completion of the testing phase and the application's subsequent official publication. The Developer does not guarantee that the application will be approved by Google for public release.
-- **Voluntary Participation:** You may stop participating in the testing program at any time. However, withdrawal or failure to remain active for the required period will forfeit any eligibility for rewards.
+<h2 id="testing-program">3. Testing Program</h2>
+By participating in testing program, you agree to the following specific terms:
+
+- **Nature of the Software:**<br>You acknowledge that the software is in a testing phase and may contain bugs, system errors, or cause data loss.
+- **Testing Period:**<br>In compliance with Google requirements, the mandatory 14-day testing period begins only once the minimum number of required testers is reached and active. Users joining before this milestone may be required to remain in the program for longer than 14 days.
+- **Reward Eligibility:**<br>Receiving rewards (such as "Lifetime" access) is subject to the successful completion of the testing phase and the subsequent official publication of the application. The Developer does not guarantee that the application will be approved or published by Google.
+- **Voluntary Participation and Withdrawal:**<br>Participation is entirely voluntary and you may opt-out at any time. However, early withdrawal or failure to remain an "active tester" for the required duration will result in the forfeiture of any eligibility for rewards.
+- **Data Collection and Purpose:**<br>To participate in the program, you agree to provide your email address (specifically, the address associated with your Google Play account). This data will be processed by the Developer exclusively to:
+    - Grant technical access to test versions via the Google Play Console.
+    - Send strictly operational communications regarding the test (e.g., updates, bug reporting).
+    - Manage the distribution of earned rewards.
+
+Your data will not be used for marketing purposes or shared with third parties, in compliance with our Privacy Policy.
 
 ## 4. User Feedback and Ideas
 We love hearing your feedback and ideas for new features or future applications! However, to avoid any potential misunderstandings, if you submit comments, suggestions, or ideas via our website contact forms, emails, or during the beta testing process, you agree that:
