@@ -42,7 +42,69 @@
     {% include footer.html %}
 </div>
 
+<div id="lang-banner" class="lang-banner" style="display: none;">
+    <div class="lang-banner-content">
+        <span class="lang-icon">🇮🇹</span>
+        <p>Vuoi visualizzare il sito in italiano?</p>
+        <div class="lang-banner-actions">
+            <button id="lang-switch-btn" class="btn-main btn-small">Passa all'Italiano</button>
+            <button id="lang-close-btn" class="btn-close" aria-label="Chiudi">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
 <script>
+    // Logica Banner Lingua
+    document.addEventListener("DOMContentLoaded", function() {
+        const langBanner = document.getElementById('lang-banner');
+        const switchBtn = document.getElementById('lang-switch-btn');
+        const closeBtn = document.getElementById('lang-close-btn');
+
+        if (!langBanner) return;
+
+        // Controlla se l'utente ha già fatto una scelta in passato
+        const bannerDismissed = localStorage.getItem('langBannerDismissed');
+
+        if (!bannerDismissed) {
+            const userLang = navigator.language || navigator.userLanguage;
+            // Prende la lingua della pagina attuale da Jekyll
+            const pageLang = "{{ lang }}";
+
+            // Se la lingua del browser è italiano e la pagina corrente non lo è
+            if (userLang.toLowerCase().startsWith('it') && pageLang !== 'it') {
+                langBanner.style.display = 'flex';
+                setTimeout(() => {
+                    langBanner.classList.add('show');
+                }, 100);
+            }
+        }
+
+        if (switchBtn) {
+            switchBtn.addEventListener('click', function() {
+                const itLink = document.querySelector('link[hreflang="it"]');
+                if (itLink) {
+                    localStorage.setItem('langBannerDismissed', 'true');
+                    window.location.href = itLink.href;
+                }
+            });
+        }
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function() {
+                localStorage.setItem('langBannerDismissed', 'true');
+                langBanner.classList.remove('show');
+                setTimeout(() => {
+                    langBanner.style.display = 'none';
+                }, 500);
+            });
+        }
+    });
+</script>
+
+<script>
+    // Gestione Tema (Chiaro/Scuro)
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
     const body = document.body;
