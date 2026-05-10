@@ -1,0 +1,41 @@
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 2px 0;
+    text-align: left;
+
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        margin: 0;
+        margin-top: 3px;
+        cursor: pointer;
+        flex-shrink: 0;
+        accent-color: var(--primary-color);
+    }
+
+    label {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        cursor: pointer;
+        color: var(--text-main);
+
+        a {
+            text-decoration: underline;
+            color: inherit;
+            font-weight: 500;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+
+/* Media query per mobile se necessario */
+@media (max-width: 600px) {
+    .checkbox-group label {
+        font-size: 1rem;
+    }
+}
