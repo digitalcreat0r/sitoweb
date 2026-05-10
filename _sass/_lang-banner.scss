@@ -148,3 +148,32 @@
         }
     }
 }
+
+/* --- Override per Tema Chiaro: --- */
+body.light-mode .lang-banner,
+body.always-light .lang-banner {
+    background-color: #1e293b;
+    color: #f8fafc;
+    border-color: #334155;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    .btn-close {
+        color: #94a3b8;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    .lang-banner-actions .btn-small {
+        background-color: #f8fafc;
+        color: #1e293b;
+        border-color: #f8fafc;
+
+        &:hover {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-color: var(--primary-color);
+        }
+    }
+}
