@@ -112,7 +112,7 @@ lang: it
             bodyText += "\n\n{{ t.email_thank_you }}";
         }
 
-        const subject = encodeURIComponent("{{ email_idea_subject }}");
+        const subject = encodeURIComponent("{{ t.email_idea_subject }}");
         const body = encodeURIComponent(bodyText);
         const devEmail = "{{ site.email }}";
 
