@@ -170,7 +170,7 @@ layout: default
             // Assembla l'oggetto e il corpo dell'email usando le variabili tradotte
             const subject = encodeURIComponent("{{ t.email_subject }} " + appName);
             const body = encodeURIComponent(
-                "{{ t.email_greeting }}\n\n" +
+                "{{ t.email_greeting }},\n\n" +
                 "{{ t.email_join_request }} " + appName + ".\n\n" +
                 "{{ t.email_play_account }} " + emailInput + "\n\n" +
                 thankYouLine

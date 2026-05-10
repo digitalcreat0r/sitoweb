@@ -104,7 +104,7 @@ lang: it
         // Se entrambi i controlli passano, nasconde il box di errore
         errorMsg.style.display = 'none';
 
-        let bodyText = "{{ t.email_greeting }}\n\n{{ t.email_idea_intro }}\n" + idea;
+        let bodyText = "{{ t.email_greeting }} {{ site.author_name }},\n\n{{ t.email_idea_intro }}\n" + idea;
 
         if (name) {
             bodyText += "\n\n{{ t.email_salutation }}\n" + name;
