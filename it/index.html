@@ -87,15 +87,21 @@ lang: it
         const errorMsg = document.getElementById('ideaErrorMsg');
         const errorText = document.getElementById('ideaErrorText');
 
-        // Controllo della checkbox: se non è spuntata mostra l'errore e ferma l'invio
+        // 1. Controllo se il campo dell'idea è vuoto
+        if (idea === "") {
+            errorText.innerHTML = "{{ t.error_empty_idea }}";
+            errorMsg.style.display = 'block';
+            return;
+        }
+
+        // 2. Controllo se la checkbox è spuntata
         if (!termsCheckbox.checked) {
-            // Nota: sto riutilizzando t.error_terms che avevi usato per l'altra sezione
             errorText.innerHTML = "{{ t.error_idea_terms }}";
             errorMsg.style.display = 'block';
             return;
         }
 
-        // Nasconde l'errore se l'utente ha spuntato la casella al secondo tentativo
+        // Se entrambi i controlli passano, nasconde il box di errore
         errorMsg.style.display = 'none';
 
         let bodyText = "{{ t.email_idea_prefix }}\n" + idea;
