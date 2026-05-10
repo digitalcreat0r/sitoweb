@@ -19,7 +19,7 @@ We grant you a personal, non-transferable, and non-exclusive license to use our 
 <h2 id="testing-program">3. Testing Program</h2>
 By participating in testing program, you agree to the following specific terms:
 
-- **Nature of the Software:**<br>You acknowledge that the software is in a testing phase and may contain bugs, system errors, or cause data loss.
+- **Nature of the Software:**<br>You acknowledge that the software is in a testing phase and may contain bugs or performance inconsistencies. As this is a pre-release version, any data or settings specifically related to your use of the application (such as preferences or progress) may be reset or lost during updates or when transitioning to the final version.
 - **Testing Period:**<br>In compliance with Google requirements, the mandatory 14-day testing period begins only once the minimum number of required testers is reached and active. Users joining before this milestone may be required to remain in the program for longer than 14 days.
 - **Reward Eligibility:**<br>Receiving rewards (such as "Lifetime" access) is subject to the successful completion of the testing phase and the subsequent official publication of the application. The Developer does not guarantee that the application will be approved or published by Google.
 - **Voluntary Participation and Withdrawal:**<br>Participation is entirely voluntary and you may opt-out at any time. However, early withdrawal or failure to remain an "active tester" for the required duration will result in the forfeiture of any eligibility for rewards.
@@ -31,7 +31,7 @@ By participating in testing program, you agree to the following specific terms:
 Your data will not be used for marketing purposes or shared with third parties, in compliance with our Privacy Policy.
 
 <h2 id="user-feedback">4. User Feedback and Ideas</h2>
-We love hearing your feedback and ideas for new features or future applications! However, to avoid any potential misunderstandings, if you submit comments, suggestions, or ideas via our website contact forms, emails, or during the beta testing process, you agree that:
+Feedback and ideas for new features or future applications are always welcome! However, to avoid potential misunderstandings, if comments, suggestions, or ideas are submitted via website contact forms, emails, or during the beta testing process, you agree that:
 - Your submission is entirely voluntary and made without expectation of compensation, now or in the future.
 - You grant the Developer a perpetual, irrevocable, worldwide, royalty-free license to use, modify, implement, and commercialize those ideas in our current or future products without any obligation or attribution to you.
 
@@ -39,7 +39,7 @@ We love hearing your feedback and ideas for new features or future applications!
 The website and applications are provided "as is" without any warranties of any kind. The Developer does not guarantee that the apps or website will meet your requirements, be completely error-free, or operate without interruption.
 
 ## 6. Limitation of Liability
-In no event shall the Developer be liable for any damages (including loss of data or profit) arising out of the use or inability to use the website or applications.
+In no event shall the Developer be liable for any damages (including loss of application-specific data or settings) arising out of the use or inability to use the website or applications.
 
 ## 7. Changes to Terms
 We reserve the right to modify these terms at any time. Your continued use of the website or apps after changes are posted constitutes your acceptance of the new terms.
