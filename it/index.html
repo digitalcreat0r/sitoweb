@@ -83,7 +83,7 @@ lang: it
         // Controllo della checkbox: se non è spuntata mostra l'errore e ferma l'invio
         if (!termsCheckbox.checked) {
             // Nota: sto riutilizzando t.error_terms che avevi usato per l'altra sezione
-            errorText.innerHTML = "Devi accettare i Termini per continuare."; // Puoi usare anche qui {{ t.error_terms }} se il testo si adatta
+            errorText.innerHTML = {{ t.error_idea_terms }};
             errorMsg.style.display = 'block';
             return;
         }
