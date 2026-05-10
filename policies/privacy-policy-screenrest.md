@@ -4,7 +4,7 @@ title: Privacy Policy - ScreenRest
 ---
 # Privacy Policy - ScreenRest
 
-*Last updated: March 15, 2024*
+*Last updated: March 15, 2026*
 
 **ScreenRest** is built with a "Privacy by Design" approach. We believe your data belongs to you. This application is designed to function entirely on your device without any external data transmission.
 

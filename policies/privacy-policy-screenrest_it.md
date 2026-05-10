@@ -5,7 +5,7 @@ permalink: /it/policies/privacy-policy-screenrest.html
 ---
 # Informativa sulla Privacy - ScreenRest
 
-*Ultimo aggiornamento: 15 Marzo 2024*
+*Ultimo aggiornamento: 15 Marzo 2026*
 
 **ScreenRest** è costruita con un approccio "Privacy by Design". Crediamo che i tuoi dati ti appartengano. Questa applicazione è progettata per funzionare interamente sul tuo dispositivo senza alcuna trasmissione di dati all'esterno.
 
