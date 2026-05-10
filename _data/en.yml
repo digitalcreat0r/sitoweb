@@ -73,6 +73,6 @@ idea_desc: "Share a problem you'd like to solve or an app idea that would make y
 placeholder_idea: "Write here..."
 idea_terms: "Terms for User Feedback and Ideas"
 error_empty_idea: "Please write your idea before continuing."
-error_idea_terms: "You must agree to the Terms for User Feedback to continue."
+error_idea_terms: "You must agree to the Terms for User Feedback and Ideas to continue."
 email_idea_prefix: "Idea/Problem:"
 email_salutation: "Best regards,"

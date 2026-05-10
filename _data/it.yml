@@ -73,6 +73,6 @@ idea_desc: "Condividi un problema che vorresti risolvere o un'idea per un'app ch
 placeholder_idea: "Scrivi qui..."
 idea_terms: "Termini per Feedback e Idee degli Utenti"
 error_empty_idea: "Per favore, scrivi la tua idea prima di continuare."
-error_idea_terms: "Devi accettare i Termini per continuare."
+error_idea_terms: "Devi accettare i Termini per Feedback e Idee degli Utenti per continuare."
 email_idea_prefix: "Idea/Problema:"
 email_salutation: "Saluti,"
