@@ -86,7 +86,8 @@
         font-weight: 600;
         border-radius: 8px;
         cursor: pointer;
-        border: 1px solid var(--border-color);
+        background-color: transparent;
+        border: 1px solid var(--text-main);
         background-color: var(--step-bg);
         color: var(--text-main);
         transition: all 0.2s ease;
