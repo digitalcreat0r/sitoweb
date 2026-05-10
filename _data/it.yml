@@ -69,7 +69,7 @@ email_thank_you: "Grazie!"
 
 # Sezione Condividi Idea
 idea_title: "Hai un'idea per una nuova app?"
-idea_desc: "Condividi un problema che vorresti risolvere o un'idea per un'app che ti semplificherebbe la vita. Se l'idea è valida, potrei svilupparla!"
+idea_desc: "Condividi un problema che vorresti risolvere o un'idea per un'app che ti semplificherebbe la vita.<br>Se l'idea è valida, potrei svilupparla!"
 placeholder_idea: "Scrivi qui..."
 idea_terms: "Termini per Feedback e Idee degli Utenti"
 error_empty_idea: "Per favore, scrivi la tua idea prima di continuare."
