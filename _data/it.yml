@@ -66,6 +66,8 @@ email_greeting: "Ciao"
 email_join_request: "Vorrei partecipare al programma di testing per"
 email_play_account: "La mia email dell'account Google Play è:"
 email_thank_you: "Grazie!"
+tester_full_title: "Gruppo al completo"
+tester_full_message: "L'app è in fase di test e attualmente il gruppo dei tester è al completo.<br>Grazie per l'interesse!"
 
 # Sezione Condividi Idea
 idea_title: "Hai un'idea per una nuova app?"
