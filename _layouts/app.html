@@ -4,6 +4,10 @@ layout: default
 {% assign lang = page.lang | default: "en" %}
 {% assign t = site.data[lang] %}
 
+{% assign app_info = site.data.apps_status[page.app_id] %}
+{% assign is_testing_active = app_info.testing_active %}
+{% assign is_testing_full = app_info.testing_full %}
+
 <div class="back-link" style="margin-bottom: 30px;">
     <a href="{{ '/' | relative_url }}">
         <i class="fa-solid fa-arrow-left"></i> {{ t.back_to_home }}
