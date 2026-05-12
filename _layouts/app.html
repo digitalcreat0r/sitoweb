@@ -32,7 +32,7 @@ layout: default
     </header>
 
     <div class="app-page-actions">
-        {% if page.testing_active %}
+        {% if is_testing_active %}
         <div id="ios-platform-warning"></div>
 
         <a href="#beta-testing" class="btn-main" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
@@ -64,12 +64,12 @@ layout: default
         {{ content }}
     </div>
 
-    {% if page.testing_active %}
+    {% if is_testing_active %}
     <hr class="app-divider">
     <section id="beta-testing">
         <h2><i class="fa-solid fa-vial"></i> {{ t.become_tester }}</h2>
 
-        {% if page.testing_full %}
+        {% if is_testing_full %}
         <div class="tester-box" style="text-align: center; padding: 40px 20px; border: 2px solid var(--primary-color);">
             <i class="fa-solid fa-users-slash" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px; display: block;"></i>
             <h3 style="margin-bottom: 10px;">{{ t.tester_full_title | default: "Gruppo al completo" }}</h3>
