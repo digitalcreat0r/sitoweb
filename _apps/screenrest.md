@@ -4,7 +4,7 @@ title: ScreenRest
 lang: en
 permalink: /apps/screenrest/
 testing_active: true
-testing_full: true
+testing_full: false
 icon: /assets/images/screenrest/screenrest_icon.png
 description: Designed for professionals and students who spend long hours at the computer. Prevent mental burnout and eye strain with smart wellness reminders.
 play_store_link: https://play.google.com/store/apps/details?id=com.cleverpocket.screenrest
