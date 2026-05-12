@@ -66,7 +66,6 @@ email_greeting: "Hello"
 email_join_request: "I would like to join the testing program for"
 email_play_account: "My Google Play account email is:"
 email_thank_you: "Thank you!"
-# Under Layout App - Beta Testing Section
 tester_full_title: "Group is full"
 tester_full_message: "The app is in testing phase and the testing group is currently full.<br>Thank you for your interest!"
 
