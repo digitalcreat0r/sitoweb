@@ -1,6 +1,4 @@
-# ==========================================
 # Impostazioni Generali / Header / Footer
-# ==========================================
 site_description: "Independent developer focused on intuitive mobile&nbsp;apps for&nbsp;specific&nbsp;use&nbsp;cases."
 maintenance_message: "Maintenance in progress. Some features may be temporarily unavailable."
 nav_home: "Home"
@@ -10,10 +8,12 @@ nav_privacy: "Privacy Policy"
 nav_cookie: "Cookie Policy"
 all_rights_reserved: "All rights reserved."
 back_to_home: "Back to Home"
+share_app: "Share"
+share_message: "Check out this app:"
+link_copied: "Link Copied!"
+btn_continue: "Continue"
 
-# ==========================================
 # Home Page (index.html)
-# ==========================================
 greeting: "Hi, I'm Oleksandr"
 about_subtitle: "Below you can find my current projects."
 my_apps: "My Apps"
@@ -21,19 +21,15 @@ learn_more: "Learn more"
 coming_soon: "Coming Soon"
 next_project: "Next Project!"
 
-# ==========================================
 # Pagina 404 (404.md)
-# ==========================================
 404_title: "Page Not Found"
 404_subtitle: "Oops! Page not found..."
 404_text: "The page you are looking for doesn't exist, has been moved, or is temporarily unavailable."
 
-# ==========================================
 # Layout App - Sezione Beta Testing (_layouts/app.html)
-# ==========================================
 become_tester: "Become a Tester"
 android_only: "This application is for <strong>Android</strong> only."
-tester_intro: "Google requires a group of at least <strong>12&nbsp;testers</strong> to be active for <strong>14&nbsp;consecutive&nbsp;days</strong> before an app can be released.<br><strong>Note:</strong> The 14-day countdown starts only once the full group is active. If you join early, you may need to keep the app installed for a longer period until the goal is reached."
+tester_intro: "Google requires a group of at least <strong>12&nbsp;testers</strong> to be active for <strong>14&nbsp;consecutive&nbsp;days</strong> before an app can be published on the Play&nbsp;Store.<br><strong>Note:</strong> The 14-day countdown starts only once the full group is active. If you join early, you may need to keep the app installed for a longer period until the goal is reached."
 
 tester_reward_title: "Tester Reward:"
 tester_reward_text: "As a thank you, testers who complete the full testing phase will receive <strong>lifetime&nbsp;free&nbsp;access</strong> to the app, provided it is successfully published. Participation is voluntary and can be discontinued at any time, however, leaving the program before the completion of the requirements will result in the loss of reward eligibility."
@@ -44,11 +40,10 @@ step1_title: "Submit your Email"
 step1_desc: "Enter your details below. Clicking <strong>Continue</strong> will open your email app with a pre-filled request. Just hit send!"
 placeholder_name: "Your name (optional)"
 placeholder_email: "Your email"
-agree_to: "I have read and agree to the"
-testing_programs: "Testing&nbsp;Programs"
-btn_continue: "Continue"
+agree_to: "I have read and agree to"
+testing_programs: "the Terms for Testing Program"
 error_email: "Please enter a valid email address."
-error_terms: "You must agree to the Testing Programs to continue."
+error_terms: "You must agree to the Terms for Testing Program to continue."
 
 # Step 2: Attesa
 step2_title: "Wait for the Invitation"
@@ -67,7 +62,20 @@ app_how_it_works: "How it works"
 
 # Testi Email Beta Testing
 email_subject: "Tester Request for"
-email_greeting: "Hello,"
+email_greeting: "Hello"
 email_join_request: "I would like to join the testing program for"
 email_play_account: "My Google Play account email is:"
 email_thank_you: "Thank you!"
+tester_full_title: "Group is full"
+tester_full_message: "The app is in testing phase and the testing group is currently full.<br>Thank you for your interest!"
+
+# Sezione Condividi Idea
+idea_title: "Have an idea for a new app?"
+idea_desc: "Share a problem you'd like to solve or an app idea that would make your&nbsp;life&nbsp;easier.<br>If the idea is good, I&nbsp;might&nbsp;build&nbsp;it!"
+placeholder_idea: "Write here..."
+idea_terms: "the&nbspTerms&nbspfor User&nbspFeedback&nbspand&nbspIdeas"
+error_empty_idea: "Please write your idea before continuing."
+error_idea_terms: "You must agree to the Terms for User Feedback and Ideas to continue."
+email_idea_subject: "Idea for a new app"
+email_idea_intro: "I have this idea:"
+email_salutation: "Best regards,"

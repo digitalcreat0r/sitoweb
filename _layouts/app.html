@@ -42,11 +42,18 @@ layout: default
         </a>
         {% endif %}
 
-        {% if page.privacy_policy %}
-        <div class="policy-link-wrapper">
-            <a href="{{ page.privacy_policy | relative_url }}">{{ t.privacy_policy | default: "Privacy Policy" }}</a>
+        <div class="secondary-actions-row">
+            {% if page.privacy_policy %}
+            <div class="policy-link-wrapper">
+                <a href="{{ page.privacy_policy | relative_url }}">{{ t.privacy_policy | default: "Privacy Policy" }}</a>
+            </div>
+            {% else %}
+            <div></div> {% endif %}
+
+            <button id="shareAppButton" class="btn-share-minimal">
+                <i class="fa-solid fa-share-nodes"></i> {{ t.share_app | default: "Share" }}
+            </button>
         </div>
-        {% endif %}
     </div>
 
     <div class="app-page-content">
@@ -57,6 +64,16 @@ layout: default
     <hr class="app-divider">
     <section id="beta-testing">
         <h2><i class="fa-solid fa-vial"></i> {{ t.become_tester }}</h2>
+
+        {% if page.testing_full %}
+        <div class="tester-box" style="text-align: center; padding: 40px 20px; border: 2px solid var(--primary-color);">
+            <i class="fa-solid fa-users-slash" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px; display: block;"></i>
+            <h3 style="margin-bottom: 10px;">{{ t.tester_full_title | default: "Gruppo al completo" }}</h3>
+            <p style="font-size: 1.1rem; margin: 0; opacity: 0.9;">
+                {{ t.tester_full_message | default: "L'app è in fase di test e attualmente il gruppo dei tester è al completo." }}
+            </p>
+        </div>
+        {% else %}
         <div class="tester-box">
             <p>{{ t.tester_intro }}</p>
             <div class="reward-badge" id="reward-badge-toggle">
@@ -88,12 +105,12 @@ layout: default
                             <input type="email" id="testerEmailInput" placeholder="{{ t.placeholder_email }}"
                                    style="padding: 12px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-main); border-radius: 6px; font-family: inherit; width: 100%; box-sizing: border-box; font-size: 1.1rem;">
 
-                            <div style="display: flex; align-items: flex-start; gap: 10px; padding: 0 2px;">
-                                <input type="checkbox" id="termsCheckbox" style="width: 20px; height: 20px; margin: 0; margin-top: 2px; cursor: pointer; flex-shrink: 0; -webkit-appearance: checkbox;">
-                                <label for="termsCheckbox" style="font-size: 0.85em; line-height: 1.4; cursor: pointer; color: var(--text-main);">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="termsCheckbox">
+                                <label for="termsCheckbox">
                                     {{ t.agree_to }}
                                     {% capture lang_prefix %}{% if lang == 'it' %}/it{% endif %}{% endcapture %}
-                                    <a href="{{ site.baseurl }}{{ lang_prefix }}/terms-of-use.html#testing-program" target="_blank" style="text-decoration: underline; color: inherit; font-weight: 500;">
+                                    <a href="{{ site.baseurl }}{{ lang_prefix }}/terms-of-use.html#testing-program" target="_blank">
                                         {{ t.testing_programs }}
                                     </a>
                                 </label>
@@ -127,6 +144,7 @@ layout: default
                 </div>
             </div>
         </div>
+        {% endif %}
     </section>
 
     <script>
@@ -154,16 +172,14 @@ layout: default
             const devEmail = "{{ site.email }}";
             const appName = "{{ page.title | escape }}";
 
-            // Costruisce la riga finale con i saluti localizzati e il nome dell'utente
             let thankYouLine = "{{ t.email_thank_you }}";
             if (nameInput) {
                 thankYouLine += "\n" + nameInput;
             }
 
-            // Assembla l'oggetto e il corpo dell'email usando le variabili tradotte
             const subject = encodeURIComponent("{{ t.email_subject }} " + appName);
             const body = encodeURIComponent(
-                "{{ t.email_greeting }}\n\n" +
+                "{{ t.email_greeting }} {{ site.author_name }},\n\n" +
                 "{{ t.email_join_request }} " + appName + ".\n\n" +
                 "{{ t.email_play_account }} " + emailInput + "\n\n" +
                 thankYouLine
@@ -171,57 +187,6 @@ layout: default
 
             window.location.href = `mailto:${devEmail}?subject=${subject}&body=${body}`;
         }
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-            const warningContainer = document.getElementById('ios-platform-warning');
-
-            if (isIOS && warningContainer) {
-                const warningBox = document.createElement('div');
-                warningBox.style.cssText = "background: #fff3cd; color: #856404; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #ffeeba; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; width: fit-content;";
-                warningBox.innerHTML = `
-                    <i class="fa-solid fa-circle-exclamation"></i>
-                    <span>{{ t.android_only }}</span>
-                `;
-                warningContainer.appendChild(warningBox);
-            }
-        });
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const rewardBadge = document.getElementById('reward-badge-toggle');
-            if (rewardBadge) {
-                const toggleIcon = rewardBadge.querySelector('.toggle-icon');
-                rewardBadge.addEventListener('click', function() {
-                    if (window.innerWidth <= 600) {
-                        this.classList.toggle('expanded');
-                    }
-                    if (toggleIcon) {
-                        toggleIcon.classList.remove('pulse-active');
-                    }
-                });
-                if (toggleIcon) {
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                if (!rewardBadge.classList.contains('expanded')) {
-                                    toggleIcon.classList.add('pulse-active');
-                                    setTimeout(() => {
-                                        toggleIcon.classList.remove('pulse-active');
-                                    }, 3000);
-                                }
-                            } else {
-                                toggleIcon.classList.remove('pulse-active');
-                            }
-                        });
-                    }, { threshold: 0.6 });
-                    observer.observe(rewardBadge);
-                }
-            }
-        });
     </script>
     {% endif %}
 </article>

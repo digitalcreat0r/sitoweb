@@ -7,8 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
     <meta name="description" content="{{ t.site_description }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ t.site_description }}{% endif %}">
+
+    <meta property="og:image" content="{% if page.icon %}{{ page.icon | absolute_url }}{% else %}{{ '/assets/images/logo.png' | absolute_url }}{% endif %}">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ t.site_description }}{% endif %}">
+    <meta name="twitter:image" content="{% if page.icon %}{{ page.icon | absolute_url }}{% else %}{{ '/assets/images/logo.png' | absolute_url }}{% endif %}">
 
     <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url | replace: '/it/', '/' }}">
     <link rel="alternate" hreflang="it" href="{{ site.url }}/it{{ page.url | replace: '/it/', '/' }}">
@@ -48,7 +60,7 @@
         <p>Vuoi visualizzare il sito in italiano?</p>
     </div>
     <div class="lang-banner-actions">
-        <button id="lang-switch-btn" class="btn-main btn-small">Passa all'Italiano</button>
+        <button id="lang-switch-btn" class="btn-small">Passa all'Italiano</button>
     </div>
     <button id="lang-close-btn" class="btn-close" aria-label="Chiudi">
         <i class="fa-solid fa-xmark"></i>

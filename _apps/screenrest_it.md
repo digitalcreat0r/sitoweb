@@ -4,6 +4,7 @@ title: ScreenRest
 lang: it
 permalink: /it/apps/screenrest/
 testing_active: true
+testing_full: false
 icon: /assets/images/screenrest/screenrest_icon.png
 description: Pensato per professionisti e studenti che trascorrono molte ore al computer. Previeni il burnout mentale e l'affaticamento visivo grazie a promemoria intelligenti per il tuo benessere.
 play_store_link: https://play.google.com/store/apps/details?id=com.cleverpocket.screenrest
