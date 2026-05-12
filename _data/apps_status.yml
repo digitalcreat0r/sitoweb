@@ -1,7 +1,7 @@
 # Pannello di controllo globale delle App
 screenrest:
   testing_active: true
-  testing_full: true
+  testing_full: false
 
 #altra_app:
   #testing_active: false
