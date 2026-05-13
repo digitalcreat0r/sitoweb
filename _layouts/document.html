@@ -5,6 +5,13 @@ body_class: always-light
 {% assign lang = page.lang | default: "en" %}
 {% assign t = site.data[lang] %}
 
+---
+layout: default
+body_class: always-light
+---
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data[lang] %}
+
 <div class="back-link">
   {% if page.back_url %}
   <a href="{{ page.back_url | relative_url }}">
@@ -17,3 +24,5 @@ body_class: always-light
   </a>
   {% endif %}
 </div>
+
+{{ content }}
