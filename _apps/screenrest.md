@@ -19,12 +19,27 @@ privacy_policy: /policies/privacy-policy-screenrest.html
   <img src="/assets/images/screenrest/4.png" alt="Automated screen break scheduling" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
 </div>
 
-## <i class="fa-solid fa-gears"></i> How it works
+<div class="highlight-quote-box">
+Motivation is your engine. ScreenRest is the guardian of your time.
+</div>
 
-Start a session with one tap. ScreenRest runs in the background and nudges you when it's time to step away, then again when it's time to get back to work. No manual timers, no constant fiddling.
+## <i class="fa-solid fa-brain"></i> Prevent Mental Burnout
+Working without breaks is the enemy of performance. It leads to mental fatigue and a sharp decline in output quality. ScreenRest enforces scientifically backed rhythms to protect your cognitive energy:
 
-- **Automatic transitions** — work and rest phases cycle on their own
-- **Smart notifications** — clear alerts, no noise in between
-- **Multiple presets** — science-backed work/break rhythms: 52/17 for focus, 90-min for deep work, all with built-in 20-20-20 eye reminders
-- **Battery-friendly** — precise background scheduling, minimal drain
-- **Clean UI** — minimal by design, stays out of your way
+* **Balanced Flow:** 52 minutes of focused work followed by a 17-minute recovery window.
+* **Deep Focus:** high-intensity 90-minute work cycles.
+
+Prefer shorter sessions? The classic **Pomodoro** method (25/5 min) is also available.
+
+## <i class="fa-solid fa-eye"></i> Protect Your Eyes
+Staring at a screen dramatically reduces your blink rate, leading to dry eyes and eye strain. The **Eye Reset** feature quietly steps in every 20 minutes, applying the 20-20-20 rule to relax your focus on a distant point.
+
+## <i class="fa-solid fa-person-walking"></i> Break the Stillness
+Your body wasn't built to sit still for hours. Turn your break into an active recovery moment — move around, stretch, and get your circulation going so you come back refreshed and ready to go.
+
+## <i class="fa-solid fa-circle-play"></i> How It Works
+Start a session with a single tap. ScreenRest runs quietly in the background and nudges you at just the right time to take a break. No manual timers to set every time — save your mental energy for what matters.
+
+---
+
+**Work in the flow, take smarter breaks.**

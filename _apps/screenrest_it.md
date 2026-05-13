@@ -20,11 +20,11 @@ privacy_policy: /it/policies/privacy-policy-screenrest.html
 </div>
 
 <div class="highlight-quote-box">
-La motivazione è il tuo motore. Screenrest è il guardiano del tuo tempo.
+La motivazione è il tuo motore. ScreenRest è il guardiano del tuo tempo.
 </div>
 
 ## <i class="fa-solid fa-brain"></i> Previeni il burnout mentale
-Lavorare senza interruzioni è il nemico delle prestazioni. Porta all'affaticamento mentale e a un calo drastico della qualità. Screenrest applica ritmi scientificamente testati per preservare la tua energia cognitiva:
+Lavorare senza interruzioni è il nemico delle prestazioni. Porta all'affaticamento mentale e a un calo drastico della qualità. ScreenRest applica ritmi scientificamente testati per preservare la tua energia cognitiva:
 
 * **Flusso Bilanciato:** 52 minuti di lavoro seguiti da 17 minuti di recupero.
 * **Focus Profondo:** cicli ad alta intensità da 90 minuti.
@@ -32,13 +32,13 @@ Lavorare senza interruzioni è il nemico delle prestazioni. Porta all'affaticame
 Preferisci sessioni più brevi? È disponibile anche il classico metodo **Pomodoro** (25/5 min).
 
 ## <i class="fa-solid fa-eye"></i> Proteggi la vista
-Fissare uno schermo riduce drasticamente la frequenza dell'ammiccamento, causando secchezza oculare e affaticamento muscolare. La funzione **Eye Reset** interviene in modo discreto ogni 20 minuti. Ti guida in una micro-pausa di 20 secondi per rilassare la messa a fuoco su un punto lontano.
+Fissare uno schermo riduce drasticamente la frequenza dell'ammiccamento, causando secchezza oculare e affaticamento muscolare. La funzione **Eye Reset** interviene in modo discreto ogni 20 minuti applicando il metodo 20-20-20, per rilassare la messa a fuoco su un punto lontano.
 
 ## <i class="fa-solid fa-person-walking"></i> Spezza l'immobilità
 Il tuo corpo non è fatto per l'immobilità prolungata. Trasforma la pausa in un momento di recupero attivo: muoviti, fai stretching e riattiva la circolazione per ripartire con nuove energie.
 
 ## <i class="fa-solid fa-circle-play"></i> Come funziona
-Avvia una sessione con un tap. Screenrest lavora in background e ti avvisa in modo intelligente quando è il momento di fare una pausa. Niente timer manuali da impostare ogni volta, risparmia le energie mentali.
+Avvia una sessione con un tap. ScreenRest lavora in background e ti avvisa in modo intelligente quando è il momento di fare una pausa. Niente timer manuali da impostare ogni volta, risparmia le energie mentali.
 
 ---
 
