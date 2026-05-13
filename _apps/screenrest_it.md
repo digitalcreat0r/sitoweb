@@ -32,7 +32,7 @@ Lavorare senza interruzioni è il nemico delle prestazioni. Porta all'affaticame
 Preferisci sessioni più brevi? È disponibile anche il classico metodo **Pomodoro** (25/5 min).
 
 ## <i class="fa-solid fa-eye"></i> Proteggi la vista
-Fissare uno schermo riduce drasticamente la frequenza dell'ammiccamento, causando secchezza oculare e affaticamento muscolare. La funzione **Eye Reset** interviene in modo discreto ogni 20 minuti. Ti guida in una micro-pausa di 20 secondi per rilassare la messa a fuoco su un punto lontano. Un sollievo semplice, immediato, senza attrito.
+Fissare uno schermo riduce drasticamente la frequenza dell'ammiccamento, causando secchezza oculare e affaticamento muscolare. La funzione **Eye Reset** interviene in modo discreto ogni 20 minuti. Ti guida in una micro-pausa di 20 secondi per rilassare la messa a fuoco su un punto lontano.
 
 ## <i class="fa-solid fa-person-walking"></i> Spezza l'immobilità
 Il tuo corpo non è fatto per l'immobilità prolungata. Trasforma la pausa in un momento di recupero attivo: muoviti, fai stretching e riattiva la circolazione per ripartire con nuove energie.
