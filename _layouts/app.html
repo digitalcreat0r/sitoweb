@@ -242,7 +242,7 @@ layout: default
                 shareBtn.addEventListener('click', async () => {
                     const shareData = {
                         title: '{{ page.title | escape }}',
-                        text: '{{ t.share_message | default: "Check out this app:" }} {{ page.title | escape }}',
+                        text: `{{ t.share_message | default: "Check out this app:" }} {{ page.title | escape }}`,
                         url: window.location.href
                     };
                     try {
