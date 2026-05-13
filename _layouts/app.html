@@ -152,6 +152,34 @@ layout: default
     </section>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const rewardBadge = document.getElementById('reward-badge-toggle');
+            if (rewardBadge) {
+                const toggleIcon = rewardBadge.querySelector('.toggle-icon');
+
+                rewardBadge.addEventListener('click', function() {
+                    if (window.innerWidth <= 600) {
+                        this.classList.toggle('expanded');
+                    }
+                    if (toggleIcon) {
+                        toggleIcon.classList.remove('pulse-active');
+                    }
+                });
+
+                if (toggleIcon && 'IntersectionObserver' in window) {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting && !rewardBadge.classList.contains('expanded')) {
+                                toggleIcon.classList.add('pulse-active');
+                                setTimeout(() => toggleIcon.classList.remove('pulse-active'), 3000);
+                            }
+                        });
+                    }, { threshold: 0.6 });
+                    observer.observe(rewardBadge);
+                }
+            }
+        });
+
         function sendBetaEmail() {
             const nameInput = document.getElementById('testerNameInput').value.trim();
             const emailInput = document.getElementById('testerEmailInput').value.trim();
@@ -192,5 +220,43 @@ layout: default
             window.location.href = `mailto:${devEmail}?subject=${subject}&body=${body}`;
         }
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+            const warningContainer = document.getElementById('ios-platform-warning');
+            if (isIOS && warningContainer) {
+                const warningBox = document.createElement('div');
+                warningBox.style.cssText = "background: #fff3cd; color: #856404; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #ffeeba; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; width: fit-content;";
+                warningBox.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i><span>{{ t.android_only }}</span>`;
+                warningContainer.appendChild(warningBox);
+            }
+        });
+    </script>
     {% endif %}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const shareBtn = document.getElementById('shareAppButton');
+            if (shareBtn) {
+                shareBtn.addEventListener('click', async () => {
+                    const shareData = {
+                        title: '{{ page.title | escape }}',
+                        text: '{{ t.share_message | default: "Check out this app:" }} {{ page.title | escape }}',
+                        url: window.location.href
+                    };
+                    try {
+                        if (navigator.share) {
+                            await navigator.share(shareData);
+                        } else {
+                            await navigator.clipboard.writeText(window.location.href);
+                            const originalHtml = shareBtn.innerHTML;
+                            shareBtn.innerHTML = '<i class="fa-solid fa-check"></i> {{ t.link_copied | default: "Link Copied!" }}';
+                            setTimeout(() => { shareBtn.innerHTML = originalHtml; }, 2500);
+                        }
+                    } catch (err) { console.log('Condivisione annullata.', err); }
+                });
+            }
+        });
+    </script>
 </article>
