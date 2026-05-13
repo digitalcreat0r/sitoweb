@@ -38,7 +38,7 @@ Fissare uno schermo riduce drasticamente la frequenza dell'ammiccamento, causand
 Il tuo corpo non è fatto per l'immobilità prolungata. Trasforma la pausa in un momento di recupero attivo: muoviti, fai stretching e riattiva la circolazione per ripartire con nuove energie.
 
 ## <i class="fa-solid fa-circle-play"></i> Come funziona
-Avvia una sessione con un tap. ScreenRest lavora in background e ti avvisa in modo intelligente quando è il momento di fare una pausa. Niente timer manuali da impostare ogni volta, risparmia le energie mentali.
+Avvia una sessione con un tap. ScreenRest lavora in background e ti avvisa in modo intelligente quando è il momento di fare una pausa. Niente timer manuali da impostare ogni volta.
 
 ---
 
