@@ -19,12 +19,25 @@ privacy_policy: /it/policies/privacy-policy-screenrest.html
   <img src="/assets/images/screenrest/4.png" alt="Pianificazione automatica delle pause" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
 </div>
 
-## <i class="fa-solid fa-gears"></i> Come funziona
+### <i class="fa-solid fa-shield-halved"></i> La motivazione è il tuo motore. Screenrest è il guardiano del tuo tempo.
 
-Avvia una sessione con un solo tocco. ScreenRest funziona in background e ti avvisa quando è il momento di staccare, e di nuovo quando è il momento di rimettersi al lavoro. Nessun timer manuale, nessuna distrazione continua.
+## <i class="fa-solid fa-brain"></i> Previeni il burnout mentale
+Lavorare senza interruzioni è il nemico delle prestazioni. Porta all'affaticamento mentale e a un calo drastico della qualità. Screenrest applica ritmi fisiologici per preservare la tua energia cognitiva:
 
-- **Transizioni automatiche** — le fasi di lavoro e riposo si alternano da sole
-- **Notifiche intelligenti** — avvisi chiari, nessun rumore di fondo
-- **Preset multipli** — ritmi basati sulla scienza: 52/17 per la concentrazione, 90 min per il lavoro profondo, tutti con promemoria 20-20-20 integrati per la vista
-- **Risparmio batteria** — pianificazione precisa in background, consumo minimo
-- **Interfaccia pulita** — design minimale che non ti intralcia
+* **Flusso Bilanciato:** 52 minuti di lavoro seguiti da 17 minuti di recupero.
+* **Focus Profondo:** cicli ad alta intensità da 90 minuti.
+
+Preferisci sessioni più brevi? È disponibile anche il classico metodo **Pomodoro** (25/5 min).
+
+## <i class="fa-solid fa-eye"></i> Proteggi la vista
+Fissare uno schermo riduce drasticamente la frequenza dell'ammiccamento, causando secchezza oculare e affaticamento muscolare. La funzione **Eye Reset** interviene in modo discreto ogni 20 minuti. Ti guida in una micro-pausa di 20 secondi per rilassare la messa a fuoco su un punto lontano. Un sollievo semplice, immediato, senza attrito.
+
+## <i class="fa-solid fa-person-walking"></i> Spezza l'immobilità
+Il corpo umano non è progettato per la postura statica imposta dalla scrivania. Al termine della sessione di lavoro, un avviso persistente **"Break Time"** si attiva come segnale concreto per alzarsi. Usalo per fare stretching, camminare e riattivare la circolazione.
+
+## <i class="fa-solid fa-circle-play"></i> Come funziona
+Avvia una sessione con un tap. Screenrest lavora in background e ti avvisa in modo intelligente quando è il momento di fare una pausa. Niente timer manuali da impostare ogni volta, risparmia le energie mentali.
+
+---
+
+**Lavora nel flusso, fai pause intelligenti.**
