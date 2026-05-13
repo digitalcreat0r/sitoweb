@@ -97,3 +97,18 @@
     .app-page-header { flex-direction: column; text-align: center; }
     .app-page-title-group h1 { text-align: center; }
 }
+
+.highlight-quote-box {
+    text-align: center;
+    padding: 30px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    margin: 40px 0;
+    background-color: rgba(var(--primary-color-rgb), 0.05);
+
+    h3 {
+        margin: 0 !important;
+        font-style: italic;
+        color: var(--text-main);
+    }
+}
