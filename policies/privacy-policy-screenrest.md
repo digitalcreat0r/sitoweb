@@ -1,7 +1,7 @@
 ---
 layout: document
 title: Privacy Policy - ScreenRest
-back_url: /screenrest/
+back_url: /apps/screenrest
 back_text: Back to ScreenRest
 ---
 # Privacy Policy - ScreenRest
