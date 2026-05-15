@@ -2,7 +2,7 @@
 layout: document
 title: Privacy Policy - ScreenRest
 permalink: /it/policies/privacy-policy-screenrest.html
-back_url: /it/apps/screenrest
+back_url: /it/screenrest
 back_text: Torna a ScreenRest
 ---
 # Privacy Policy - ScreenRest
