@@ -2,7 +2,7 @@
 layout: app
 title: ScreenRest
 lang: it
-permalink: /it/apps/screenrest/
+permalink: /it/screenrest/
 app_id: screenrest
 icon: /assets/images/screenrest/screenrest_icon.png
 description: Pensato per professionisti e studenti che trascorrono molte ore al computer. Previeni il burnout mentale e l'affaticamento visivo grazie a promemoria intelligenti per il tuo benessere.
