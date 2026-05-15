@@ -19,13 +19,17 @@ Website: {{ site.url }}
 ## 2. Information Collection
 I do **not** collect, store, or process any personal information such as names, email addresses, or phone numbers.
 
-### Diagnostics & Crash Reporting
-To help me improve app stability, I use **Firebase Crashlytics**. If the app crashes, it transmits an anonymous report including:
-- **Crashlytics Installation UUID:** A randomly generated, anonymous identifier.
-- **Stack traces:** Technical logs indicating where the code failed.
-- **Device Metadata:** Hardware model, OS version, and app state at the time of the crash.
+### Diagnostics & Crash Reporting (Opt-In)
+To help me improve app stability, I use **Firebase Crashlytics**. By default, automatic crash reporting is disabled.
 
-**Your Choice:** You can enable or disable crash reporting at any time through the **Settings > Privacy** menu within the app.
+If the app experiences a crash, it will generate a local log on your device. Upon your next launch, you will be presented with a prompt asking for your explicit consent to send this specific crash report.
+- **If you choose "Send":** The app will transmit the anonymous report to Firebase.
+- **If you choose "Don't Send":** The local report is permanently deleted from your device and no data is transmitted.
+
+The anonymous report, only if explicitly sent by you, includes:
+- **Crashlytics Installation UUID:** A randomly generated, anonymous identifier.
+- **Stack traces:** Technical logs indicating exactly where the code failed.
+- **Device Metadata:** Hardware model, operating system version, and the state of the app at the time of the crash.
 
 ## 3. Local Storage & Permissions
 The app uses **Android Jetpack DataStore** to save your preferences locally. These remain on your device and are never uploaded to any external server.
@@ -36,7 +40,7 @@ The app uses **Android Jetpack DataStore** to save your preferences locally. The
 - **Vibration:** Used for haptic feedback.
 
 ## 4. Compliance & Rights
-In accordance with GDPR and international privacy laws, you have full control over your data. Since all operational data is stored locally, you can exercise your right to erasure at any time by clearing the app's data or uninstalling the application.
+In accordance with GDPR and international privacy laws, you have full control over your data. Since all operational data is stored locally, you can exercise your right to erasure at any time by clearing the app's data or uninstalling the application. Furthermore, crash logs are strictly opt-in and are only transmitted with your explicit, per-crash consent.
 
 ## 5. Contact Information
 If you have any questions regarding your privacy, please contact me at: **{{ site.email }}**
