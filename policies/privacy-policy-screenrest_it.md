@@ -5,34 +5,39 @@ permalink: /it/policies/privacy-policy-screenrest.html
 back_url: /it/apps/screenrest
 back_text: Torna a ScreenRest
 ---
-# Informativa sulla Privacy - ScreenRest
+# Privacy Policy - ScreenRest
 
-*Ultimo aggiornamento: 15 Marzo 2026*
+*Ultimo aggiornamento: 15 maggio 2026*
 
-**ScreenRest** è costruita con un approccio "Privacy by Design". Crediamo che i tuoi dati ti appartengano. Questa applicazione è progettata per funzionare interamente sul tuo dispositivo senza alcuna trasmissione di dati all'esterno.
+**ScreenRest** è un'applicazione sviluppata e gestita da **Oleksandr Bihansky** ("Io"), operante con il marchio **CleverPocket**. L'app è stata progettata seguendo il principio della "Privacy by Design": i tuoi dati appartengono a te. Questa applicazione è strutturata per funzionare interamente sul tuo dispositivo, garantendo stabilità tecnica e il massimo rispetto della tua privacy.
 
-## 1. Raccolta delle Informazioni
-**Non** raccogliamo, memorizziamo o elaboriamo alcuna informazione personale. Nello specifico:
+## 1. Titolare del Trattamento
+Il titolare del trattamento dei dati per questa applicazione è:
+**Oleksandr Bihansky (CleverPocket)**
+Email: {{ site.email }}
+Sito Web: {{ site.url }}
 
-- **Nessun Account:** Non è richiesta alcuna registrazione o login per utilizzare l'app.
-- **Nessun Tracciamento:** Non ci sono strumenti di analisi (come Firebase) o ID pubblicitari integrati nel codice.
+## 2. Raccolta delle Informazioni
+**Non** raccolgo, memorizzo o tratto in alcun modo dati personali identificativi (come nomi, indirizzi email o numeri di telefono).
 
-## 2. Archiviazione Locale e Permessi
-L'app utilizza **Android Jetpack DataStore** per salvare le tue preferenze localmente. Queste rimangono sul tuo dispositivo e non vengono mai caricate su un cloud o su server esterni.
+### Diagnostica e Crash Reporting
+Per migliorare la stabilità dell'app, utilizzo **Firebase Crashlytics**. In caso di errore fatale, l'app invia un rapporto tecnico anonimo per aiutarmi a individuare il bug. I dati includono:
+- **Crashlytics Installation UUID:** Un identificativo anonimo per distinguere i crash.
+- **Stack traces:** Log tecnici della parte di codice che ha fallito.
+- **Metadati del dispositivo:** Modello, versione OS e stato dell'app.
+
+**La tua scelta:** Puoi disattivare l'invio di questi rapporti in ogni momento tramite il menu **Impostazioni > Privacy** nell'app.
+
+## 3. Archiviazione Locale e Permessi
+L'app utilizza **Android Jetpack DataStore** per salvare le tue preferenze localmente sul dispositivo. Questi dati non vengono mai caricati su server esterni.
 
 ### Permessi Utilizzati
-Per fornire le sue funzionalità principali, l'app richiede i seguenti permessi:
-- **Allarmi Esatti:** Utilizzati per attivare timer di benessere precisi.
-- **Notifiche:** Utilizzate per fornire aggiornamenti di stato e promemoria.
-- **Vibrazione:** Utilizzata per il feedback aptico durante le interazioni.
+- **Sveglie esatte:** Per attivare i timer di benessere con precisione.
+- **Notifiche:** Per i promemoria sullo stato del timer.
+- **Vibrazione:** Per il feedback haptic.
 
-## 3. Conformità e Diritti
-In conformità con il GDPR e le leggi internazionali sulla privacy, hai il pieno controllo sui tuoi dati. Poiché tutti i dati sono memorizzati localmente, puoi esercitare il tuo diritto alla cancellazione in qualsiasi momento:
-- Cancellando la cache e i dati dell'app nelle impostazioni del tuo dispositivo.
-- Disinstallando l'applicazione.
+## 4. Conformità e Diritti
+In conformità con il GDPR, hai il controllo totale. Poiché i dati sono locali, puoi esercitare il diritto alla cancellazione semplicemente svuotando la cache dell'app o disinstallandola.
 
-## 4. Modifiche a Questa Policy
-Potremmo aggiornare la nostra Informativa sulla Privacy di tanto in tanto. Il tuo uso continuato dell'app dopo la pubblicazione delle modifiche costituisce l'accettazione dei nuovi termini.
-
-## 5. Informazioni di Contatto
-Se hai domande o necessità di supporto riguardo alla tua privacy, contattami all'indirizzo: **{{ site.email }}**
+## 5. Contatti
+Per qualsiasi domanda riguardante la tua privacy, puoi contattarmi direttamente all'indirizzo: **{{ site.email }}**
