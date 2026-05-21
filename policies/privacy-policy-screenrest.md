@@ -15,8 +15,7 @@ The data controller for this application is:
 
 **Oleksandr Bihansky ({{ site.brand }})**
 
-Email: {{ site.email }}
-
+Email: {{ site.email }}<br>
 Website: {{ site.url }}
 
 ## 2. Information Collection
@@ -46,4 +45,5 @@ The app uses **Android Jetpack DataStore** to save your preferences locally. The
 In accordance with GDPR and international privacy laws, you have full control over your data. Since all operational data is stored locally, you can exercise your right to erasure at any time by clearing the app's data or uninstalling the application. Furthermore, crash logs are strictly opt-in and are only transmitted with your explicit, per-crash consent.
 
 ## 5. Contact Information
-If you have any questions regarding your privacy, please contact the developer at: **{{ site.email }}**
+If you have any questions regarding your privacy, please contact the developer at:<br>
+**{{ site.email }}**
