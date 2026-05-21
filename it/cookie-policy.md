@@ -3,27 +3,28 @@ layout: document
 title: Cookie Policy
 lang: it
 ---
-# Informativa sui Cookie - CleverPocket Dev
+# Informativa sui Cookie - {{ site.brand }}
 
-*Ultimo aggiornamento: 4 Maggio 2026*
+*Ultimo aggiornamento: 21 maggio 2026*
 
-Questa Informativa sui Cookie spiega come CleverPocket Dev utilizza i cookie e tecnologie simili, come l'archiviazione locale (local storage), sul nostro sito web. Rispettiamo la tua privacy e miriamo a essere pienamente trasparenti riguardo ai dati memorizzati sul tuo dispositivo.
+La presente Informativa sui Cookie spiega come **{{ site.brand }}**, sviluppato e gestito da **{{ site.author }}** ("lo sviluppatore"), utilizza i cookie e tecnologie simili, come l'archiviazione locale (local storage), su questo sito web. La privacy dell'utente è una priorità e lo sviluppatore si impegna a garantire la massima trasparenza sui dati memorizzati sul dispositivo dell'utente.
 
-## 1. Cosa sono i cookie e l'archiviazione locale?
-I cookie sono piccoli file di testo posizionati sul tuo dispositivo per aiutare un sito web a fornire un'esperienza utente migliore. L'archiviazione locale (local storage) è una tecnologia web standard che consente a un sito web di memorizzare informazioni localmente sul tuo browser.
+## 1. Cosa sono i Cookie e l'Archiviazione Locale?
+I cookie sono piccoli file di testo che vengono salvati sul dispositivo dell'utente per aiutare il sito web a offrire una migliore esperienza d'uso. L'archiviazione locale (local storage) è una tecnologia web standard che consente a un sito web di memorizzare informazioni localmente all'interno del browser dell'utente.
 
-## 2. Come li utilizziamo
-Il nostro sito web è costruito pensando alla privacy. Non utilizziamo cookie di tracciamento invasivi, cookie pubblicitari di terze parti o cookie analitici che monitorano il tuo comportamento di navigazione su altri siti.
+## 2. Come lo Sviluppatore Utilizza Queste Tecnologie
+Questo sito web è progettato nel pieno rispetto della privacy. Lo sviluppatore non utilizza cookie di tracciamento invasivi, cookie pubblicitari di terze parti o cookie analitici che monitorano il comportamento di navigazione dell'utente su altri siti.
 
-Le uniche tecnologie di archiviazione che utilizziamo attualmente sono strettamente necessarie per le funzionalità principali del sito e per la tua esperienza utente:
-* **Preferenza del Tema (Archiviazione Locale):** Utilizziamo l'archiviazione locale del tuo browser (`localStorage`) per ricordare la tua preferenza di visualizzazione (Modalità Chiara o Modalità Scura) tra una sessione e l'altra. Questi dati non vengono inviati ad alcun server e rimangono esclusivamente sul tuo dispositivo.
-* **Cookie di Sessione e Sicurezza:** Se interagisci con i nostri moduli di contatto sicuri o con i sistemi di candidatura per il beta testing, potrebbero essere generati cookie di sessione minimi dal processore del modulo sicuro per prevenire lo spam e mantenere una sessione sicura.
+Le uniche tecnologie di archiviazione attualmente utilizzate sono strettamente necessarie per le funzionalità essenziali del sito web e per l'esperienza dell'utente:
+- **Preferenza del Tema (Archiviazione Locale):** Lo sviluppatore utilizza l'archiviazione locale del browser (`localStorage`) per ricordare la preferenza di visualizzazione dell'utente (Modalità Chiara o Modalità Scura) tra una sessione e l'altra. Questi dati non vengono trasmessi a nessun server e rimangono esclusivamente sul dispositivo dell'utente.
+- **Cookie di Sessione e di Sicurezza:** Se l'utente interagisce con i moduli di contatto sicuri o con i sistemi di candidatura per i programmi di beta testing, il gestore sicuro del modulo potrebbe generare cookie di sessione minimi per prevenire lo spam, garantire la sicurezza e mantenere una sessione sicura.
 
-## 3. Cookie di terze parti
-Attualmente non utilizziamo alcuno strumento di analisi o tracciamento di terze parti sul nostro sito web. Se ciò dovesse cambiare in futuro, aggiorneremo questa informativa e richiederemo il tuo consenso esplicito, come richiesto dalla legge, prima di inserire cookie non essenziali sul tuo dispositivo.
+## 3. Cookie di Terze Parti
+Lo sviluppatore attualmente non utilizza strumenti di analisi o di tracciamento di terze parti su questo sito web. Qualora in futuro venissero implementati tali strumenti, la presente informativa verrà aggiornata e, ove richiesto dalla legge, verrà richiesto il consenso esplicito dell'utente prima di installare qualsiasi cookie non essenziale sul suo dispositivo.
 
-## 4. Gestione delle tue preferenze
-Puoi scegliere di disabilitare o cancellare l'archiviazione locale e i cookie del tuo browser in qualsiasi momento attraverso le impostazioni del tuo browser web. Tieni presente che la cancellazione dell'archiviazione locale ripristinerà semplicemente la tua preferenza per la modalità Chiara/Scura all'impostazione predefinita.
+## 4. Gestione delle Preferenze
+L'utente può scegliere di disattivare o cancellare i cookie e l'archiviazione locale del browser in qualsiasi momento tramite le impostazioni del proprio browser web. Si prega di notare che la cancellazione dell'archiviazione locale comporterà semplicemente il ripristino della preferenza della modalità Chiara/Scura all'impostazione predefinita.
 
-## 5. Contattaci
-In caso di domande su questa Informativa sui Cookie, contattaci all'indirizzo: **{{ site.email }}**
+## 5. Contatti
+Per qualsiasi domanda relativa alla presente Informativa sui Cookie, è possibile contattare lo sviluppatore all'indirizzo:<br>
+**{{ site.email }}**
