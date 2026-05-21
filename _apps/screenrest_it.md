@@ -2,9 +2,8 @@
 layout: app
 title: ScreenRest
 lang: it
-permalink: /it/apps/screenrest/
-testing_active: true
-testing_full: false
+permalink: /it/screenrest/
+app_id: screenrest
 icon: /assets/images/screenrest/screenrest_icon.png
 description: Pensato per professionisti e studenti che trascorrono molte ore al computer. Previeni il burnout mentale e l'affaticamento visivo grazie a promemoria intelligenti per il tuo benessere.
 play_store_link: https://play.google.com/store/apps/details?id=com.cleverpocket.screenrest
@@ -20,12 +19,27 @@ privacy_policy: /it/policies/privacy-policy-screenrest.html
   <img src="/assets/images/screenrest/4.png" alt="Pianificazione automatica delle pause" style="height: 400px; border-radius: 12px; box-shadow: var(--shadow);">
 </div>
 
-## <i class="fa-solid fa-gears"></i> Come funziona
+<div class="highlight-quote-box">
+La motivazione è il tuo motore.<br>ScreenRest è il guardiano del tuo&nbsp;tempo.
+</div>
 
-Avvia una sessione con un solo tocco. ScreenRest funziona in background e ti avvisa quando è il momento di staccare, e di nuovo quando è il momento di rimettersi al lavoro. Nessun timer manuale, nessuna distrazione continua.
+## <i class="fa-solid fa-brain"></i> Previeni il burnout mentale
+Lavorare senza interruzioni è il nemico delle prestazioni. Porta all'affaticamento mentale e a un calo drastico della qualità.<br>ScreenRest applica ritmi scientificamente testati per preservare la tua energia cognitiva:
 
-- **Transizioni automatiche** — le fasi di lavoro e riposo si alternano da sole
-- **Notifiche intelligenti** — avvisi chiari, nessun rumore di fondo
-- **Preset multipli** — ritmi basati sulla scienza: 52/17 per la concentrazione, 90 min per il lavoro profondo, tutti con promemoria 20-20-20 integrati per la vista
-- **Risparmio batteria** — pianificazione precisa in background, consumo minimo
-- **Interfaccia pulita** — design minimale che non ti intralcia
+* **Flusso Bilanciato:** 52 minuti di lavoro seguiti da 17 minuti di recupero.
+* **Focus Profondo:** cicli ad alta intensità da 90 minuti.
+
+Preferisci sessioni più brevi? È disponibile anche il classico metodo **Pomodoro** (25/5 min).
+
+## <i class="fa-solid fa-eye"></i> Proteggi la vista
+Fissare uno schermo riduce drasticamente la frequenza dell'ammiccamento, causando secchezza oculare e affaticamento muscolare.<br>La funzione **Eye&nbsp;Reset** interviene in modo discreto ogni 20 minuti applicando il metodo&nbsp;20-20-20, per rilassare la messa a fuoco su un punto lontano.
+
+## <i class="fa-solid fa-person-walking"></i> Spezza l'immobilità
+Il tuo corpo non è fatto per l'immobilità prolungata. Trasforma la pausa in un momento di recupero attivo: muoviti, fai stretching e riattiva la circolazione per ripartire con nuove energie.
+
+## <i class="fa-solid fa-circle-play"></i> Come funziona
+Avvia una sessione con un tap. ScreenRest lavora in background e ti avvisa in modo intelligente quando è il momento di fare una pausa. Niente timer manuali da impostare ogni volta.
+
+---
+
+**Lavora nel flusso, fai pause intelligenti.**
