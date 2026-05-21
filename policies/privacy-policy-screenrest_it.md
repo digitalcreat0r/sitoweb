@@ -9,12 +9,12 @@ back_text: Torna a ScreenRest
 
 *Ultimo aggiornamento: 15 maggio 2026*
 
-**ScreenRest** è un'applicazione sviluppata e gestita da **Oleksandr Bihansky** ("lo sviluppatore"), operante come **{{ site.brand }}**. L'applicazione è stata progettata seguendo il principio di "Privacy by Design" (Privacy fin dalla progettazione): è strutturata per funzionare principalmente sul tuo dispositivo, garantendo al contempo elevati standard di stabilità tecnica e riservatezza.
+**ScreenRest** è un'applicazione sviluppata e gestita da **{{ site.author }}** ("lo sviluppatore"), operante come **{{ site.brand }}**. L'applicazione è stata progettata seguendo il principio di "Privacy by Design" (Privacy fin dalla progettazione): è strutturata per funzionare principalmente sul tuo dispositivo, garantendo al contempo elevati standard di stabilità tecnica e riservatezza.
 
 ## 1. Titolare del Trattamento dei Dati
 Il titolare del trattamento dei dati per questa applicazione è:
 
-**Oleksandr Bihansky ({{ site.brand }})**
+**{{ site.author }} ({{ site.brand }})**
 
 Email: {{ site.email }}<br>
 Sito web: {{ site.url }}

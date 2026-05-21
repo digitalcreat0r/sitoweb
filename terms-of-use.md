@@ -8,8 +8,10 @@ title: Terms of Use
 
 By using the website, applications, and services provided by **{{ site.brand }}**, developed and managed by **{{ site.author }}** ("the developer"), you agree to the following terms. Please read them carefully.
 
+*(Note: These terms apply to your use of this website and general services. Individual mobile applications published by the developer may be subject to their own specific end-user license agreements (EULA) and individual privacy policies, which can be accessed within each app).*
+
 ## 1. Acceptance of Terms & Eligibility
-By accessing the website or downloading and using the mobile applications, including **ScreenRest**, you agree to be bound by these Terms of Use and our Privacy Policy.
+By accessing the website or downloading and using the mobile applications provided by the developer, you agree to be bound by these Terms of Use and the website's Privacy Policy.
 
 You represent that you are of legal age to form a binding contract, or that you have obtained parental/guardian consent to use these services.
 
@@ -19,7 +21,7 @@ A personal, non-transferable, and non-exclusive license is granted to use the we
 - Use the website or applications for any illegal activities.
 
 <h2 id="testing-program">3. Testing Program</h2>
-By participating in the testing program, you agree to the following specific terms:
+By participating in any testing program provided via this website, you agree to the following specific terms:
 
 - **Nature of the Software:**<br>You acknowledge that the software is in a testing phase and may contain bugs or performance inconsistencies. As this is a pre-release version, any data or settings specifically related to your use of the application (such as preferences, statistics, or progress) may be reset or lost during updates or when transitioning to the final version.
 - **Testing Period:**<br>In compliance with Google requirements, the mandatory 14-day testing period begins only once the minimum number of required testers is reached and active. Users joining before this milestone may be required to remain in the program for longer than 14 days.

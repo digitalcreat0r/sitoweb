@@ -8,7 +8,7 @@ title: Privacy Policy
 
 Welcome to **{{ site.brand }}**. This Privacy Policy is issued by **{{ site.author }}** ("the developer") and explains how personal data is collected, used, and safeguarded when you visit this website, apply to be a beta tester, or initiate contact to share feedback and new ideas. Your privacy is respected and the developer is committed to protecting your personal data.
 
-*(Note: This policy applies exclusively to interactions on this website. Individual mobile applications, such as ScreenRest, have their own specific privacy policies, which can be accessed within each app and on their respective app store pages).*
+*(Note: This policy applies exclusively to interactions on this website. Individual mobile applications published by the developer have their own specific privacy policies, which can be accessed within each app and on their respective app store pages).*
 
 ## 1. Data Controller
 The data controller for this website and its related services is:
