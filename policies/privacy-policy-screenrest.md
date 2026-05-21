@@ -12,8 +12,11 @@ back_text: Back to ScreenRest
 
 ## 1. Data Controller
 The data controller for this application is:
+
 **Oleksandr Bihansky ({{ site.brand }})**
+
 Email: {{ site.email }}
+
 Website: {{ site.url }}
 
 ## 2. Information Collection
