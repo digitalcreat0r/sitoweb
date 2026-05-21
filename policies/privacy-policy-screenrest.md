@@ -8,12 +8,12 @@ back_text: Back to ScreenRest
 
 *Last updated: May 15, 2026*
 
-**ScreenRest** is an application developed and managed by **Oleksandr Bihansky** ("the developer"), operating as **{{ site.brand }}**. It is built with a "Privacy by Design" approach. This application is designed to function primarily on your device while maintaining high standards for technical stability and privacy.
+**ScreenRest** is an application developed and managed by **{{ site.author }}** ("the developer"), operating as **{{ site.brand }}**. It is built with a "Privacy by Design" approach. This application is designed to function primarily on your device while maintaining high standards for technical stability and privacy.
 
 ## 1. Data Controller
 The data controller for this application is:
 
-**Oleksandr Bihansky ({{ site.brand }})**
+**{{ site.author }} ({{ site.brand }})**
 
 Email: {{ site.email }}<br>
 Website: {{ site.url }}

@@ -6,7 +6,7 @@ title: Terms of Use
 
 *Last updated: May 21, 2026*
 
-By using the website, applications, and services provided by **{{ site.brand }}**, developed and managed by **Oleksandr Bihansky** ("the developer"), you agree to the following terms. Please read them carefully.
+By using the website, applications, and services provided by **{{ site.brand }}**, developed and managed by **{{ site.author }}** ("the developer"), you agree to the following terms. Please read them carefully.
 
 ## 1. Acceptance of Terms & Eligibility
 By accessing the website or downloading and using the mobile applications, including **ScreenRest**, you agree to be bound by these Terms of Use and our Privacy Policy.
@@ -50,4 +50,5 @@ The developer reserves the right to modify these terms at any time. Continued us
 These terms are governed by and construed in accordance with the laws of Italy, without regard to its conflict of law principles.
 
 ## 9. Contact Information
-If you have any questions regarding these terms, please contact the developer at: **{{ site.email }}**
+If you have any questions regarding these terms, please contact the developer at:<br>
+**{{ site.email }}**
