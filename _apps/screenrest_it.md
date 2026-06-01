@@ -20,7 +20,7 @@ privacy_policy: /it/policies/privacy-policy-screenrest.html
 </div>
 
 <div class="highlight-quote-box">
-La motivazione è il tuo motore.<br>ScreenRest è il guardiano del tuo&nbsp;tempo.
+La motivazione è il tuo motore.<br>ScreenRest è il guardiano del tuo ritmo&nbsp;di&nbsp;lavoro.
 </div>
 
 ## <i class="fa-solid fa-brain"></i> Previeni il burnout mentale

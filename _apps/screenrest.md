@@ -19,7 +19,7 @@ privacy_policy: /policies/privacy-policy-screenrest.html
 </div>
 
 <div class="highlight-quote-box">
-Motivation is your engine.<br>ScreenRest is the guardian of your&nbsp;time.
+Motivation is your engine.<br>ScreenRest is the guardian of your work&nbsp;rhythm.
 </div>
 
 ## <i class="fa-solid fa-brain"></i> Prevent Mental Burnout
