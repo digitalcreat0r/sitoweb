@@ -33,17 +33,27 @@ The anonymous report, only if explicitly sent by you, includes:
 - **Stack traces:** Technical logs indicating exactly where the code failed.
 - **Device Metadata:** Hardware model, operating system version, and the state of the app at the time of the crash.
 
-## 3. Local Storage & Permissions
+### Third-Party Services
+- **Google Play Services:** Used for age verification signals and basic app functionality. Google may process data according to their own Privacy Policy.
+
+## 3. Age Verification & Minor Protection
+To comply with regional regulations (such as the Texas SCOPE Act), ScreenRest implements age verification measures:
+- **Automated Verification:** The app uses Google Play Age Signals to determine if a user is a minor or an adult based on their Google account status. This process is handled by Google Play Services; the developer only receives an anonymous status signal (e.g., "Verified Adult" or "Supervised Minor") and does not access your date of birth or identity documents.
+- **Manual Declaration:** If automated verification is unavailable, users must manually declare their age category.
+- **Minor Safety:** For users identified as minors, the app requires a manual acknowledgment of parental guidance. Since ScreenRest collects no personal data and operates entirely offline, it does not create "digital service provider" profiles for minors.
+
+## 4. Local Storage & Permissions
 The app uses **Android Jetpack DataStore** to save your preferences locally. These remain on your device and are never uploaded to any external server.
+- **Age Verification Status:** Your age category (Adult/Minor) is stored locally using Android Jetpack DataStore to remember your status and avoid repeated prompts. This data never leaves your device.
 
 ### Permissions Used
 - **Exact Alarms:** Used to trigger precise wellness timers.
 - **Notifications:** Used to provide status updates and reminders.
 - **Vibration:** Used for haptic feedback.
 
-## 4. Compliance & Rights
+## 5. Compliance & Rights
 In accordance with GDPR and international privacy laws, you have full control over your data. Since all operational data is stored locally, you can exercise your right to erasure at any time by clearing the app's data or uninstalling the application. Furthermore, crash logs are strictly opt-in and are only transmitted with your explicit, per-crash consent.
 
-## 5. Contact Information
+## 6. Contact Information
 If you have any questions regarding your privacy, please contact the developer at:<br>
 **{{ site.email }}**
